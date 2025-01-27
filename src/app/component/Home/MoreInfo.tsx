@@ -1,6 +1,5 @@
 import React from 'react'
 import BannerBg from '../../../../public/images/infobanner.png'
-import Link from 'next/link'
 
 const MoreInfo = () => {
   return (
@@ -25,7 +24,7 @@ const MoreInfo = () => {
         <div className="w-1/2 h-full">
         </div>
       </div>
-    </section >
+    </section>
   )
 }
 

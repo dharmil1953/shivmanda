@@ -36,17 +36,26 @@ const OurProject = () => {
                     </h1>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5">
-                    {OurProjects.map((OurProjectItems, index) => (
-                        <div key={index} className='group'>
-                            <div className='w-full overflow-hidden rounded-[20px]'>
-                                <Image src={OurProjectItems.ProjectImg} alt={`${OurProjectItems.ProjectTitle}`} className='w-full h-[380px] group-hover:scale-110 duration-300 object-cover' />
-                            </div>
-                            <Link href={OurProjectItems.ProjectLink} className='mt-4 font-medium text-xl text-Light text-center group-hover:text-[#EFEFEF] duration-300 block'>
+                <div className="overflow-x-auto">
+                    <div className="flex lg:grid lg:grid-cols-3 gap-5">
+                        {OurProjects.map((OurProjectItems, index) => (
+                            <div key={index} className="min-w-[300px] group flex-shrink-0 sm:flex-shrink">
+                                <div className="w-full overflow-hidden rounded-[20px]">
+                                    <Image
+                                        src={OurProjectItems.ProjectImg}
+                                        alt={`${OurProjectItems.ProjectTitle}`}
+                                        className="w-full h-[380px] group-hover:scale-110 duration-300 object-cover"
+                                    />
+                                </div>
+                                <Link
+                                    href={OurProjectItems.ProjectLink}
+                                    className="mt-4 font-medium text-xl text-Light text-center group-hover:text-[#EFEFEF] duration-300 block"
+                                >
                                     {OurProjectItems.ProjectTitle}
-                            </Link>
-                        </div>
-                    ))}
+                                </Link>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
                 <div className='w-full text-center'>

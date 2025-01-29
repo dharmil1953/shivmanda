@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Building2, Trophy, Target, Award, Users, Shield, ChevronRight } from 'lucide-react';
+import ServicesSection from '../component/About/ServiceSection';
 
 export default function About() {
   return (
@@ -118,7 +119,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* <ServicesSection /> */}
+      <ServicesSection />
 
       <section className="py-24">
         <div className="container mx-auto px-6">

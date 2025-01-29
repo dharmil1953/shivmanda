@@ -20,10 +20,10 @@ const listItems = [
 const Hero = () => {
   return (
     <div>
-      <section className="relative w-full h-[600px]">
-        <div className="absolute top-0 left-0 w-full h-full overflow-hidden">
+      <section className="relative w-full h-[600px] ">
+        <div className="absolute top-0 left-0 w-full h-full overflow-hidden ">
           <video
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover "
             autoPlay
             loop
             muted

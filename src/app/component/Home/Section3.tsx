@@ -57,7 +57,7 @@ const Section3 = () => {
                         <h1 className="mb-5 text-2xl text-Light sm:text-3xl leading-8 sm:leading-10 font-medium">
                             Pioneering Excellence in
                             <span className="block">
-                                <span className="font-bold">Construction</span>
+                                <span className="font-bold uppercase">Construction</span>
                             </span>
                         </h1>
                         <div className='overflow-x-auto'>
@@ -65,7 +65,7 @@ const Section3 = () => {
                                 {tabs.map((tab) => (
                                     <button
                                         key={tab.id}
-                                        className={`px-3 py-1 sm:px-4 sm:py-2 rounded-full h-8 sm:h-full text-sm sm:text-base leading-4 font-semibold duration-300 border-2  border-transparent ${activeTab === tab.id
+                                        className={`max-[374px]:px-2 px-3 py-1 sm:px-4 sm:py-2 rounded-full h-8 sm:h-full text-sm sm:text-base leading-4 font-semibold duration-300 border-2  border-transparent ${activeTab === tab.id
                                             ? "text-primaryColor bg-Light"
                                             : "text-Light hover:border-2 hover:border-Light"
                                             }`}

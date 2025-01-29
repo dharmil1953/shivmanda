@@ -36,7 +36,7 @@ const ProductList = [
 const Footer = () => {
     return (
         <footer className='pt-16 pb-20'>
-            <div className="container px-4 md:px-8">
+            <div className="container mx-auto px-4 md:px-8">
                 <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4'>
                     <div className='pr-3 text-Dark col-span-4 mb-4 sm:col-span-2 lg:col-span-1'>
                         <div className='mb-3'>

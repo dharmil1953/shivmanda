@@ -1,10 +1,10 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import logo from "../../../public/images/logo.svg";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react"; // Hamburger and close icons
+import { Menu, X } from "lucide-react"; 
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -20,19 +20,19 @@ const Header = () => {
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
-  useEffect(() => {
-    if (menuOpen) {
-      document.body.classList.add("no-scroll");
-    } else {
-      document.body.classList.remove("no-scroll");
-    }
-    return () => {
-      document.body.classList.remove("no-scroll"); // Cleanup on unmount
-    };
-  }, [menuOpen]);
+  // useEffect(() => {
+  //   if (menuOpen) {
+  //     document.body.classList.add("no-scroll");
+  //   } else {
+  //     document.body.classList.remove("no-scroll");
+  //   }
+  //   return () => {
+  //     document.body.classList.remove("no-scroll"); // Cleanup on unmount
+  //   };
+  // }, [menuOpen]);
 
   return (
-    <header className="bg-white shadow-md sticky top-0 z-10">
+    <header className="bg-Light shadow-md sticky top-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <div className="text-xl font-bold text-gray-800">

@@ -41,15 +41,15 @@ const Industrie = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     {Industriedata.map((industries, index) => (
-                        <div key={index} className='w-full rounded-[20px] px-7 py-6  lg:px-10 lg:py-8 text-Dark bg-[#EFEFEF]'>
-                            <div className="flex gap-2 md:gap-3 lg:gap-0 items-center">
+                        <div key={index} className='w-full rounded-[20px] max-[374px]:px-5 px-6 py-6  lg:px-10 lg:py-8 text-Dark bg-[#EFEFEF]'>
+                            <div className="flex gap-2 md:gap-3 lg:gap-0 xl:gap-4 items-center">
                                 <div className='w-4/12 lg:w-3/12 xl:w-2/12'>
                                     <div className='flex items-center justify-center  size-20 lg:size-[91px] rounded-full bg-primaryColor'>
                                         <Image src={industries.image} alt={`Industry Image ${index + 1}`} className='w-auto' />
                                     </div>
                                 </div>
                                 <div className="w-8/12 lg:w-9/12 xl:w-10/12">
-                                    <h2 className='text-2xl md:text-xl lg:text-2xl font-semibold'>{industries.title}</h2>
+                                    <h2 className=' max-[379px]:text-xl text-2xl md:text-xl lg:text-2xl font-semibold'>{industries.title}</h2>
                                 </div>
                             </div>
 

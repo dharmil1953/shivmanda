@@ -2,7 +2,6 @@ import React from 'react'
 import BannerBg from '../../../../public/images/infobanner.png'
 import Hammer from '../../../../public/images/hammer 1.svg'
 import Cap from '../../../../public/images/helmet 1.svg'
-import Link from 'next/link'
 import Image from 'next/image'
 
 const MoreInfo = () => {

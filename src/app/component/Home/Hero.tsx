@@ -35,7 +35,7 @@ const Hero = () => {
                             <ul className="flex flex-wrap items-center gap-5 justify-center sm:justify-between pt-5">
                                 {listItems.map((item, index) => (
                                     <li key={index} className="flex items-center m-0">
-                                        <img src={item.image} alt="Marker" className="w-6 h-6 mr-3" />
+                                        <Image src={item.image} alt="Marker" className="w-6 h-6 mr-3" />
                                         <span className="text-lg font-medium">{item.title}</span>
                                     </li>
                                 ))}

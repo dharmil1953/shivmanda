@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import blog1 from '../../../../public/images/image (6).png'
-import blog2 from '../../../../public/images/image (7).png'
-import blog3 from '../../../../public/images/image (8).png'
+import blog1 from '../../../../public/images/react.jpg'
+import blog2 from '../../../../public/images/nodejs.png'
+import blog3 from '../../../../public/images/nextjs.png'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -50,7 +50,7 @@ const OurTechnology = () => {
                         <div key={index} className='rounded-[20px] p-5 pb-9 bg-[#EFEFEF]'>
                             <div className='w-full pb-5'>
                                 <Link href={BlogItems.BlogLink}>
-                                    <Image src={BlogItems.BlogImg} alt={`${BlogItems.BlogTitle}`} className='w-full h-full object-cover' />
+                                    <Image src={BlogItems.BlogImg} alt={`${BlogItems.BlogTitle}`} className='w-full h-full object-cover rounded-[20px]' />
                                 </Link>
                             </div>
                             <div className='text-Dark'>

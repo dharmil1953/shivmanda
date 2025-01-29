@@ -28,7 +28,7 @@ const tabs = [
         content:
             "Get in touch with us to learn more about how we can bring your construction ideas to life. We are here to guide you through every step of your journey.",
     },
-    
+
 ];
 
 const Section3 = () => {
@@ -46,7 +46,7 @@ const Section3 = () => {
                             <Image
                                 src={tabBg}
                                 alt="tabbg"
-                                className="w-auto mx-auto relative z-10"
+                                className="w-auto mx-auto relative z-[1]"
                             />
                             <div className="w-36 h-36 md:w-42 md:h-42 lg:w-52 lg:h-52 bg-white -z-0 rounded-2xl absolute -bottom-5 md:-bottom-3 -left-5 md:-left-3"></div>
                         </div>
@@ -60,20 +60,21 @@ const Section3 = () => {
                                 <span className="font-bold">Construction</span>
                             </span>
                         </h1>
-
-                        <div className="mb-6 flex md:gap-2 lg:gap-6">
-                            {tabs.map((tab) => (
-                                <button
-                                    key={tab.id}
-                                    className={`px-4 py-2 rounded-full text-base leading-4 font-semibold duration-300 ${activeTab === tab.id
+                        <div className='overflow-x-auto'>
+                            <div className="mb-6 flex gap-1 md:gap-2 lg:gap-6 w-full">
+                                {tabs.map((tab) => (
+                                    <button
+                                        key={tab.id}
+                                        className={`px-3 py-1 sm:px-4 sm:py-2 rounded-full h-8 sm:h-full text-sm sm:text-base leading-4 font-semibold duration-300 border-2  border-transparent ${activeTab === tab.id
                                             ? "text-primaryColor bg-Light"
-                                            : "text-Light border-2 border-transparent hover:border-Light"
-                                        }`}
-                                    onClick={() => setActiveTab(tab.id)}
-                                >
-                                    {tab.label}
-                                </button>
-                            ))}
+                                            : "text-Light hover:border-2 hover:border-Light"
+                                            }`}
+                                        onClick={() => setActiveTab(tab.id)}
+                                    >
+                                        {tab.label}
+                                    </button>
+                                ))}
+                            </div>
                         </div>
 
                         {/* Tab Content */}

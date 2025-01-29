@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Raleway } from "next/font/google";
 import "./globals.css";
+import { FaWhatsapp } from "react-icons/fa";
 import Header from "./component/Header";
 import Footer from "./component/Footer";
 
@@ -27,6 +28,8 @@ export default function RootLayout({
       >
         <Header />
         {children}
+        <div className="size-12 rounded-full fixed bottom-5 right-5 bg-slate-200 cursor-pointer shadow-2xl flex items-center justify-center"><FaWhatsapp size={28} color="green" />
+        </div>
         <Footer />
       </body>
     </html>

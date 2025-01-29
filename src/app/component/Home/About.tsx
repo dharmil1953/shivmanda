@@ -20,15 +20,15 @@ const About = () => {
                     <div className='w-full xl:w-6/12 lg:pl-10'>
                         <div className="grid gap-4 grid-cols-2">
                             <div className='bg-primaryColor rounded-[20px] px-5 py-5 xl:px-11 md:pt-[60px] xl:pb-[50px] col-span-2 md:col-span-1 row-span-2 text-center'>
-                                <h1 className='text-6xl md:text-7xl pb-6 text-Light font-bold'>500+</h1>
+                                <h1 className='text-5xl md:text-6xl pb-6 text-Light font-bold'>500+</h1>
                                 <p className='text-base md:text-lg text-Light font-semibold leading-[25px]'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
                             </div>
                             <div className='bg-secondaryColor text-accentColor rounded-[20px] py-5 px-5 xl:px-11'>
-                                <h1 className='text-6xl md:text-7xl pb-[15px] font-bold'>120+</h1>
+                                <h1 className='text-5xl md:text-6xl pb-[15px] font-bold'>120+</h1>
                                 <p className='text-base md:text-lg font-semibold md:leading-[25px]'>Businesses guided over thirty years</p>
                             </div>
                             <div className='bg-[#EFEFEF] text-accentColor rounded-[20px] py-5 px-5 xl:px-11'>
-                                <h1 className='text-6xl md:text-7xl pb-[15px] font-bold'>30+</h1>
+                                <h1 className='text-5xl md:text-6xl pb-[15px] font-bold'>30+</h1>
                                 <p className='text-base md:text-lg font-semibold md:leading-[25px]'>Business Excellence awards achieved</p>
                             </div>
                         </div>

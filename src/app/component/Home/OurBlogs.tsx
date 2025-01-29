@@ -10,7 +10,7 @@ const BlogsData = [
     {
         BlogLink: '/',
         BlogImg: blog1,
-        BlogTitle: 'Real estate listings',
+        BlogTitle: 'ReactJs',
         BlogDate: '19th July 2023',
         BlogDesc: "It seems you're looking for some sample texts related to residential properties or settings. Here are a few types of text.",
         BlogBtn: 'Read More'
@@ -18,7 +18,7 @@ const BlogsData = [
     {
         BlogLink: '/',
         BlogImg: blog2,
-        BlogTitle: 'Real estate listings',
+        BlogTitle: 'Node Js',
         BlogDate: '19th July 2023',
         BlogDesc: "It seems you're looking for some sample texts related to residential properties or settings. Here are a few types of text.",
         BlogBtn: 'Read More'
@@ -26,7 +26,7 @@ const BlogsData = [
     {
         BlogLink: '/',
         BlogImg: blog3,
-        BlogTitle: 'Real estate listings',
+        BlogTitle: 'NextJs',
         BlogDate: '19th July 2023',
         BlogDesc: "It seems you're looking for some sample texts related to residential properties or settings. Here are a few types of text.",
         BlogBtn: 'Read More'

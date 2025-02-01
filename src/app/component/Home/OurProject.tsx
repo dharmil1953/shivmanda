@@ -5,7 +5,13 @@ import Project2 from '../../../../public/images/image (4).png'
 import Project3 from '../../../../public/images/image (5).png'
 import Image from 'next/image'
 import Link from 'next/link'
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const OurProjects = [
     {
@@ -36,26 +42,47 @@ const OurProject = () => {
                     </h1>
                 </div>
 
-                <div className="overflow-x-auto">
-                    <div className="flex lg:grid lg:grid-cols-3 gap-5">
-                        {OurProjects.map((OurProjectItems, index) => (
-                            <div key={index} className="min-w-[300px] group flex-shrink-0 sm:flex-shrink">
+                <div className="overflow-hidden relative">
+                    <Swiper
+                        modules={[Navigation, Autoplay]}
+                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        pagination={{ clickable: true }}
+                        breakpoints={{
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        }}
+                        className="py-5"
+                    >
+                        {OurProjects.map((item, index) => (
+                            <SwiperSlide key={index} className="group">
                                 <div className="w-full overflow-hidden rounded-[20px]">
                                     <Image
-                                        src={OurProjectItems.ProjectImg}
-                                        alt={`${OurProjectItems.ProjectTitle}`}
+                                        src={item.ProjectImg}
+                                        alt={item.ProjectTitle}
+                                        width={400}
+                                        height={380}
                                         className="w-full h-[380px] group-hover:scale-110 duration-300 object-cover"
                                     />
                                 </div>
                                 <Link
-                                    href={OurProjectItems.ProjectLink}
+                                    href={item.ProjectLink}
                                     className="mt-4 font-medium text-xl text-Light text-center group-hover:text-[#EFEFEF] duration-300 block"
                                 >
-                                    {OurProjectItems.ProjectTitle}
+                                    {item.ProjectTitle}
                                 </Link>
-                            </div>
+                            </SwiperSlide>
                         ))}
-                    </div>
+                    </Swiper>
+
+                    {/* <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white w-8 h-8 flex items-center justify-center z-30 rounded-full hover:bg-gray-600 transition">
+                        <AiOutlineLeft className="text-xl" />
+                    </button>
+                    <button className="custom-next absolute right-0  top-1/2 -translate-y-1/2 bg-gray-800 text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-600 transition">
+                        <AiOutlineRight className="text-xl" />
+                    </button> */}
                 </div>
 
                 <div className='w-full text-center'>

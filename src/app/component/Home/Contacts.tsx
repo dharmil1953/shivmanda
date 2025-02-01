@@ -8,7 +8,7 @@ const Contacts = () => {
         <section className='py-12 sm:py-14 md:py-16 lg:py-20 bg-[#EFEFEF]'>
             <div className="container mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-5 gap-8 items-center">
-                    <div className='col-span-10 md:col-span-2  relative'>
+                    <div className='col-span-10 md:col-span-2 relative'>
                         <div className='relative  w-1/2 md:w-4/5 lg:w-1/2 text-center mx-auto'>
                             <span className=' size-40 md:size-48 xl:size-52 absolute -top-2 -right-2 md:-top-3 lg:-top-4 xl:-top-5 md:-right-3 lg:-right-4 xl:-right-5 bg-primaryColor rounded-[20px]'></span>
                             <Image src={CallGirl} alt='Contact' className='h-full mx-auto relative z-10' />

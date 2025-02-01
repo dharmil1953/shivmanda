@@ -8,12 +8,14 @@ const About = () => {
                     <div className='w-full xl:w-6/12'>
                         <h3 className='text-primaryColor text-lg leading-6 mb-3 font-medium'>About Us</h3>
                         <div className=''>
-                            <h1 className='mb-2.5 w-full xl:w-7/12  text-4xl leading-10 text-black font-medium'>Pioneering Excellence
-                                <span className='block'> in <span className='text-primaryColor font-bold uppercase'>Construction</span> </span>
+                            <h1 className="mb-5 text-2xl text-Dark sm:text-3xl leading-8 sm:leading-10 font-medium">Pioneering Excellence in
+                                <span className="block"> in
+                                    <span className="font-bold text-primaryColor uppercase"> Construction</span>
+                                </span>
                             </h1>
                             <div className='xl:w-9/12'>
-                                <p className='text-Body text-lg font-medium mb-3'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
-                                <p className='text-Body text-lg font-medium'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
+                                <p className='text-Body text-base sm:text-lg font-medium mb-3'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
+                                <p className='text-Body text-base sm:text-lg font-medium'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
                             </div>
                         </div>
                     </div>

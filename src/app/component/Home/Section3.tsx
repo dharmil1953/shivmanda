@@ -41,14 +41,12 @@ const Section3 = () => {
                 <div className="flex flex-wrap gap-16 md:gap-0 flex-col-reverse md:flex-row">
                     {/* Image Section */}
                     <div className="w-full  md:w-5/12 mb-8 md:mb-0 flex items-center justify-center">
-                        <div className="relative w-3/4 sm:w-2/3 md:w-3/5 lg:w-3/5 ">
-                            <div className="w-36 h-36 md:w-42 md:h-42 lg:w-52 lg:h-52 bg-white -z-0 rounded-2xl absolute -top-5 md:-top-3 -right-5 md:-right-3"></div>
-                            <Image
-                                src={tabBg}
-                                alt="tabbg"
-                                className="w-auto mx-auto relative z-[1]"
-                            />
-                            <div className="w-36 h-36 md:w-42 md:h-42 lg:w-52 lg:h-52 bg-white -z-0 rounded-2xl absolute -bottom-5 md:-bottom-3 -left-5 md:-left-3"></div>
+                        <div className='relative w-3/4 sm:w-2/3 md:w-3/4 lg:w-3/5 text-center mx-auto'>
+                            <span className=' size-40 md:size-48 xl:size-52 absolute -top-2 -right-2 md:-top-3 lg:-top-4 xl:-top-5 md:-right-3 lg:-right-4 xl:-right-5 bg-Light rounded-[20px]'></span>
+
+                            <Image src={tabBg} alt='bg' className='h-full mx-auto relative z-10' />
+
+                            <span className='size-40 md:size-48 lg:size-52 absolute md:-bottom-3 lg:-bottom-5  -bottom-2 -left-2 md:-left-3 lg:-left-5 bg-Light rounded-[20px]'></span>
                         </div>
                     </div>
 
@@ -61,19 +59,21 @@ const Section3 = () => {
                             </span>
                         </h1>
                         <div className='overflow-x-auto'>
-                            <div className="mb-6 flex gap-1 md:gap-2 lg:gap-6 w-full">
-                                {tabs.map((tab) => (
-                                    <button
-                                        key={tab.id}
-                                        className={`max-[374px]:px-2 px-3 py-1 sm:px-4 sm:py-2 rounded-full h-8 sm:h-full text-sm sm:text-base leading-4 font-semibold duration-300 border-2  border-transparent ${activeTab === tab.id
-                                            ? "text-primaryColor bg-Light"
-                                            : "text-Light hover:border-2 hover:border-Light"
-                                            }`}
-                                        onClick={() => setActiveTab(tab.id)}
-                                    >
-                                        {tab.label}
-                                    </button>
-                                ))}
+                            <div className="max-[379px]:w-[450px] sm:w-full">
+                                <div className="mb-6 w-full flex justify-center sm:justify-start gap-2 md:gap-2 lg:gap-6">
+                                    {tabs.map((tab) => (
+                                        <button
+                                            key={tab.id}
+                                            className={`max-[374px]:px-3 px-3 py-2 sm:px-4 sm:py-2 rounded-full h-8 sm:h-full text-base leading-3 sm:leading-4 font-semibold duration-300 border-2  border-transparent ${activeTab === tab.id
+                                                ? "text-primaryColor bg-Light"
+                                                : "text-Light hover:border-2 hover:border-Light"
+                                                }`}
+                                            onClick={() => setActiveTab(tab.id)}
+                                        >
+                                            {tab.label}
+                                        </button>
+                                    ))}
+                                </div>
                             </div>
                         </div>
 
@@ -88,7 +88,7 @@ const Section3 = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </div >
 
     )
 }

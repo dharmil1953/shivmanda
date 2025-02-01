@@ -5,10 +5,8 @@ import Project2 from '../../../../public/images/image (4).png'
 import Project3 from '../../../../public/images/image (5).png'
 import Image from 'next/image'
 import Link from 'next/link'
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
-
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Navigation, Pagination } from "swiper/modules";
+import { Autoplay, Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";

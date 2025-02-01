@@ -1,109 +1,179 @@
-"use client";
-import React, { useEffect, useRef, useState } from "react";
-import { ChevronRight } from "lucide-react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { JSX, useEffect, useRef } from "react";
+import { Building, Building2, ChevronRight, PencilRuler, Wrench } from "lucide-react";
 
 interface Service {
-  icon: string;
+  icon: JSX.Element;
   title: string;
+  type: string;
   description: string;
 }
 
 const services: Service[] = [
   {
-    icon: "🏢",
-    title: "Building",
+    icon: <Building className="w-12 h-12" />,
+    title: "Architectural Excellence",
+    type: "Design & Planning",
     description:
-      "From preconstruction to virtual design and construction, we offer a wide range of services to meet your building needs.",
+      "Creating innovative architectural solutions that blend aesthetics with functionality. Our designs shape the future of urban landscapes.",
   },
   {
-    icon: "🔧",
-    title: "Civil",
+    icon: <Wrench className="w-12 h-12" />,
+    title: "Engineering Mastery",
+    type: "Technical Solutions",
     description:
-      "From engineering to preconstruction, we offer a variety of services and delivery methods.",
+      "Delivering cutting-edge engineering solutions with precision. From concept to completion, we ensure technical excellence.",
   },
   {
-    icon: "🛠️",
-    title: "Construction",
+    icon: <PencilRuler className="w-12 h-12" />,
+    title: "Project Leadership",
+    type: "Management & Execution",
     description:
-      "Providing top-tier construction management and site development services for diverse projects.",
+      "Expert project management ensuring timely delivery, cost efficiency, and superior quality in every construction phase.",
   },
   {
-    icon: "🏗️",
-    title: "Infrastructure",
+    icon: <Building2 className="w-12 h-12" />,
+    title: "Urban Development",
+    type: "Infrastructure & Growth",
     description:
-      "Specialized in roads, bridges, and urban infrastructure to support growing communities.",
+      "Transforming cities through sustainable infrastructure development. Building tomorrow's communities today.",
   },
 ];
 
-const ServicesSection: React.FC = () => {
-  const sectionRef = useRef<HTMLDivElement | null>(null);
-  const [scrollComplete, setScrollComplete] = useState<boolean>(false);
-
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    offset: ["start start", "end start"],
-  });
-
-  const xTransform = useTransform(scrollYProgress, [0, 1], ["0%", "-100%"]);
+const ServicesSection = () => {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const leftContentRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const section = sectionRef.current;
+    const leftContent = leftContentRef.current;
+    if (!section || !leftContent) return;
+
     const handleScroll = () => {
-      if (!sectionRef.current) return;
-      const { top } = sectionRef.current.getBoundingClientRect();
-      if (top < window.innerHeight * 0.5 && !scrollComplete) {
-        setScrollComplete(true);
+      if (window.innerWidth < 1024) return;
+
+      const sectionRect = section.getBoundingClientRect();
+      const sectionTop = sectionRect.top;
+      const sectionBottom = sectionRect.bottom;
+      const viewportHeight = window.innerHeight;
+      const stopPoint = sectionBottom - viewportHeight;
+
+      if (sectionTop <= 0 && stopPoint > 0) {
+        // Fixed position while scrolling through the section
+        leftContent.style.position = 'fixed';
+        leftContent.style.top = '50%';
+        leftContent.style.transform = 'translateY(-50%)';
+      } else if (stopPoint <= 0) {
+        // Absolute position at the bottom when reaching the end
+        leftContent.style.position = 'absolute';
+        leftContent.style.top = '50%';
+        leftContent.style.transform = 'translateY(0)';
+      } else {
+        // Initial position at the top
+        leftContent.style.position = 'absolute';
+        leftContent.style.top = '50%';
+        leftContent.style.transform = 'translateY(-50%)';
       }
     };
 
     window.addEventListener("scroll", handleScroll);
+    handleScroll();
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [scrollComplete]);
+  }, []);
 
   return (
-    <div
+    <section
       ref={sectionRef}
-      className="relative w-full min-h-[500px] flex items-center bg-cover bg-center"
-      style={{ backgroundImage: "url('/your-background-image.jpg')" }}
+      className="relative w-full bg-[var(--background)]"
     >
-      {/* Left Content */}
-      <div className="w-1/3 p-10 md:p-16 text-white bg-black/60 rounded-lg scale-110">
-        <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          We Provide Strong Services For You
-        </h2>
-        <p className="text-lg md:text-xl text-gray-300 mb-6">
-          Our suite of trusted construction services ensures the highest degree
-          of quality, safety, efficiency, and innovation on your project.
-        </p>
-        <button className="bg-white text-black px-6 py-3 text-lg rounded-md hover:bg-gray-200 transition-all">
-          Explore All Services
-        </button>
-      </div>
+      {/* Mobile Layout */}
+      <div className="lg:hidden w-full py-12 px-4 space-y-8">
+        <div className="bg-[var(--accent)] text-[var(--text-light)] p-6 rounded-lg">
+          <h2 className="text-3xl font-bold mb-4 leading-tight">
+            Building Tomorrow <span className="text-[var(--primary)]">World</span> Today
+          </h2>
+          <p className="text-[var(--text-body)] mb-4">
+            Pioneering construction excellence with innovative solutions and 
+            unmatched expertise in building the future.
+          </p>
+          <button className="bg-[var(--primary)] text-[var(--text-light)] px-6 py-3 text-lg rounded-md hover:bg-opacity-90 transition-all">
+            Explore All Services
+          </button>
+        </div>
 
-      {/* Scrollable Services Section */}
-      <div className="relative w-2/3 overflow-hidden">
-        <motion.div
-          style={{ x: scrollComplete ? "-100%" : xTransform }}
-          transition={{ ease: "easeInOut", duration: 1.5 }}
-          className="flex gap-6 p-8"
-        >
+        <div className="space-y-4">
           {services.map((service, index) => (
             <div
               key={index}
-              className="min-w-[320px] md:min-w-[400px] bg-white/90 border border-gray-300 rounded-lg p-6 shadow-lg"
+              className="bg-[var(--background)] border border-[var(--text-body)]/10 rounded-lg p-6 shadow-lg hover:shadow-xl transition-all"
             >
-              <div className="text-4xl mb-4">{service.icon}</div>
-              <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
-              <p className="text-gray-700 text-lg mb-4">{service.description}</p>
-              <button className="flex items-center text-black hover:text-gray-800 transition-all">
+              <div className="flex justify-between items-start mb-4">
+                <div className="text-3xl text-[var(--primary)]">{service.icon}</div>
+                <span className="text-lg font-semibold text-[var(--primary)] bg-[var(--primary)]/10 px-3 py-1 rounded-full">
+                  {service.type}
+                </span>
+              </div>
+              <h3 className="text-xl font-semibold mb-2 text-[var(--foreground)]">{service.title}</h3>
+              <p className="text-[var(--text-body)] text-base mb-4">
+                {service.description}
+              </p>
+              <button className="flex items-center text-[var(--primary)] hover:text-[var(--secondary)] transition-all group">
                 Read More
-                <ChevronRight className="w-5 h-5 ml-2" />
+                <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
           ))}
-        </motion.div>
+        </div>
       </div>
-    </div>
+
+      {/* Desktop Layout */}
+      <div className="hidden lg:block relative min-h-[200vh]">
+        <div 
+          ref={leftContentRef}
+          className="w-[40%] absolute left-0 px-12"
+          style={{ transform: 'translateY(-50%)' }}
+        >
+          <div className="bg-[var(--accent)] text-[var(--text-light)] p-12 rounded-lg">
+            <h2 className="text-5xl font-bold mb-6 leading-tight">
+              Building Tomorrow <span className="text-[var(--primary)]">World</span> Today
+            </h2>
+            <p className="text-[var(--text-body)] text-xl mb-6">
+              Pioneering construction excellence with innovative solutions and 
+              unmatched expertise in building the future.
+            </p>
+            <button className="bg-[var(--primary)] text-[var(--text-light)] px-8 py-4 text-lg rounded-md hover:bg-opacity-90 transition-all">
+              Explore All Services
+            </button>
+          </div>
+        </div>
+
+        <div className="w-[55%] ml-auto pt-24 pb-32 px-8">
+          <div className="space-y-8">
+            {services.map((service, index) => (
+              <div
+                key={index}
+                className="bg-[var(--background)] border border-[var(--text-body)]/10 rounded-lg p-8 shadow-lg hover:shadow-xl transition-all"
+              >
+                <div className="flex justify-between items-start mb-6">
+                  <div className="text-6xl text-[var(--primary)]">{service.icon}</div>
+                  <span className="text-xl font-semibold text-[var(--primary)] bg-[var(--primary)]/10 px-4 py-2 rounded-full">
+                    {service.type}
+                  </span>
+                </div>
+                <h3 className="text-2xl font-semibold mb-3 text-[var(--foreground)]">{service.title}</h3>
+                <p className="text-[var(--text-body)] text-lg mb-6">
+                  {service.description}
+                </p>
+                <button className="flex items-center text-[var(--primary)] hover:text-[var(--secondary)] transition-all text-lg group">
+                  Read More
+                  <ChevronRight className="w-6 h-6 ml-2 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 

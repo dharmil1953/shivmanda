@@ -14,6 +14,7 @@ const raleway = Raleway({
 export const metadata: Metadata = {
   title: "Shivmada | Construction Company",
   description: "Shivmada",
+  icons: '/favicon.ico',
 };
 
 export default function RootLayout({

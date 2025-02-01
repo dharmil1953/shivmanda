@@ -11,11 +11,11 @@ const navLinks = [
   { href: "/Aboutus", label: "About Us" },
   { 
     href: "#", 
-    label: "Products",
+    label: "Products",  
     submenu: [
-      { href: "/Products/product1", label: "Product 1" },
-      { href: "/Products/product2", label: "Product 2" },
-      { href: "/Products/product3", label: "Product 3" },
+      { href: "/Products/productOne", label: "Product 1" },
+      { href: "/Products/productTwo", label: "Product 2" },
+      { href: "/Products/productThree", label: "Product 3" },
     ],
   },
   { href: "/Contact", label: "Contact Us" },

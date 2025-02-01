@@ -1,24 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
-}
-
-export default function ProductDetail({ params }: PageProps) {
-  const productName = params.slug
-    .split('-')
-    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(' ');
-
+ export default async function ProductDetail() {
+   
   return (
     <main className="min-h-screen bg-[var(--background)]">
       <section className="relative h-[60vh] w-full">
         <Image
           src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
-          alt={productName}
+          alt="Product Image"
           fill
           className="object-cover"
           priority
@@ -26,7 +16,7 @@ export default function ProductDetail({ params }: PageProps) {
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              {productName}
+              Product
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl">
               Innovative solutions for modern construction challenges
@@ -130,3 +120,4 @@ export default function ProductDetail({ params }: PageProps) {
     </main>
   );
 }
+

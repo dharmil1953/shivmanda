@@ -1,21 +1,20 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 
-const listItems = [
-  {
-    title: "Engineering",
-    image: "./check.svg",
-  },
-  {
-    title: "Construction",
-    image: "./check.svg",
-  },
-  {
-    title: "Productiveness",
-    image: "./check.svg",
-  },
-];
+// const listItems = [
+//   {
+//     title: "Engineering",
+//     image: "./check.svg",
+//   },
+//   {
+//     title: "Construction",
+//     image: "./check.svg",
+//   },
+//   {
+//     title: "Productiveness",
+//     image: "./check.svg",
+//   },
+// ];
 
 const Hero = () => {
   return (
@@ -43,11 +42,10 @@ const Hero = () => {
             </h1>
             <div className="text-lg">
               <p>
-                The construction industry plays a vital role in shaping the
-                physical and economic landscape of our world. It involves the
-                planning, design, development
+              Inspiring People to Build Better. The world needs new solutions for the way we live and move,  making it a better place for generations to come.
+
               </p>
-              <ul className="flex flex-wrap items-center gap-5 justify-center sm:justify-between pt-5">
+              {/* <ul className="flex flex-wrap items-center gap-5 justify-center sm:justify-between pt-5">
                 {listItems.map((item, index) => (
                   <li key={index} className="flex items-center m-0">
                     <Image
@@ -60,7 +58,7 @@ const Hero = () => {
                     <span className="text-lg font-medium">{item.title}</span>
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>

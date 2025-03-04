@@ -1,8 +1,8 @@
 'use client'
 import React from 'react'
-import Project1 from '../../../../public/images/image (3).png'
-import Project2 from '../../../../public/images/image (4).png'
-import Project3 from '../../../../public/images/image (5).png'
+import Project1 from '../../../../public/images/project-1.png'
+import Project2 from '../../../../public/images/project-2.jpg'
+import Project3 from '../../../../public/images/project-3.png'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -15,17 +15,17 @@ const OurProjects = [
     {
         ProjectLink: '/',
         ProjectImg: Project1,
-        ProjectTitle: 'Real estate listings',
+        ProjectTitle: 'RVNL Karnaprayag - Devprayag Tunnel',
     },
     {
         ProjectLink: '/',
         ProjectImg: Project2,
-        ProjectTitle: 'Residential leasing agreement',
+        ProjectTitle: 'Delhi - Amritsar- Katra Expressway',
     },
     {
         ProjectLink: '/',
         ProjectImg: Project3,
-        ProjectTitle: 'Residential architecture'
+        ProjectTitle: 'Delhi - Vadodara Expressway'
     },
 ];
 

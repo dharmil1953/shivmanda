@@ -7,23 +7,23 @@ import Image from 'next/image';
 const Industriedata = [
     {
         image: icon1,
-        title: "Residential",
-        desc: "The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development. The construction industry plays a vital role in shaping the physical and economic landscape of our world. ",
+        title: "Building ",
+        desc: "For residential, commercial and industrial projects  ",
     },
     {
         image: icon2,
         title: "Infrastructure",
-        desc: "The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development. The construction industry plays a vital role in shaping the physical and economic landscape of our world. ",
+        desc: "Performance and Durability enhancing solutions for infrastructure projects ",
     },
     {
         image: icon1,
-        title: "Top Quality",
-        desc: "The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development. The construction industry plays a vital role in shaping the physical and economic landscape of our world. ",
+        title: "Paints",
+        desc: "Innovative solutions for exterior and interior paints ",
     },
     {
         image: icon2,
-        title: "24/7 Support",
-        desc: "The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development. The construction industry plays a vital role in shaping the physical and economic landscape of our world. ",
+        title: "Ready Mix Concrete",
+        desc: "Solutions for reducing shrinkage cracks and better workability ",
     },
 ];
 

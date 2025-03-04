@@ -10,25 +10,41 @@ const BlogsData = [
     {
         BlogLink: '/',
         BlogImg: blog1,
-        BlogTitle: 'ReactJs',
+        BlogTitle: 'Stone Matrix Asphalt',
         BlogDate: '19th July 2023',
-        BlogDesc: "It seems you're looking for some sample texts related to residential properties or settings. Here are a few types of text.",
+        BlogDesc: "Stone Matrix Asphalt (SMA) is a gap-graded mix that provides enhanced durability and rut resistance for high-traffic roads. Its stone-on-stone contact structure, held together by a rich mastic of bitumen and filler, offers superior performance against deformation, cracking, and weathering.",
         BlogBtn: 'Read More'
     },
     {
         BlogLink: '/',
         BlogImg: blog2,
-        BlogTitle: 'Node Js',
+        BlogTitle: 'SMA Mix Design',
         BlogDate: '19th July 2023',
-        BlogDesc: "It seems you're looking for some sample texts related to residential properties or settings. Here are a few types of text.",
+        BlogDesc: "Proper SMA mix design requires careful selection of aggregates, binders, and stabilizing additives. The optimized design balances stone skeleton for strength, mastic for durability, and voids for proper drainage. Our advanced mix designs exceed industry standards for performance and longevity.",
         BlogBtn: 'Read More'
     },
     {
         BlogLink: '/',
         BlogImg: blog3,
-        BlogTitle: 'NextJs',
+        BlogTitle: 'Silica Fume Concrete',
         BlogDate: '19th July 2023',
-        BlogDesc: "It seems you're looking for some sample texts related to residential properties or settings. Here are a few types of text.",
+        BlogDesc: "Silica fume dramatically improves concrete's compressive strength and durability. As an ultrafine pozzolanic material, it fills microscopic voids and enhances the cement paste-aggregate bond. The result is significantly reduced permeability and superior resistance to chemical attack from chlorides and sulfates.",
+        BlogBtn: 'Read More'
+    },
+    {
+        BlogLink: '/',
+        BlogImg: blog1,
+        BlogTitle: 'Steel Fibre Reinforced Concrete',
+        BlogDate: '19th July 2023',
+        BlogDesc: "Steel Fibre Reinforced Concrete (SFRC) incorporates high-tensile steel fibres to enhance flexural strength and crack resistance. These fibres distribute stresses uniformly throughout the concrete matrix, dramatically improving toughness, impact resistance, and fatigue performance in demanding infrastructure applications.",
+        BlogBtn: 'Read More'
+    },
+    {
+        BlogLink: '/',
+        BlogImg: blog2,
+        BlogTitle: 'Fibre Reinforced Concrete',
+        BlogDate: '19th July 2023',
+        BlogDesc: "Fibre Reinforced Concrete utilizes synthetic, glass, or natural fibres to control plastic shrinkage cracking and enhance mechanical properties. This versatile technology increases concrete's flexural capacity, impact resistance, and long-term durability while reducing the need for traditional reinforcement in many applications.",
         BlogBtn: 'Read More'
     },
 ]
@@ -40,7 +56,7 @@ const OurTechnology = () => {
 
                 <div className='mb-12 text-center'>
                     <h3 className='text-primaryColor text-lg leading-6 mb-3 font-semibold'>Technology</h3>
-                    <h1 className="mb-5 text-Dark text-2xl sm:text-3xl  leading-8 sm:leading-10 font-medium">
+                    <h1 className="mb-5 text-Dark text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
                         Our Technologies
                     </h1>
                 </div>
@@ -60,14 +76,14 @@ const OurTechnology = () => {
                                 </Link>
                                 <p className='text-base line-clamp-3 text-ellipsis'>{BlogItems.BlogDesc}</p>
 
-                                <Link href={BlogItems.BlogLink} className='py-2 block mt-3 w-fit px-6 bg-transparent  hover:bg-Light border-2 hover:border-Light border-primaryColor font-semibold text-primaryColor duration-300 rounded-full'>{BlogItems.BlogBtn}</Link>
+                                <Link href={BlogItems.BlogLink} className='py-2 block mt-3 w-fit px-6 bg-transparent hover:bg-Light border-2 hover:border-Light border-primaryColor font-semibold text-primaryColor duration-300 rounded-full'>{BlogItems.BlogBtn}</Link>
                             </div>
                         </div>
                     ))}
                 </div>
 
                 <div className='w-full text-center'>
-                    <button className="mt-10 h-10 px-6 bg-primaryColor mx-auto hover:bg-transparent border-2  border-transparent hover:border-primaryColor font-semibold text-Light hover:text-primaryColor  duration-300 rounded-full">
+                    <button className="mt-10 h-10 px-6 bg-primaryColor mx-auto hover:bg-transparent border-2 border-transparent hover:border-primaryColor font-semibold text-Light hover:text-primaryColor duration-300 rounded-full">
                         View More
                     </button>
                 </div>
@@ -78,4 +94,3 @@ const OurTechnology = () => {
 }
 
 export default OurTechnology
-

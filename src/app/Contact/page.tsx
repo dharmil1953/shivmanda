@@ -17,10 +17,12 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Request a Free Appointment Your First Step Toward Exceptional Solutions
+              Get in touch with us
               </h1>
               <p className="text-lg md:text-xl mb-8">
-               We invite you to take advantage of our complimentary consultation service. we belive that every succesful project begins with a clear understanding of your unique  needs and goal.
+              Please fill in your details and our dedicated team will reach out to you within 24 hours
+Looking forward to discussing opportunities with you
+
               </p>
             </motion.div>
             <motion.div
@@ -47,17 +49,17 @@ export default function Contact() {
               {
                 icon: Phone,
                 title: "Call Us",
-                details: ["+1 (555) 123-4567", "+1 (555) 765-4321"],
+                details: ["+91 9873173214",  "+91 9205992676"],
               },
               {
                 icon: Mail,
                 title: "Email Us",
-                details: ["info@construction.com", "support@construction.com"],
+                details: ["smpl@narsinghdass.com ", "material@narsinghdass.com"],
               },
               {
                 icon: MapPin,
                 title: "Visit Us",
-                details: ["123 Construction Ave", "New York, NY 10001"],
+                details: ["Shop No, 1170/23, GT Rd, Block 25, Shakti Nagar, Delhi, 110007"],
               },
             ].map((contact, index) => (
               <motion.div

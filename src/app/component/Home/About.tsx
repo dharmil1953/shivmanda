@@ -7,31 +7,32 @@ const About = () => {
                 <div className='flex flex-wrap gap-8 xl:gap-0'>
                     <div className='w-full xl:w-6/12'>
                         <h3 className='text-primaryColor text-lg leading-6 mb-3 font-medium'>About Us</h3>
-                        <div className=''>
+                        <div>
                             <h1 className="mb-5 text-2xl text-Dark sm:text-3xl leading-8 sm:leading-10 font-medium">Pioneering Excellence in
-                                <span className="block"> in
-                                    <span className="font-bold text-primaryColor uppercase"> Construction</span>
+                                <span className="block">
+                                    <span className="font-bold text-primaryColor uppercase">Construction</span>
                                 </span>
                             </h1>
                             <div className='xl:w-9/12'>
                                 <p className='text-Body text-base sm:text-lg font-medium mb-3'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
                                 <p className='text-Body text-base sm:text-lg font-medium'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
                             </div>
+                            <p className='text-Body text-lg font-medium mb-3'>Established in 1958, Narsingh Dass Group (India) rides on the values of Trust, Compassion, Togetherness and Excellence. Shivananda Marketing Pvt. Ltd. offers specialty chemicals in emerging and growing sectors of our society. With a focus on building materials, it has become one of the leading solution providers of high-performance chemicals and fibres in the infrastructure sector of India.</p>
                         </div>
                     </div>
                     <div className='w-full xl:w-6/12 lg:pl-10'>
                         <div className="grid gap-4 grid-cols-2">
                             <div className='bg-primaryColor rounded-[20px] px-5 py-5 xl:px-11 md:pt-[60px] xl:pb-[50px] col-span-2 md:col-span-1 row-span-2 text-center'>
-                                <h1 className='text-5xl md:text-6xl pb-6 text-Light font-bold'>500+</h1>
+                                <h1 className='text-5xl md:text-6xl pb-6 text-Light font-bold'>250+</h1>
                                 <p className='text-base md:text-lg text-Light font-semibold leading-[25px]'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
                             </div>
                             <div className='bg-secondaryColor text-accentColor rounded-[20px] py-5 px-5 xl:px-11'>
                                 <h1 className='text-5xl md:text-6xl pb-[15px] font-bold'>120+</h1>
-                                <p className='text-base md:text-lg font-semibold md:leading-[25px]'>Businesses guided over thirty years</p>
+                                <p className='text-base md:text-lg font-semibold md:leading-[25px]'>Businesses guided over thirty five years</p>
                             </div>
                             <div className='bg-[#EFEFEF] text-accentColor rounded-[20px] py-5 px-5 xl:px-11'>
-                                <h1 className='text-5xl md:text-6xl pb-[15px] font-bold'>30+</h1>
-                                <p className='text-base md:text-lg font-semibold md:leading-[25px]'>Business Excellence awards achieved</p>
+                                <h1 className='text-5xl md:text-6xl pb-[15px] font-bold'>35+</h1>
+                                <p className='text-base md:text-lg font-semibold md:leading-[25px]'> years of Business Excellence</p>
                             </div>
                         </div>
                     </div>

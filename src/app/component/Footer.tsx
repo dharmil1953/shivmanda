@@ -47,6 +47,25 @@ const Footer = () => {
                         <h2 className='text-lg lg:text-xl font-semibold  text-primaryColor uppercase mb-3 ml-1'>
                             Contact Us
                         </h2>
+                            <p className='text-sm mb-2 text-Dark'>Call us: 9AM - 6 PM</p>
+
+                            <Link href={'/'} className='text-primaryColor text-lg sm:text-xl font-semibold block mb-3'>+91 9873173214/ +91 9205992676
+                            </Link>
+                            <Link href={'/'} className='text-base hover:text-primaryColor text-Dark font-medium block mb-3 duration-300'>smpl@narsinghdass.com / material@narsinghdass.com</Link>
+                        </div>
+                        <div className='mb-3'>
+                            <h2 className='text-xl font-semibold text-primaryColor uppercase mb-3'>
+                                Privacy & Terms
+                            </h2>
+
+                            <ul className='text-base sm:text-lg font-medium'>
+                                <li className='mb-2'>
+                                    <Link href='#' className='hover:text-primaryColor duration-300'>Privacy Policy</Link>
+                                </li>
+                                <li className='mb-2'>
+                                    <Link href='#' className='hover:text-primaryColor duration-300'>Terms & Conditions</Link>
+                                </li>
+                            </ul>
 
                         <div className='ml-1'>
                             <p className='text-base text-Dark mb-2'>Call us : 8AM - 5PM</p>

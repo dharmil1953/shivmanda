@@ -16,10 +16,10 @@ import Image from 'next/image';
         <div className="absolute inset-0 bg-black/50 flex items-center justify-center">
           <div className="container mx-auto px-4">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              Product
+            Synthetic Fibre
             </h1>
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl">
-              Innovative solutions for modern construction challenges
+            Micro Polyester and Polyproplene Fibre
             </p>
           </div>
         </div>
@@ -30,14 +30,9 @@ import Image from 'next/image';
           <div>
             <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Overview</h2>
             <p className="text-[var(--text-body)] mb-6">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor 
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis 
-              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Concrete tends to become brittle, lacking tension and developing cracks in certain construction projects which are faced with repeated stress, temperature variation and corrosion. Recron 3s adds toughness and tensile strength to concrete while helping resist shrinkage and cracking. It also bonds better to the mix, thanks to its unique triangular cross section and dimensional stability. Developed after extensive research by Reliance Industries Limited, Recron 3s has been widely used in a variety of applications
             </p>
-            <p className="text-[var(--text-body)] mb-6">
-              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-              eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
-            </p>
+            
           </div>
 
           <div>
@@ -45,19 +40,20 @@ import Image from 'next/image';
             <div className="space-y-4">
               <div className="border-b border-[var(--text-body)]/10 pb-4">
                 <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">Project Type</h3>
-                <p className="text-[var(--text-body)]">Commercial Construction</p>
+                <p className="text-[var(--text-body)]"> Polyester and Polypropolene (Mono filament)</p>
               </div>
               <div className="border-b border-[var(--text-body)]/10 pb-4">
-                <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">Location</h3>
-                <p className="text-[var(--text-body)]">Downtown Metropolitan Area</p>
+                <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">Length</h3>
+                <p className="text-[var(--text-body)]">1mm, 3mm. 6mm, 12mm, 18mm</p>
               </div>
               <div className="border-b border-[var(--text-body)]/10 pb-4">
-                <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">Size</h3>
-                <p className="text-[var(--text-body)]">50,000 sq ft</p>
+                <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">Compliance</h3>
+                <p className="text-[var(--text-body)]"> Complies with IS 16481:2022, EN 14889-2:2006 of EU
+                </p>
               </div>
               <div className="border-b border-[var(--text-body)]/10 pb-4">
-                <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">Timeline</h3>
-                <p className="text-[var(--text-body)]">18 months</p>
+                <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">Tested by</h3>
+                <p className="text-[var(--text-body)]"> IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat, UBC Canada</p>
               </div>
             </div>
           </div>

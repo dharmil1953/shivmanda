@@ -1,0 +1,23 @@
+[
+    {
+      "slug": "synthetic-fibre",
+      "name": "Synthetic Fibre",
+      "description": "Micro Polyester and Polypropylene Fibre",
+      "overview": "Concrete tends to become brittle, lacking tension and developing cracks in certain construction projects which are faced with repeated stress, temperature variation and corrosion. Recron 3s adds toughness and tensile strength to concrete while helping resist shrinkage and cracking. It also bonds better to the mix, thanks to its unique triangular cross section and dimensional stability. Developed after extensive research by Reliance Industries Limited, Recron 3s has been widely used in a variety of applications",
+      "specifications": [
+        { "title": "Project Type", "value": "Polyester and Polypropylene (Mono filament)" },
+        { "title": "Length", "value": "1mm, 3mm, 6mm, 12mm, 18mm" },
+        { "title": "Compliance", "value": "Complies with IS 16481:2022..." },
+        { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat, UBC Canada" }
+      ],
+      "features": [
+        { "title": "Improves concrete durability", "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+        { "title": "Reduces cracks and shrinkage",  "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
+        { "title": "Enhances bonding strength",  "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
+      ],
+      "images": [
+        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+      ]
+    }
+  ]
+  

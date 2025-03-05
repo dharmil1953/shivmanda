@@ -8,7 +8,7 @@ import Link from 'next/link'
 
 const BlogsData = [
     {
-        BlogLink: '/',
+        BlogLink: 'https://antrocel.com/areas-of-application/stone-matrix-asphalt-explained/',
         BlogImg: blog1,
         BlogTitle: 'Stone Matrix Asphalt',
         BlogDate: '19th July 2023',
@@ -16,7 +16,7 @@ const BlogsData = [
         BlogBtn: 'Read More'
     },
     {
-        BlogLink: '/',
+        BlogLink: 'https://antrocel.com/areas-of-application/sma-asphalt-mix-design/',
         BlogImg: blog2,
         BlogTitle: 'SMA Mix Design',
         BlogDate: '19th July 2023',

@@ -59,7 +59,7 @@ Looking forward to discussing opportunities with you
               {
                 icon: MapPin,
                 title: "Visit Us",
-                details: ["Shop No, 1170/23, GT Rd, Block 25, Shakti Nagar, Delhi, 110007"],
+                details: ["Shop No, 1170/23, 3rd Floor, GT Rd, Block 25, Shakti Nagar, Delhi, 110007"],
               },
             ].map((contact, index) => (
               <motion.div

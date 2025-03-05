@@ -13,7 +13,7 @@ const navLinks = [
     href: "#", 
     label: "Products",  
     submenu: [
-      { href: "/Products/productOne", label: "Product 1" },
+      { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
       { href: "/Products/productTwo", label: "Product 2" },
       { href: "/Products/productThree", label: "Product 3" },
     ],

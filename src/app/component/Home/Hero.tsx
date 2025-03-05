@@ -1,21 +1,6 @@
 "use client";
 import React from "react";
 
-// const listItems = [
-//   {
-//     title: "Engineering",
-//     image: "./check.svg",
-//   },
-//   {
-//     title: "Construction",
-//     image: "./check.svg",
-//   },
-//   {
-//     title: "Productiveness",
-//     image: "./check.svg",
-//   },
-// ];
-
 const Hero = () => {
   return (
     <div>

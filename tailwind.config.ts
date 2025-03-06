@@ -22,6 +22,15 @@ export default {
       listStyleImage: {
         myAccent: "url('/check.svg')",
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translate(0%)'},
+          '100%': { transform: 'translate(-100%)'},
+        }
+      },
+      animation: {
+        marquee: 'marquee 40s linear infinite',
+      }
     },
   },
   plugins: [],

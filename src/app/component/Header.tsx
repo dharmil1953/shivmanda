@@ -13,9 +13,9 @@ const navLinks = [
     href: "#", 
     label: "Products",  
     submenu: [
+      { href: "/Products/antrocel-g", label: "Antrocel-g " },
+      { href: "/Products/steel-fibre", label: "Steel Fibre" },
       { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
-      { href: "/Products/productTwo", label: "Product 2" },
-      { href: "/Products/productThree", label: "Product 3" },
     ],
   },
   { href: "/Contact", label: "Contact Us" },

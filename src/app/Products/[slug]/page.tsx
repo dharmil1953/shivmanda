@@ -122,10 +122,19 @@ import Image from "next/image";
 import fs from "fs/promises";
 import path from "path";
 
-interface PageProps {
-  params: {
-    slug: string;
-  };
+interface Project {
+  slug: string;
+  name: string;
+  description: string;
+  image: string;
+  overview: string;
+  specifications: Specification[];
+  images: string[];
+}
+
+interface Specification {
+  title: string;
+  value: string;
 }
 
 async function getProjectData(slug: string) {
@@ -134,15 +143,18 @@ async function getProjectData(slug: string) {
     const jsonData = await fs.readFile(filePath, "utf-8"); // Use async read
     const projects = JSON.parse(jsonData); // Parse JSON safely
 
-    return projects.find((project: any) => project.slug === slug) || null;
+    return projects.find((project: Project) => project.slug === slug) || null;
   } catch (error) {
     console.error("Error reading projects.json:", error);
     return null;
   }
 }
 
-export default async function ProductDetail({ params }: PageProps) {
-  const { slug } = params;
+type tParams = Promise<{ slug: string }>;
+  export default async function ProductDetail({ params }: { params: tParams }) {
+    const { slug } = await params;
+
+    console.log(slug)
 
   const project = await getProjectData(slug);
 
@@ -195,7 +207,7 @@ export default async function ProductDetail({ params }: PageProps) {
               Specifications
             </h2>
             <div className="space-y-4">
-              {project.specifications.map((spec: any, index: number) => (
+              {project.specifications.map((spec: Specification, index: number) => (
                 <div
                   key={index}
                   className="border-b border-[var(--text-body)]/10 pb-4"

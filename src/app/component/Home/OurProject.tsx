@@ -3,6 +3,7 @@ import React from 'react'
 import Project1 from '../../../../public/images/project-1.png'
 import Project2 from '../../../../public/images/project-2.jpg'
 import Project3 from '../../../../public/images/project-3.png'
+import Project4 from '../../../../public/images/project-4.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -26,6 +27,11 @@ const OurProjects = [
         ProjectLink: '/',
         ProjectImg: Project3,
         ProjectTitle: 'Delhi - Vadodara Expressway'
+    },
+    {
+        ProjectLink: '/',
+        ProjectImg: Project4,
+        ProjectTitle: 'Delhi Metro Rail Corporation Phase 4'
     },
 ];
 

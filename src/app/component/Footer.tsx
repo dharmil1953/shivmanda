@@ -3,113 +3,71 @@ import Link from 'next/link'
 import React from 'react'
 
 const ProductList = [
-    {
-        productLink: '#',
-        productTitle: 'Bath',
-    },
-    {
-        productLink: '#',
-        productTitle: 'Bedding',
-    }, {
-        productLink: '#',
-        productTitle: 'Electroncis & Applicances',
-    }, {
-        productLink: '#',
-        productTitle: 'Guest Room Amenities',
-    },
-    {
-        productLink: '#',
-        productTitle: 'Bath',
-    },
-    {
-        productLink: '#',
-        productTitle: 'Bedding',
-    }, {
-        productLink: '#',
-        productTitle: 'Electroncis & Applicances',
-    }, {
-        productLink: '#',
-        productTitle: 'Guest Room Amenities',
-    }
+    { productLink: '#', productTitle: 'Bath' },
+    { productLink: '#', productTitle: 'Bedding' },
+    { productLink: '#', productTitle: 'Electronics & Appliances' },
+    { productLink: '#', productTitle: 'Guest Room Amenities' },
+    { productLink: '#', productTitle: 'Bath' },
+    { productLink: '#', productTitle: 'Bedding' },
+    { productLink: '#', productTitle: 'Electronics & Appliances' },
+    { productLink: '#', productTitle: 'Guest Room Amenities' }
 ]
 
 const Footer = () => {
-
     const firstHalf = ProductList.slice(0, ProductList.length / 2);
     const secondHalf = ProductList.slice(ProductList.length / 2);
 
     return (
-        <footer className='pt-12 md:pt-14 lg:pt-16 pb-16 md:pt-18 lg:pb-20'>
+        <footer className='pt-12 md:pt-14 lg:pt-16 pb-16 md:pb-18 lg:pb-20 bg-gray-100'>
             <div className="container mx-auto px-4 md:px-8">
-                <div className='grid grid-cols-10 gap-4'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8'>
 
-                    <div className='col-span-10 col-start-1 sm:col-span-3 row-start-1'>
-                        <h2 className='text-lg lg:text-xl font-semibold  text-primaryColor uppercase mb-3 ml-1'>
+                    {/* Contact Us */}
+                    <div>
+                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-4'>
                             Contact Us
                         </h2>
-                            <p className='text-sm mb-2 text-Dark'>Call us: 9AM - 6 PM</p>
-
-                            <Link href={'/'} className='text-primaryColor text-lg sm:text-xl font-semibold block mb-3'>+91 9873173214/ +91 9205992676
-                            </Link>
-                            <Link href={'/'} className='text-base hover:text-primaryColor text-Dark font-medium block mb-3 duration-300'>smpl@narsinghdass.com / material@narsinghdass.com</Link>
-                        </div>
-                        <div className='mb-3'>
-                            <h2 className='text-xl font-semibold text-primaryColor uppercase mb-3'>
-                                Privacy & Terms
-                            </h2>
-
-                            <ul className='text-base sm:text-lg font-medium'>
-                                <li className='mb-2'>
-                                    <Link href='#' className='hover:text-primaryColor duration-300'>Privacy Policy</Link>
-                                </li>
-                                <li className='mb-2'>
-                                    <Link href='#' className='hover:text-primaryColor duration-300'>Terms & Conditions</Link>
-                                </li>
-                            </ul>
-
-                        <div className='ml-1'>
-                            <p className='text-base text-Dark mb-2'>Call us : 8AM - 5PM</p>
-                            <Link href="tel:#" className='block text-xl mb-2 font-semibold text-primaryColor'>
-                                135484511325
-                            </Link>
-                            <Link href="mailto:#" className='block mb-2 text-base text-Dark'>
-                                email@SHIVANANDA MARKETING.com
-                            </Link>
-                        </div>
+                        <p className='text-sm text-Dark mb-2'>Call us: 9AM - 6 PM</p>
+                        <Link href='tel:+919873173214' className='text-primaryColor text-lg sm:text-xl font-semibold block mb-3'>
+                            +91 9873173214 / +91 9205992676
+                        </Link>
+                        <Link href='mailto:smpl@narsinghdass.com' className='text-base text-Dark font-medium block mb-3 hover:text-primaryColor duration-300'>
+                            smpl@narsinghdass.com / material@narsinghdass.com
+                        </Link>
                     </div>
 
-                    <div className='col-span-10 sm:col-span-3 sm:col-start-4 row-start-2 sm:row-start-1'>
-                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-3 ml-1'>
-                            Help Support
+                    {/* Help & Support */}
+                    <div>
+                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-4'>
+                            Help & Support
                         </h2>
-
-                        <div className='ml-1 text-Dark'>
-                            <Link href="#" className='text-base md:text-lg mb-2 block'>Contact Us</Link>
-                            <Link href="#" className='text-base md:text-lg mb-2 block'>Our Service</Link>
-                        </div>
-
+                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                            Contact Us
+                        </Link>
+                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                            Our Services
+                        </Link>
                     </div>
 
-                    <div className='col-span-10 col-start-1 row-start-3  sm:col-span-4 md:col-start-7 sm:row-start-1'>
-                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-3 ml-1'>
+                    {/* Product Categories */}
+                    <div>
+                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-4'>
                             Product Categories
                         </h2>
-
-                        <div className="flex gap-8 ml-1">
-                            <ul className="list-none">
+                        <div className="grid grid-cols-2 gap-x-6">
+                            <ul>
                                 {firstHalf.map((product, index) => (
                                     <li key={index}>
-                                        <Link href={product.productLink} className='block text-base md:text-lg text-Dark mb-2'>
+                                        <Link href={product.productLink} className='block text-base md:text-lg text-Dark mb-2 hover:text-primaryColor'>
                                             {product.productTitle}
                                         </Link>
                                     </li>
                                 ))}
                             </ul>
-
-                            <ul className="list-none">
+                            <ul>
                                 {secondHalf.map((product, index) => (
                                     <li key={index}>
-                                        <Link href={product.productLink} className='block text-base md:text-lg text-Dark mb-2'>
+                                        <Link href={product.productLink} className='block text-base md:text-lg text-Dark mb-2 hover:text-primaryColor'>
                                             {product.productTitle}
                                         </Link>
                                     </li>
@@ -118,30 +76,29 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className='col-span-10 col-start-1 sm:col-span-3 row-start-4 sm:row-start-2'>
-                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-3 ml-1'>
-                            Privacy  & Terms
-                        </h2>
-
-                        <div className='ml-1 text-Dark'>
-                            <Link href="#" className='text-base md:text-lg mb-2 block'>Privacy Policy</Link>
-                            <Link href="#" className='text-base md:text-lg mb-2 block'>Terms & Condition</Link>
-                        </div>
-                    </div>
-
-                    <div className='col-span-10 col-start-1 sm:col-span-3 row-start-5 sm:row-start-2'>
-                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-3 ml-1'>
+                    {/* Company Information */}
+                    <div>
+                        <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-4'>
                             Company Information
                         </h2>
-
-                        <div className='ml-1 text-Dark'>
-                            <Link href="#" className='text-base md:text-lg mb-2 block'>Blog</Link>
-                            <Link href="#" className='text-base md:text-lg mb-2 block'>About</Link>
-                        </div>
+                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                            Blog
+                        </Link>
+                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                            About
+                        </Link>
                     </div>
+
+                </div>
+
+                {/* Bottom Section */}
+                <div className="border-t border-gray-300 mt-8 pt-6 text-center">
+                    <p className='text-base text-Dark'>
+                        &copy; {new Date().getFullYear()} SHIVANANDA MARKETING. All rights reserved.
+                    </p>
                 </div>
             </div>
-        </footer >
+        </footer>
     )
 }
 

@@ -24,7 +24,7 @@ const BlogsData = [
         BlogBtn: 'Read More'
     },
     {
-        BlogLink: '/',
+        BlogLink: 'https://www.nbmcw.com/product-technology/construction-chemicals-waterproofing/concrete-admixtures/self-compacting-concrete-for-rafts-a-retaining-walls.html',
         BlogImg: blog3,
         BlogTitle: 'Silica Fume Concrete',
         BlogDate: '19th July 2023',
@@ -32,7 +32,7 @@ const BlogsData = [
         BlogBtn: 'Read More'
     },
     {
-        BlogLink: '/',
+        BlogLink: 'https://www.becosan.com/steel-fibre-reinforced-concrete/',
         BlogImg: blog1,
         BlogTitle: 'Steel Fibre Reinforced Concrete',
         BlogDate: '19th July 2023',

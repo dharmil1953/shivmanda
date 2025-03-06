@@ -1,23 +1,70 @@
-[
-    {
-      "slug": "synthetic-fibre",
-      "name": "Synthetic Fibre",
-      "description": "Micro Polyester and Polypropylene Fibre",
-      "overview": "Concrete tends to become brittle, lacking tension and developing cracks in certain construction projects which are faced with repeated stress, temperature variation and corrosion. Recron 3s adds toughness and tensile strength to concrete while helping resist shrinkage and cracking. It also bonds better to the mix, thanks to its unique triangular cross section and dimensional stability. Developed after extensive research by Reliance Industries Limited, Recron 3s has been widely used in a variety of applications",
-      "specifications": [
-        { "title": "Project Type", "value": "Polyester and Polypropylene (Mono filament)" },
-        { "title": "Length", "value": "1mm, 3mm, 6mm, 12mm, 18mm" },
-        { "title": "Compliance", "value": "Complies with IS 16481:2022..." },
-        { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat, UBC Canada" }
-      ],
-      "features": [
-        { "title": "Improves concrete durability", "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-        { "title": "Reduces cracks and shrinkage",  "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."},
-        { "title": "Enhances bonding strength",  "value":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}
-      ],
-      "images": [
-        "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
-      ]
-    }
-  ]
-  
+const projectdata[
+  {
+    "slug": "synthetic-fibre",
+    "name": "Synthetic Fibre",
+    "description": "Micro Polyester and Polypropylene Fibre",
+    "overview": "Concrete often suffers from brittleness, low tensile strength, and shrinkage cracks. Synthetic Fibre, made from micro polyester and polypropylene, significantly enhances concrete performance by improving crack resistance, increasing tensile strength, and ensuring better bonding. It is specifically designed for projects facing repeated stress, temperature variations, and exposure to moisture. This fibre reinforcement is extensively used in industrial flooring, precast structures, tunnel linings, and road pavements to increase the durability and flexibility of concrete.",
+    "specifications": [
+      { "title": "Project Type", "value": "Polyester and Polypropylene (Mono filament)" },
+      { "title": "Length", "value": "1mm, 3mm, 6mm, 12mm, 18mm" },
+      { "title": "Compliance", "value": "Complies with IS 16481:2022" },
+      { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat, UBC Canada" }
+    ],
+    "features": [
+      { "title": "Improves Concrete Durability", "value": "Enhances toughness and prevents early-age cracking, ensuring long-lasting concrete." },
+      { "title": "Reduces Cracks and Shrinkage", "value": "Effectively controls shrinkage cracks and improves resistance to thermal expansion." },
+      { "title": "Enhances Bonding Strength", "value": "Promotes better adhesion within the concrete mix for stronger structural integrity." }
+    ],
+    "images": [
+      "/images/antrocel-g.jpg"
+    ]
+  },
+  {
+    "slug": "antrocel-g",
+    "name": "Antrocel-G",
+    "description": "High-Performance Glass Fibre for Concrete Reinforcement",
+    "overview": "Antrocel-G is a specially engineered glass fibre reinforcement that significantly enhances the strength and flexibility of concrete structures. It effectively reduces shrinkage cracks, improves impact resistance, and ensures long-term performance, even in harsh environments. Designed for use in precast elements, repair applications, and industrial flooring, Antrocel-G provides excellent bonding characteristics, ensuring a uniform distribution of fibres within the concrete mix. It is a superior alternative to traditional steel reinforcements, reducing the risk of corrosion while enhancing durability.",
+    "specifications": [
+      { "title": "Project Type", "value": "Glass Fibre Reinforcement" },
+      { "title": "Length", "value": "3mm, 6mm, 12mm, 18mm, 24mm" },
+      { "title": "Compliance", "value": "Complies with ASTM C1666, EN 14889-2" },
+      { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat" }
+    ],
+    "features": [
+      { "title": "Enhances Structural Strength", "value": "Provides superior tensile strength, improving the longevity of concrete structures." },
+      { "title": "Minimizes Crack Formation", "value": "Effectively prevents shrinkage cracks and ensures better structural integrity." },
+      { "title": "Improves Impact Resistance", "value": "Protects concrete surfaces from mechanical wear and impact, increasing durability." },
+      { "title": "Better Workability", "value": "Ensures easy mixing and uniform distribution within the concrete mix." }
+    ],
+    "images": [
+      "/images/antrocel-g.jpg",
+      "/images/antrocel-1.jpg",
+      "/images/antrocel-2.jpg"
+    ]
+  },
+  {
+    "slug": "steel-fibre",
+    "name": "Steel Fibre",
+    "description": "High-Strength Steel Fibre for Concrete Reinforcement",
+    "overview": "Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance.",
+    "specifications": [
+      { "title": "Project Type", "value": "Steel Fibre Reinforcement" },
+      { "title": "Material", "value": "Low Carbon, Galvanized, or Stainless Steel" },
+      { "title": "Lengths Available", "value": "30mm, 50mm, 60mm" },
+      { "title": "Aspect Ratio", "value": "40 to 80" },
+      { "title": "Compliance", "value": "Meets ASTM A820, EN 14889-1 Standards" },
+      { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat" }
+    ],
+    "features": [
+      { "title": "Enhances Load-Bearing Capacity", "value": "Improves the structural integrity of concrete, making it more resistant to heavy loads." },
+      { "title": "Prevents Cracking", "value": "Effectively controls micro and macro cracks, reducing maintenance costs." },
+      { "title": "Increases Impact & Fatigue Resistance", "value": "Ideal for high-traffic and heavy-duty applications like industrial flooring and roadways." },
+      { "title": "Reduces Dependence on Traditional Reinforcement", "value": "Minimizes the need for steel rebars and mesh, leading to cost and labor savings." }
+    ],
+    "images": [
+      "/images/steel-1.jpg",
+      "/images/steel-2.jpg",
+      "/images/steel-3.jpg"
+    ]
+  }
+]

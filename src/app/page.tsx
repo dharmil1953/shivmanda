@@ -7,18 +7,20 @@ import OurProject from "./component/Home/OurProject";
 import Contacts from "./component/Home/Contacts";
 import MoreInfo from "./component/Home/MoreInfo";
 import OurTechnology from "./component/Home/OurTechnology";
+import OurClients from "./component/Home/OurClient";
 
 export default function Home() {
   return (
     <>
       <Hero />
+      <OurClients />
       <About />
       <Section3 />
       <Industrie />
       <OurProject />
       <OurTechnology />
-      <Contacts />
       <MoreInfo />
+      <Contacts />
     </>
   );
 }

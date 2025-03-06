@@ -23,7 +23,7 @@ const OurClients = () => {
   ];
 
   return (
-    <div className=" container mx-auto overflow-hidden bg-gray-50 py-8">
+    <div className=" container mx-auto overflow-hidden bg-white py-8">
       <div className="animate-marquee flex">
         {[...logos, ...logos].map((logo, index) => (
           <div 

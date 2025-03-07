@@ -125,6 +125,7 @@ import path from "path";
 interface Project {
   slug: string;
   name: string;
+  bgImage: string;
   description: string;
   image: string;
   overview: string;
@@ -173,7 +174,7 @@ type tParams = Promise<{ slug: string }>;
       <section className="relative h-[60vh] w-full">
         <Image
           src={
-            project.image ||
+            project.bgImage ||
             "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
           }
           alt={project.name}

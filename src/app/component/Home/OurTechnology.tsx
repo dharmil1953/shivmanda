@@ -1,8 +1,10 @@
 'use client'
 import React from 'react'
-import blog1 from '../../../../public/images/react.jpg'
-import blog2 from '../../../../public/images/nodejs.png'
-import blog3 from '../../../../public/images/nextjs.png'
+import blog1 from '../../../../public/images/stone-matrix.jpg'
+import blog2 from '../../../../public/images/SMA-mix.jpg'
+import blog3 from '../../../../public/images/steel-2.jpg'
+import blog4 from '../../../../public/images/steel-1.jpg'
+import blog5 from '../../../../public/images/fibre-reinforce.jpg'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -33,7 +35,7 @@ const BlogsData = [
     },
     {
         BlogLink: 'https://www.becosan.com/steel-fibre-reinforced-concrete/',
-        BlogImg: blog1,
+        BlogImg: blog4,
         BlogTitle: 'Steel Fibre Reinforced Concrete',
         BlogDate: '19th July 2023',
         BlogDesc: "Steel Fibre Reinforced Concrete (SFRC) incorporates high-tensile steel fibres to enhance flexural strength and crack resistance. These fibres distribute stresses uniformly throughout the concrete matrix, dramatically improving toughness, impact resistance, and fatigue performance in demanding infrastructure applications.",
@@ -41,7 +43,7 @@ const BlogsData = [
     },
     {
         BlogLink: '/',
-        BlogImg: blog2,
+        BlogImg: blog5,
         BlogTitle: 'Fibre Reinforced Concrete',
         BlogDate: '19th July 2023',
         BlogDesc: "Fibre Reinforced Concrete utilizes synthetic, glass, or natural fibres to control plastic shrinkage cracking and enhance mechanical properties. This versatile technology increases concrete's flexural capacity, impact resistance, and long-term durability while reducing the need for traditional reinforcement in many applications.",

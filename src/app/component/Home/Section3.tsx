@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from 'react'
-import tabBg from '../../../../public/images/section3.svg'
+import tabBg from '../../../../public/images/pioneer.png'
 import Image from 'next/image'
 
 const tabs = [

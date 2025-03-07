@@ -2,6 +2,7 @@
   {
     "slug": "synthetic-fibre",
     "name": "Synthetic Fibre",
+    "bgImage": "/images/synthetic-1.png",
     "description": "Micro Polyester and Polypropylene Fibre",
     "overview": "Concrete often suffers from brittleness, low tensile strength, and shrinkage cracks. Synthetic Fibre, made from micro polyester and polypropylene, significantly enhances concrete performance by improving crack resistance, increasing tensile strength, and ensuring better bonding. It is specifically designed for projects facing repeated stress, temperature variations, and exposure to moisture. This fibre reinforcement is extensively used in industrial flooring, precast structures, tunnel linings, and road pavements to increase the durability and flexibility of concrete.",
     "specifications": [
@@ -16,12 +17,14 @@
       { "title": "Enhances Bonding Strength", "value": "Promotes better adhesion within the concrete mix for stronger structural integrity." }
     ],
     "images": [
-      "/images/antrocel-g.jpg"
+      "/images/synthetic-4.jpg",
+      "/images/Synthetic-fibres-5.jpg"
     ]
   },
   {
     "slug": "antrocel-g",
     "name": "Antrocel-G",
+    "bgImage": "/images/antrocel-2.jpg",
     "description": "High-Performance Glass Fibre for Concrete Reinforcement",
     "overview": "Antrocel-G is a specially engineered glass fibre reinforcement that significantly enhances the strength and flexibility of concrete structures. It effectively reduces shrinkage cracks, improves impact resistance, and ensures long-term performance, even in harsh environments. Designed for use in precast elements, repair applications, and industrial flooring, Antrocel-G provides excellent bonding characteristics, ensuring a uniform distribution of fibres within the concrete mix. It is a superior alternative to traditional steel reinforcements, reducing the risk of corrosion while enhancing durability.",
     "specifications": [
@@ -45,6 +48,7 @@
   {
     "slug": "steel-fibre",
     "name": "Steel Fibre",
+    "bgImage": "/images/steel-3.jpg",
     "description": "High-Strength Steel Fibre for Concrete Reinforcement",
     "overview": "Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance.",
     "specifications": [
@@ -64,7 +68,7 @@
     "images": [
       "/images/steel-1.jpg",
       "/images/steel-2.jpg",
-      "/images/steel-3.jpg"
+      "/images/steel-4.jpg"
     ]
   }
 ]

@@ -14,9 +14,8 @@ const About = () => {
                                 </span>
                             </h1>
                             <div className='xl:w-9/12'>
-                                <p className='text-Body text-base sm:text-lg font-medium'>The construction industry plays a vital role in shaping the physical and economic landscape of our world. It involves the planning, design, development</p>
-                            </div>
                             <p className='text-Body text-lg font-medium mb-3'>Established in 1958, Narsingh Dass Group (India) rides on the values of Trust, Compassion, Togetherness and Excellence. Shivananda Marketing Pvt. Ltd. offers specialty chemicals in emerging and growing sectors of our society. With a focus on building materials, it has become one of the leading solution providers of high-performance chemicals and fibres in the infrastructure sector of India.</p>
+                            </div>
                         </div>
                     </div>
                     <div className='w-full xl:w-6/12 lg:pl-10'>

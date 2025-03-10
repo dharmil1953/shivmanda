@@ -7,55 +7,57 @@ import Image from 'next/image';
 const Industriedata = [
     {
         image: icon1,
-        title: "Building ",
-        desc: "For residential, commercial and industrial projects  ",
+        title: "Building",
+        desc: "For residential, commercial and industrial projects",
     },
     {
         image: icon2,
         title: "Infrastructure",
-        desc: "Performance and Durability enhancing solutions for infrastructure projects ",
+        desc: "Performance and Durability enhancing solutions for infrastructure projects",
     },
     {
         image: icon1,
         title: "Paints",
-        desc: "Innovative solutions for exterior and interior paints ",
+        desc: "Innovative solutions for exterior and interior paints",
     },
     {
         image: icon2,
         title: "Ready Mix Concrete",
-        desc: "Solutions for reducing shrinkage cracks and better workability ",
+        desc: "Solutions for reducing shrinkage cracks and better workability",
     },
+    {
+        image: icon1,
+        title: "Paper",
+        desc: "For Printing, Packaging and Hygiene Segments",
+    }
 ];
 
 const Industrie = () => {
     return (
         <section className='py-12 sm:py-14 md:py-16 lg:py-20'>
-            <div className="container mx-auto px-4 md:px-8 ">
-
+            <div className="container mx-auto px-4 md:px-8">
+                {/* Section Heading */}
                 <div className='mb-11 md:mb-12 text-center'>
                     <h3 className='text-primaryColor text-lg leading-6 mb-2 font-medium'>Our Industries</h3>
-                    <h1 className="mb-5 text-Dark text-2xl sm:text-3xl  leading-8 sm:leading-10 font-medium">
+                    <h1 className="mb-5 text-Dark text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
                         <span className="font-bold text-primaryColor uppercase">Industries</span> We Serve
                     </h1>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                {/* Responsive Grid Layout */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
                     {Industriedata.map((industries, index) => (
-                        <div key={index} className='w-full rounded-[20px] max-[374px]:px-5 px-6 py-6  lg:px-10 lg:py-8 text-Dark bg-[#EFEFEF]'>
-                            <div className="flex gap-2 md:gap-3 lg:gap-0 xl:gap-4 items-center">
-                                <div className='w-4/12 lg:w-3/12 xl:w-2/12'>
-                                    <div className='flex items-center justify-center  size-20 lg:size-[91px] rounded-full bg-primaryColor'>
-                                        <Image src={industries.image} alt={`Industry Image ${index + 1}`} className='w-auto' />
-                                    </div>
-                                </div>
-                                <div className="w-8/12 lg:w-9/12 xl:w-10/12">
-                                    <h2 className=' max-[379px]:text-xl text-2xl md:text-xl lg:text-2xl font-semibold'>{industries.title}</h2>
-                                </div>
+                        <div key={index} className='w-full bg-[#EFEFEF] rounded-xl px-6 py-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300'>
+                            {/* Icon */}
+                            <div className='flex items-center justify-center size-20 lg:size-[91px] rounded-full bg-primaryColor mx-auto mb-4'>
+                                <Image src={industries.image} alt={`Industry Image ${index + 1}`} className='w-auto' />
                             </div>
 
-                            <div className="w-full mt-3">
-                                <p className='font-medium text-base lg:text-lg'>{industries.desc}</p>
-                            </div>
+                            {/* Title */}
+                            <h2 className='text-xl md:text-2xl font-semibold mb-2'>{industries.title}</h2>
+
+                            {/* Description */}
+                            <p className='text-base md:text-lg text-gray-700'>{industries.desc}</p>
                         </div>
                     ))}
                 </div>

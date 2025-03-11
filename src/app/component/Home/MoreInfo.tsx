@@ -6,14 +6,14 @@ const FeaturesSection = () => {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {/* Enhanced Durability & Strength */}
-          <div className="bg-primaryColor rounded-lg p-8 text-center flex flex-col items-center">
-            <div className="bg-white rounded-full p-3 w-16 h-16 flex items-center justify-center mb-6">
+          <div className="bg-white shadow-lg rounded-lg p-8 text-center flex flex-col items-center">
+            <div className="bg-gray-100 rounded-full p-3 w-16 h-16 flex items-center justify-center mb-6">
               <svg className="w-8 h-8" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#FFFFFF" stroke="#FF7069" strokeWidth="2" />
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z" fill="#FFFFFF" stroke="#000000" strokeWidth="2" />
               </svg>
             </div>
-            <h3 className="text-white text-xl font-bold mb-4">Enhanced Durability & Strength</h3>
-            <p className="text-white text-sm">
+            <h3 className="text-gray-800 text-xl font-bold mb-4">Enhanced Durability & Strength</h3>
+            <p className="text-gray-600 text-sm">
               Benefits of Comobe Silica Fume in concrete (resistance to sulfates, chlorides, etc.).
             </p>
           </div>

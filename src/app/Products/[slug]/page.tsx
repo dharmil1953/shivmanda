@@ -155,8 +155,6 @@ type tParams = Promise<{ slug: string }>;
   export default async function ProductDetail({ params }: { params: tParams }) {
     const { slug } = await params;
 
-    console.log(slug)
-
   const project = await getProjectData(slug);
 
   console.log("Project Details:", project); 
@@ -196,12 +194,21 @@ type tParams = Promise<{ slug: string }>;
 
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12">
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
-              Overview
-            </h2>
-            <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
-          </div>
+        <div>
+  <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
+    Overview
+  </h2>
+  <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
+
+  {/* Download Button */}
+  <a
+    href="/project.pdf"
+    download
+    className="inline-block bg-[var(--text-dark)] text-red-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
+  >
+    Download PDF
+  </a>
+</div>
 
           <div>
             <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">

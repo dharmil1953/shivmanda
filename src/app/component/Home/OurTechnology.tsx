@@ -57,9 +57,9 @@ const OurTechnology = () => {
             <div className="container mx-auto px-4 md:px-8 ">
 
                 <div className='mb-12 text-center'>
-                    <h3 className='text-primaryColor text-lg leading-6 mb-3 font-semibold'>Technology</h3>
+                    <h3 className='text-primaryColor text-lg leading-6 mb-3 font-semibold'>Blogs</h3>
                     <h1 className="mb-5 text-Dark text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
-                        Our Technologies
+                        Our Blog
                     </h1>
                 </div>
 

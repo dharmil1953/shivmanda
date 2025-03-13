@@ -23,13 +23,14 @@ const OurClients = () => {
   ];
 
   return (
-    <div className=" container mx-auto overflow-hidden bg-white py-8">
-      <div className="animate-marquee flex">
+    <div className="container mx-auto overflow-hidden bg-white py-8">
+    <h2 className="text-2xl font-bold text-black text-center mb-12">Our Clients</h2>
+    <div className="animate-marquee flex">
         {[...logos, ...logos].map((logo, index) => (
-          <div 
-            key={index} 
-            className="flex-shrink-0 w-40 h-20 mx-10 flex items-center justify-center"
-          >
+         <div 
+         key={index} 
+         className="flex-shrink-0 w-40 h-20 mx-10 flex items-center justify-center"
+       >
             <Image 
               src={logo.src} 
               alt={logo.alt} 

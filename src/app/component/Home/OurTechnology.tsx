@@ -10,7 +10,7 @@ import Link from 'next/link'
 
 const BlogsData = [
     {
-        BlogLink: 'https://antrocel.com/areas-of-application/stone-matrix-asphalt-explained/',
+        BlogLink: '/Blog/stone-matrix-asphalt',
         BlogImg: blog1,
         BlogTitle: 'Stone Matrix Asphalt',
         BlogDate: '19th July 2023',
@@ -18,7 +18,7 @@ const BlogsData = [
         BlogBtn: 'Read More'
     },
     {
-        BlogLink: 'https://antrocel.com/areas-of-application/sma-asphalt-mix-design/',
+        BlogLink: '/Blog/sma-asphalt-mix-design',
         BlogImg: blog2,
         BlogTitle: 'SMA Mix Design',
         BlogDate: '19th July 2023',
@@ -26,7 +26,7 @@ const BlogsData = [
         BlogBtn: 'Read More'
     },
     {
-        BlogLink: 'https://www.nbmcw.com/product-technology/construction-chemicals-waterproofing/concrete-admixtures/self-compacting-concrete-for-rafts-a-retaining-walls.html',
+        BlogLink: '/Blog/self-compacting-concrete-for-rafts-and-retaining-walls',
         BlogImg: blog3,
         BlogTitle: 'Silica Fume Concrete',
         BlogDate: '19th July 2023',
@@ -34,7 +34,7 @@ const BlogsData = [
         BlogBtn: 'Read More'
     },
     {
-        BlogLink: 'https://www.becosan.com/steel-fibre-reinforced-concrete/',
+        BlogLink: '/Blog/steel-fibre-reinforced-concrete',
         BlogImg: blog4,
         BlogTitle: 'Steel Fibre Reinforced Concrete',
         BlogDate: '19th July 2023',

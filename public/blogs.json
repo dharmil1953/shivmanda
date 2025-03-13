@@ -1,129 +1,120 @@
 [
     {
-      "slug": "modern-web-development-trends-2025",
-      "name": "Modern Web Development Trends in 2025",
-      "bgImage": "/api/placeholder/1920/1080",
-      "description": "Explore the cutting-edge technologies and methodologies that are reshaping how we build for the web in 2025, from AI-assisted coding to advanced frontend frameworks.",
-      "image": "/api/placeholder/1200/800",
-      "overview": "Web development continues to evolve at a rapid pace, with 2025 bringing several significant shifts in how developers approach building modern applications. This article examines the most important trends that every developer should be aware of.\n\nAI-Assisted Development has become mainstream, with tools that not only suggest code completions but can now generate entire components and logic flows based on natural language descriptions. This has dramatically increased developer productivity while reducing the learning curve for newcomers.\n\nWeb Components and micro-frontends have gained widespread adoption, allowing teams to build more modular, maintainable applications. The component-based architecture approach has matured significantly, with better tools for managing state and styling across complex applications.\n\nServer Components represent one of the biggest paradigm shifts, blurring the line between server and client rendering. This approach combines the performance benefits of server rendering with the interactivity of client-side applications, resulting in faster initial page loads and improved SEO without sacrificing user experience.\n\nWebAssembly has expanded beyond its initial use cases and is now commonly used for bringing high-performance computing directly to the browser. From image and video processing to complex simulations, WebAssembly has enabled web applications to handle tasks that previously required native applications.\n\nAccessibility has moved from being an afterthought to a fundamental aspect of development, with more frameworks providing built-in tools for ensuring applications are usable by everyone. This shift has been driven by both ethical considerations and regulatory requirements.\n\nEdge Computing has reshaped how we think about deployment, with applications now distributed across global networks of edge servers to minimize latency and improve reliability. This approach has become particularly important for applications with users spread across different geographic regions.\n\nAs we move forward, the lines between traditional web development, mobile development, and desktop application development continue to blur. The modern web developer needs to be comfortable working across these domains, leveraging shared code and design systems to create consistent experiences regardless of platform.",
+      "slug": "stone-matrix-asphalt",
+      "name": "Stone Matrix Asphalt (SMA)",
+      "bgImage": "/images/SMA-mix.jpg",
+      "description": "Stone Matrix Asphalt (SMA) is a durable and rut-resistant asphalt mix, ideal for heavily trafficked roads. It comprises a coarse aggregate skeleton, binder, filler, fine aggregate, and stabilizing additives like cellulose fibers.",
+      "image": "/images/sma-image.png",
+      "overview": "Developed in Germany during the 1960s, SMA has become a preferred choice for road surfaces subjected to heavy loads. Its unique composition offers enhanced durability, improved skid resistance, and reduced cracking, making it a cost-effective and environmentally friendly option for modern infrastructure.",
       "specifications": [
         {
-          "title": "Primary Languages",
-          "value": "JavaScript, TypeScript, Rust (via WebAssembly)"
+          "title": "Composition",
+          "value": "70-80% coarse aggregate, 8-12% filler, 6.0-7.0% binder, and 0.3% fiber."
         },
         {
-          "title": "Popular Frameworks",
-          "value": "Next.js 15, React 20, Vue 4, Angular 17"
+          "title": "Advantages",
+          "value": "Enhanced durability, rut resistance, improved skid resistance, reduced cracking, environmental benefits, cost-effectiveness, efficient maintenance, noise reduction."
         },
         {
-          "title": "Build Tools",
-          "value": "Vite, Turbopack, Rspack"
-        },
-        {
-          "title": "Styling Approaches",
-          "value": "CSS-in-JS, Atomic CSS, CSS Variables"
-        },
-        {
-          "title": "Performance Metrics",
-          "value": "Core Web Vitals, Interaction to Next Paint (INP)"
-        },
-        {
-          "title": "Testing Frameworks",
-          "value": "Vitest, Playwright, Testing Library"
+          "title": "Challenges",
+          "value": "Higher initial cost, complex mix design."
         }
       ],
       "images": [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600"
-      ],
-      "totalUsers": 3467
-    },
-    {
-      "slug": "accessibility-first-development",
-      "name": "Accessibility-First Development: Building for Everyone",
-      "bgImage": "/api/placeholder/1920/1080",
-      "description": "Learn why prioritizing accessibility from the start of your project leads to better products for all users and how to implement accessibility best practices effectively.",
-      "image": "/api/placeholder/1200/800",
-      "overview": "Accessibility should never be an afterthought in development. This article explores the benefits of taking an accessibility-first approach and provides practical guidelines for implementation.",
-      "specifications": [
-        {
-          "title": "WCAG Compliance",
-          "value": "Level AA recommended minimum"
-        },
-        {
-          "title": "Testing Tools",
-          "value": "Axe, WAVE, Screen Readers"
-        },
-        {
-          "title": "Focus Areas",
-          "value": "Keyboard Navigation, Screen Reader Support, Color Contrast"
-        }
-      ],
-      "images": [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600"
-      ],
-      "totalUsers": 2945
-    },
-    {
-      "slug": "future-of-responsive-design",
-      "name": "The Future of Responsive Design: Beyond Media Queries",
-      "bgImage": "/api/placeholder/1920/1080",
-      "description": "Discover how container queries, fluid typography, and layout algorithms are creating more flexible and maintainable responsive designs than traditional media query approaches.",
-      "image": "/api/placeholder/1200/800",
-      "overview": "Responsive design has evolved significantly beyond simple media queries. This article explores the newest techniques that are changing how we approach adaptable layouts.",
-      "specifications": [
-        {
-          "title": "Key Technologies",
-          "value": "Container Queries, :has() selector, Subgrid"
-        },
-        {
-          "title": "Fluid Typography",
-          "value": "clamp(), min(), max() functions"
-        },
-        {
-          "title": "Layouts",
-          "value": "CSS Grid, Flexbox, Multi-column"
-        }
-      ],
-      "images": [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600"
+        "/images/sma-gallery-two.jpg"
       ],
       "totalUsers": 3156
     },
     {
-      "slug": "performance-optimization-strategies",
-      "name": "Web Performance Optimization Strategies for 2025",
-      "bgImage": "/api/placeholder/1920/1080",
-      "description": "Master the latest techniques for creating lightning-fast web experiences that keep users engaged and improve conversion rates across devices.",
-      "image": "/api/placeholder/1200/800",
-      "overview": "Performance remains critical for web success. This comprehensive guide covers modern optimization techniques to help you deliver the fastest possible experience to your users.",
+      "slug": "sma-asphalt-mix-design",
+      "name": "Stone Matrix Asphalt (SMA) Mix Design",
+      "bgImage": "/images/SMA-mix.jpg",
+      "description": "Stone Matrix Asphalt (SMA) is a gap-graded hot mix asphalt designed to maximize rutting resistance and durability through a stone-on-stone aggregate skeleton and a rich asphalt binder mortar.",
+      "image": "/images/sma-image.png",
+      "overview": "Developed in Germany in the 1960s, SMA has become a preferred choice for heavily trafficked roads due to its deformation-resistant and durable properties. The mix design focuses on creating a strong aggregate structure filled with a binder-rich mortar, enhancing performance and longevity.",
       "specifications": [
         {
-          "title": "Loading Techniques",
-          "value": "Lazy Loading, Streaming, Partial Hydration"
+          "title": "Aggregate Structure",
+          "value": "Gap-graded aggregate blend ensuring stone-on-stone contact for structural integrity."
         },
         {
-          "title": "Asset Optimization",
-          "value": "Next-gen Formats, CDN Strategies"
+          "title": "Binder Content",
+          "value": "Typically higher asphalt binder content (around 6%) to improve durability and flexibility."
         },
         {
-          "title": "JavaScript Optimization",
-          "value": "Tree Shaking, Code Splitting, Script Loading Strategy"
+          "title": "Stabilizing Additives",
+          "value": "Use of fibers (e.g., cellulose) or polymers to prevent binder drainage during transport and placement."
+        },
+        {
+          "title": "Advantages",
+          "value": "Enhanced rut resistance, improved durability, better skid resistance, and reduced noise levels."
+        },
+        {
+          "title": "Considerations",
+          "value": "Requires high-quality aggregates, precise mix design, and careful production and placement practices."
         }
       ],
       "images": [
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600",
-        "/api/placeholder/800/600"
+        "/images/sma-gallery-two.jpg"
       ],
-      "totalUsers": 3742
-    }
-  ]
+      "totalUsers": 3156
+    },
+    {
+      "slug": "self-compacting-concrete-for-rafts-and-retaining-walls",
+      "name": "Self-Compacting Concrete (SCC) for Rafts and Retaining Walls",
+      "bgImage": "/images/self-concrete-bgImage.jpg",
+      "description": "Self-Compacting Concrete (SCC) is a high-performance concrete that flows under its own weight, filling formwork completely without the need for mechanical vibration. This property makes it particularly suitable for complex structures like rafts and retaining walls.",
+      "image": "/images/Self-compacting-Concrete-SCC.jpg",
+      "overview": "Developed to address durability concerns and labor shortages, SCC ensures complete compaction even in confined zones with dense reinforcement. Its ability to flow easily into intricate formwork shapes without segregation enhances both the structural integrity and surface finish of concrete elements.",
+      "specifications": [
+        {
+          "title": "Key Properties",
+          "value": "High deformability, excellent segregation resistance, and the ability to fill intricate formwork under its own weight."
+        },
+        {
+          "title": "Advantages",
+          "value": "Eliminates the need for vibration, reduces construction time, improves surface finish quality, and minimizes noise during placement."
+        },
+        {
+          "title": "Applications",
+          "value": "Ideal for structures with complex geometries or dense reinforcement, such as rafts, retaining walls, and areas where traditional vibration methods are challenging."
+        }
+      ],
+      "images": [
+        "/images/Self-compacting-Concrete-SCC.jpg"
+      ],
+      "totalUsers": 3156
+    },
+    {
+      "slug": "steel-fibre-reinforced-concrete",
+      "name": "Steel Fibre Reinforced Concrete (SFRC)",
+      "bgImage": "/images/steel-bgImage.png",
+      "description": "Steel Fibre Reinforced Concrete (SFRC) incorporates steel fibres into the concrete mix to enhance its mechanical properties, providing improved tensile strength, ductility, and resistance to cracking.",
+      "image": "/images/steel-1.jpg",
+      "overview": "SFRC is a composite material where steel fibres are uniformly distributed and randomly oriented within the concrete. This reinforcement method addresses concrete's inherent brittleness and low tensile strength, making it suitable for applications requiring enhanced durability and load-bearing capacity.",
+      "specifications": [
+        {
+          "title": "Fibre Characteristics",
+          "value": "Steel fibres are typically 4 to 5 cm in length and can be corrugated, wavy, or smooth, with flat or shaped ends."
+        },
+        {
+          "title": "Dosage",
+          "value": "The typical fibre content ranges from 25 to 100 kg per cubic meter of concrete, depending on the desired reinforcement level."
+        },
+        {
+          "title": "Advantages",
+          "value": "Improved mechanical behavior in all directions, increased resistance to abrasion and erosion, enhanced durability with reduced cracking, and greater resistance to compression, tension, torsion, and shear forces."
+        },
+        {
+          "title": "Considerations",
+          "value": "Potential for fibres to protrude through the concrete surface, which can be mitigated by applying a 'dry shake' treatment during curing."
+        }
+      ],
+      "images": [
+        "/images/steel-fibre-gallery-one.png",
+        "/images/steel-fibre-gallery-two.png",
+        "/images/steel-2.jpg"        
+      ],
+      "totalUsers": 3156
+    } 
+]

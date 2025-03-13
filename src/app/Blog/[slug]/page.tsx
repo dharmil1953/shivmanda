@@ -78,7 +78,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
     <main className="min-h-screen bg-[var(--background)]">
       <div className="relative w-full h-96">
         <Image
-          src={blog.bgImage || "/api/placeholder/1200/800"}
+          src={blog.bgImage}
           alt={blog.name}
           layout="fill"
           objectFit="cover"
@@ -87,7 +87,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
         />
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 flex items-end">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <Link href="/blog" className="inline-flex items-center text-white/90 hover:text-white mb-4 transition-colors">
+            <Link href="/" className="inline-flex items-center text-white/90 hover:text-white mb-4 transition-colors">
               <ArrowLeft size={16} className="mr-2" />
               Back to all articles
             </Link>

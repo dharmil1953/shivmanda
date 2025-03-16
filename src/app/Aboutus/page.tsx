@@ -6,13 +6,12 @@ import Image from "next/image";
 import {
   Building2,
   Trophy,
-  Target,
-  Award,
   Users,
-  Shield,
   ChevronRight,
 } from "lucide-react";
-// import logo from "../../../public/images/logo.png"
+import mapImg from "../../../public/images/contact.png";
+import OurProject from "../component/Home/OurProject"
+import logo from "../../../public/images/logo.png";
 
 export default function About() {
   return (
@@ -27,6 +26,9 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
             >
+              <h3 className="text-primaryColor text-lg leading-6 mb-3 font-medium">
+                About Us
+              </h3>
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 Narsingh Dass Group is a multifarious trading group, renowned
                 and much admired in the paper industry. With its core business
@@ -43,7 +45,7 @@ export default function About() {
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 With a corporate philosophy based on Knowledge Partnership,
                 Narsingh Dass Group follows a guiding principle of
-                <span className="font-bold"> "Customers Grow, We Grow"</span>.
+                <span className="font-bold"> Customers Grow, We Grow</span>.
                 With this belief, the group has enjoyed consistent growth and
                 expansion over the years and has transformed itself from a
                 trading company to a complete
@@ -51,24 +53,24 @@ export default function About() {
               </p>
 
               <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Our Business centers are - Narsingh Dass & Co., Narsingh Dass (Co.
-              Pvt. Ltd.), India Paper Products / Sudhir Papers / Synchem,
-              Shivananda Marketing Pvt. Ltd., Sudhir Papers Limited.
-            </p>
+                Our Business centers are - Narsingh Dass & Co., Narsingh Dass
+                (Co. Pvt. Ltd.), India Paper Products / Sudhir Papers / Synchem,
+                Shivananda Marketing Pvt. Ltd., Sudhir Papers Limited.
+              </p>
             </motion.div>
 
-            {/* Image - Right Side */}
             <motion.div
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
-              className="relative h-[400px] rounded-2xl overflow-hidden shadow-xl"
+              className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl"
             >
               <Image
-                src="https://images.unsplash.com/photo-1503387762-592deb58ef4e"
+                src={logo}
                 alt="Modern Construction Project"
-                fill
-                className="object-cover"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
               />
             </motion.div>
           </div>
@@ -80,8 +82,6 @@ export default function About() {
             transition={{ duration: 0.8 }}
             className="mt-12"
           >
-           
-
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
               <span className="font-bold"> Shivananda Marketing Pvt. Ltd.</span>
               was established in 1989 and has since been a pioneer in
@@ -214,91 +214,86 @@ export default function About() {
 
       {/* <ServicesSection /> */}
 
-      <section className="py-24">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            className="text-center max-w-3xl mx-auto mb-16"
-          >
-            <h2 className="text-4xl font-bold mb-6">
-              Specialized
-              <span className="text-[var(--primary)] block mt-2">
-                Solutions
-              </span>
-            </h2>
-            <p className="text-[var(--text-body)] text-lg">
-              Delivering excellence across every aspect of construction and
-              infrastructure development
-            </p>
-          </motion.div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                icon: Building2,
-                title: "Commercial Development",
-                description:
-                  "Creating state-of-the-art commercial spaces that combine functionality with architectural excellence.",
-              },
-              {
-                icon: Shield,
-                title: "Industrial Construction",
-                description:
-                  "Building robust industrial facilities with advanced technical specifications and safety standards.",
-              },
-              {
-                icon: Target,
-                title: "Infrastructure Projects",
-                description:
-                  "Developing critical infrastructure that connects communities and powers progress.",
-              },
-            ].map((service, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2 }}
-                className="p-8 rounded-xl bg-white shadow-lg hover:shadow-xl transition-all"
-              >
-                <service.icon className="w-14 h-14 text-[var(--primary)] mb-6" />
-                <h3 className="text-2xl font-bold mb-4 text-[var(--text-dark)]">
-                  {service.title}
-                </h3>
-                <p className="text-[var(--text-body)] mb-8">
-                  {service.description}
-                </p>
-                <button className="border-2 border-[var(--primary)] text-[var(--primary)] px-6 py-2 rounded-full hover:bg-[var(--primary)] hover:text-white transition-colors">
-                  Learn More
-                </button>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <OurProject />
 
       <section className="py-24 bg-[var(--secondary)]/5">
         <div className="container mx-auto px-6">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            {/* Left: Contact Details */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="space-y-8"
+              initial={{ opacity: 0, x: -20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="space-y-6"
             >
               <h2 className="text-4xl font-bold">
-                Ready to Build
+                Get in Touch
                 <span className="text-[var(--primary)] block mt-2">
-                  Something Extraordinary?
+                  Let us Build Something Great
                 </span>
               </h2>
+
               <p className="text-[var(--text-body)] text-lg">
-                From concept to completion, we are here to transform your
-                construction vision into reality. Let us create something
-                remarkable together.
+                Have a project idea? Contact us today and let’s bring it to
+                life.
               </p>
-              <button className="bg-[var(--primary)] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[var(--primary)]/90 transition-colors mt-8">
-                Start Your Project
+
+              <div className="space-y-4">
+                <div className="flex items-center space-x-4">
+                  <span className="text-[var(--primary)] text-2xl">📞</span>
+                  <div className="flex flex-col">
+                    <a
+                      href="tel:9873173214"
+                      className="text-lg text-[var(--text-body)] hover:text-[var(--primary)] transition"
+                    >
+                      +91 9873173214
+                    </a>
+                    <a
+                      href="tel:9205992676"
+                      className="text-lg text-[var(--text-body)] hover:text-[var(--primary)] transition"
+                    >
+                      +91 9205992676
+                    </a>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <span className="text-[var(--primary)] text-2xl">📧</span>
+                  <div className="flex flex-col">
+                    <a
+                      href="mailto:material@narsinghdass.com"
+                      className="text-lg text-[var(--text-body)] hover:text-[var(--primary)] transition"
+                    >
+                      material@narsinghdass.com
+                    </a>
+                    <a
+                      href="mailto:smpl@narsinghdass.com"
+                      className="text-lg text-[var(--text-body)] hover:text-[var(--primary)] transition"
+                    >
+                      smpl@narsinghdass.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <button className="bg-[var(--primary)] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[var(--primary)]/90 transition-colors mt-6">
+                Contact Us
               </button>
+            </motion.div>
+
+            {/* Right: Image */}
+            <motion.div
+              initial={{ opacity: 0, x: 20 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.8 }}
+              className="relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl"
+            >
+              <Image
+                src={mapImg}
+                alt="Contact Image"
+                fill
+                className="object-cover"
+              />
             </motion.div>
           </div>
         </div>

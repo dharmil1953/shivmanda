@@ -3,14 +3,12 @@ import Link from 'next/link'
 import React from 'react'
 
 const ProductList = [
-    { productLink: '#', productTitle: 'Bath' },
-    { productLink: '#', productTitle: 'Bedding' },
-    { productLink: '#', productTitle: 'Electronics & Appliances' },
-    { productLink: '#', productTitle: 'Guest Room Amenities' },
-    { productLink: '#', productTitle: 'Bath' },
-    { productLink: '#', productTitle: 'Bedding' },
-    { productLink: '#', productTitle: 'Electronics & Appliances' },
-    { productLink: '#', productTitle: 'Guest Room Amenities' }
+    { productLink: "/Products/antrocel-g", productTitle: "Antrocel-g " },
+    { productLink: "/Products/steel-fibre", productTitle: "Steel Fibre" },
+    { productLink: "/Products/synthetic-fibre", productTitle: "Synthetic Fibre" },
+    { productLink: "/Products/cellulose-fiber-pellets", productTitle: "Cellulose Fiber Pellets" },
+    { productLink: "/Products/anti-stripping-agent", productTitle: "Anti Stripping Agent" },
+    { productLink: "/Products/silica-fume", productTitle: "Silica Fume" },
 ]
 
 const Footer = () => {

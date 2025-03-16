@@ -8,30 +8,36 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation } from "swiper/modules";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 const OurProjects = [
     {
-        ProjectLink: '/',
+        ProjectLink: '/Products/synthetic-fibre',
         ProjectImg: Project1,
-        ProjectTitle: 'RVNL Karnaprayag - Devprayag Tunnel',
+        ProjectTitle: 'Synthetic Fibre',
     },
     {
-        ProjectLink: '/',
+        ProjectLink: '/Products/cellulose-fiber-pellets',
         ProjectImg: Project2,
-        ProjectTitle: 'Delhi - Amritsar- Katra Expressway',
+        ProjectTitle: 'Cellulose Fibre Pellets',
     },
     {
-        ProjectLink: '/',
+        ProjectLink: '/Products/steel-fibre',
         ProjectImg: Project3,
-        ProjectTitle: 'Delhi - Vadodara Expressway'
+        ProjectTitle: 'Steel Fibre'
     },
     {
-        ProjectLink: '/',
+        ProjectLink: '/Products/silica-fume',
         ProjectImg: Project4,
-        ProjectTitle: 'Delhi Metro Rail Corporation Phase 4'
+        ProjectTitle: 'Silica Fume'
+    },
+    {
+        ProjectLink: '/Products/anti-stripping-agent',
+        ProjectImg: Project4,
+        ProjectTitle: 'Anti Stripping Agent'
     },
 ];
 
@@ -41,7 +47,7 @@ const OurProject = () => {
             <div className="container mx-auto px-4 md:px-8 ">
 
                 <div className='mb-12 text-center'>
-                    <h1 className="mb-5 text-Light text-2xl sm:text-3xl  leading-8 sm:leading-10 font-medium">
+                    <h1 className="mb-5 text-Light text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
                         Our <span className="font-bold uppercase">PROJECTS</span>
                     </h1>
                 </div>
@@ -50,6 +56,7 @@ const OurProject = () => {
                     <Swiper
                         modules={[Navigation, Autoplay]}
                         autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        navigation={{ nextEl: ".custom-next", prevEl: ".custom-prev" }} // Enable Manual Navigation
                         spaceBetween={20}
                         slidesPerView={1}
                         pagination={{ clickable: true }}
@@ -62,14 +69,16 @@ const OurProject = () => {
                     >
                         {OurProjects.map((item, index) => (
                             <SwiperSlide key={index} className="group">
-                                <div className="w-full overflow-hidden rounded-[20px]">
-                                    <Image
-                                        src={item.ProjectImg}
-                                        alt={item.ProjectTitle}
-                                        width={400}
-                                        height={380}
-                                        className="w-full h-[380px] group-hover:scale-110 duration-300 object-cover"
-                                    />
+                                <div className="w-full flex justify-center">
+                                    <div className="w-[250px] h-[250px] overflow-hidden rounded-full shadow-lg border-4 border-gray-200">
+                                        <Image
+                                            src={item.ProjectImg}
+                                            alt={item.ProjectTitle}
+                                            width={250}
+                                            height={250}
+                                            className="w-full h-full object-cover group-hover:scale-110 duration-300"
+                                        />
+                                    </div>
                                 </div>
                                 <Link
                                     href={item.ProjectLink}
@@ -81,16 +90,17 @@ const OurProject = () => {
                         ))}
                     </Swiper>
 
-                    {/* <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white w-8 h-8 flex items-center justify-center z-30 rounded-full hover:bg-gray-600 transition">
+                    {/* Manual Navigation Buttons */}
+                    <button className="custom-prev absolute left-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white w-10 h-10 flex items-center justify-center z-30 rounded-full hover:bg-gray-600 transition">
                         <AiOutlineLeft className="text-xl" />
                     </button>
-                    <button className="custom-next absolute right-0  top-1/2 -translate-y-1/2 bg-gray-800 text-white w-8 h-8 flex items-center justify-center rounded-full hover:bg-gray-600 transition">
+                    <button className="custom-next absolute right-0 top-1/2 -translate-y-1/2 bg-gray-800 text-white w-10 h-10 flex items-center justify-center rounded-full hover:bg-gray-600 transition">
                         <AiOutlineRight className="text-xl" />
-                    </button> */}
+                    </button>
                 </div>
 
                 <div className='w-full text-center'>
-                    <button className="mt-10 h-10 px-6 bg-Light mx-auto hover:bg-transparent border-2 hover:border-Light border-transparent  font-semibold text-primaryColor hover:text-Light duration-300 rounded-full">
+                    <button className="mt-10 h-10 px-6 bg-Light mx-auto hover:bg-transparent border-2 hover:border-Light border-transparent font-semibold text-primaryColor hover:text-Light duration-300 rounded-full">
                         View More
                     </button>
                 </div>
@@ -99,4 +109,4 @@ const OurProject = () => {
     )
 }
 
-export default OurProject
+export default OurProject;

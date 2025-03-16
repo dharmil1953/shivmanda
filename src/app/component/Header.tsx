@@ -16,6 +16,9 @@ const navLinks = [
       { href: "/Products/antrocel-g", label: "Antrocel-g " },
       { href: "/Products/steel-fibre", label: "Steel Fibre" },
       { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
+      { href: "/Products/cellulose-fiber-pellets", label: "Cellulose Fiber Pellets" },
+      { href: "/Products/anti-stripping-agent", label: "Anti Stripping Agent" },
+      { href: "/Products/silica-fume", label: "Silica Fume" },
     ],
   },
   // { 

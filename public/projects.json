@@ -3,41 +3,117 @@
     "slug": "synthetic-fibre",
     "name": "Synthetic Fibre",
     "bgImage": "/images/synthetic-1.png",
-    "description": "Micro Polyester and Polypropylene Fibre",
+    "description": "Empowering Fibre Reinforcement Technology",
+    "extraLine": "Recron 3s - Making a stronger world",
+    "logoImg": ["/images/realince.jpg", "/images/recron-s3.png"],
     "overview": "Concrete often suffers from brittleness, low tensile strength, and shrinkage cracks. Synthetic Fibre, made from micro polyester and polypropylene, significantly enhances concrete performance by improving crack resistance, increasing tensile strength, and ensuring better bonding. It is specifically designed for projects facing repeated stress, temperature variations, and exposure to moisture. This fibre reinforcement is extensively used in industrial flooring, precast structures, tunnel linings, and road pavements to increase the durability and flexibility of concrete.",
     "specifications": [
-      { "title": "Project Type", "value": "Polyester and Polypropylene (Mono filament)" },
+      {
+        "title": "Product Type",
+        "value": "Polyester and Polypropylene (Mono filament)"
+      },
       { "title": "Length", "value": "1mm, 3mm, 6mm, 12mm, 18mm" },
-      { "title": "Compliance", "value": "Complies with IS 16481:2022" },
-      { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat, UBC Canada" }
+      { "title": "Pack Size", "value": "125gm and 900gm" },
+      {
+        "title": "Compliance",
+        "value": "Complies with IS 16481:2022, EN 14889-2:2006 of EU"
+      },
+      {
+        "title": "Tested by",
+        "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat, UBC Canada"
+      }
     ],
+    "ExtraImg": "/images/synthetic-extra.png",
+    "Advantages": "",
+    "Application": [
+      "Plastering",
+      "Slab on Grade",
+      "Raft",
+      "Basements",
+      "Foundations",
+      "Water Retaining Structures",
+      "Parking Slabs",
+      "Beam & Columns",
+      "Open Drains"
+    ],
+    "Key Features": [
+      "Improves resistance of plastic & drying shrinkage/cracking",
+      "Inhibits Propagation of micro-cracks and provides stability to concrete",
+      "Improves flexural toughness and split tensile strength",
+      "Enhances abrasion resistance and increases energy absorption of concrete, thereby improving impact resistance",
+      "Aids in making concrete more homogenous",
+      "Reduces permeability in concrete",
+      "Improves durability and enhances longevity of the structure"
+    ],
+    "pdfURL": "",
     "features": [
-      { "title": "Improves Concrete Durability", "value": "Enhances toughness and prevents early-age cracking, ensuring long-lasting concrete." },
-      { "title": "Reduces Cracks and Shrinkage", "value": "Effectively controls shrinkage cracks and improves resistance to thermal expansion." },
-      { "title": "Enhances Bonding Strength", "value": "Promotes better adhesion within the concrete mix for stronger structural integrity." }
+      {
+        "title": "Improves Concrete Durability",
+        "value": "Enhances toughness and prevents early-age cracking, ensuring long-lasting concrete."
+      },
+      {
+        "title": "Reduces Cracks and Shrinkage",
+        "value": "Effectively controls shrinkage cracks and improves resistance to thermal expansion."
+      },
+      {
+        "title": "Enhances Bonding Strength",
+        "value": "Promotes better adhesion within the concrete mix for stronger structural integrity."
+      }
     ],
-    "images": [
-      "/images/synthetic-4.jpg",
-      "/images/Synthetic-fibres-5.jpg"
-    ]
+    "images": ["/images/synthetic-4.jpg", "/images/Synthetic-fibres-5.jpg"]
   },
   {
     "slug": "antrocel-g",
     "name": "Antrocel-G",
     "bgImage": "/images/antrocel-2.jpg",
     "description": "High-Performance Glass Fibre for Concrete Reinforcement",
+    "extraLine": "Advanced Glass Fibre for Stronger Concrete",
+    "logoImg": ["/images/antrocel-logo.jpg"],
     "overview": "Antrocel-G is a specially engineered glass fibre reinforcement that significantly enhances the strength and flexibility of concrete structures. It effectively reduces shrinkage cracks, improves impact resistance, and ensures long-term performance, even in harsh environments. Designed for use in precast elements, repair applications, and industrial flooring, Antrocel-G provides excellent bonding characteristics, ensuring a uniform distribution of fibres within the concrete mix. It is a superior alternative to traditional steel reinforcements, reducing the risk of corrosion while enhancing durability.",
     "specifications": [
-      { "title": "Project Type", "value": "Glass Fibre Reinforcement" },
+      { "title": "Product Type", "value": "Glass Fibre Reinforcement" },
       { "title": "Length", "value": "3mm, 6mm, 12mm, 18mm, 24mm" },
-      { "title": "Compliance", "value": "Complies with ASTM C1666, EN 14889-2" },
-      { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat" }
+      {
+        "title": "Compliance",
+        "value": "Complies with ASTM C1666, EN 14889-2"
+      },
+      {
+        "title": "Tested by",
+        "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat"
+      }
     ],
+    "ExtraImg": "/images/antrocel-extra.png",
+    "Advantages": "",
+    "Application": [
+      "Precast Elements",
+      "Industrial Flooring",
+      "Repair Applications",
+      "Architectural Panels",
+      "Tunneling",
+      "Marine Structures"
+    ],
+    "Key Features": [
+      "Provides superior tensile strength",
+      "Minimizes shrinkage cracks",
+      "Enhances impact resistance",
+      "Ensures excellent workability and uniform distribution",
+      "Reduces risk of corrosion compared to steel reinforcements",
+      "Improves durability and longevity of structures"
+    ],
+    "pdfURL": "",
     "features": [
-      { "title": "Enhances Structural Strength", "value": "Provides superior tensile strength, improving the longevity of concrete structures." },
-      { "title": "Minimizes Crack Formation", "value": "Effectively prevents shrinkage cracks and ensures better structural integrity." },
-      { "title": "Improves Impact Resistance", "value": "Protects concrete surfaces from mechanical wear and impact, increasing durability." },
-      { "title": "Better Workability", "value": "Ensures easy mixing and uniform distribution within the concrete mix." }
+      {
+        "title": "Enhances Structural Strength",
+        "value": "Provides superior tensile strength, improving the longevity of concrete structures."
+      },
+      {
+        "title": "Minimizes Crack Formation",
+        "value": "Effectively prevents shrinkage cracks and ensures better structural integrity."
+      },
+      {
+        "title": "Improves Impact Resistance",
+        "value": "Protects concrete surfaces from mechanical wear and impact, increasing durability."
+      }
     ],
     "images": [
       "/images/antrocel-g.jpg",
@@ -49,26 +125,152 @@
     "slug": "steel-fibre",
     "name": "Steel Fibre",
     "bgImage": "/images/steel-3.jpg",
-    "description": "High-Strength Steel Fibre for Concrete Reinforcement",
-    "overview": "Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance.",
+    "description": "Vajra Shakti - Making a stronger world",
+    "extraLine": "Advanced Steel Fibre for Heavy-Duty Applications",
+    "logoImg": ["/images/vajra-shakti.jpg"],
+    "overview": "Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance. Vajra Shakti Steel fibers are low carbon & cold drawn steel wire fibre manufactured by quality base primary steel bar. It has excellent mechanical properties including high tensile strength. Due to its High strength and uniform distribution of fibers, stresses can be fully dispersed and cracking propagation be effectively controlled. Steel Fibers are reliable, cost-efficient concrete reinforcement which provide temperature & shrinkage crack control, enhanced flexural reinforcement, improved shear strength and increase the crack resistance of concrete. It is designed to be easy to mix, place and finish in any concrete mix. It provides excellent load transfer in the the crack, it stabilizes load-bearing capacity after appearance of crack. Vajra Shakti Steel Fibres complies with all ASTM & EN Standards .",
     "specifications": [
-      { "title": "Project Type", "value": "Steel Fibre Reinforcement" },
-      { "title": "Material", "value": "Low Carbon, Galvanized, or Stainless Steel" },
-      { "title": "Lengths Available", "value": "30mm, 50mm, 60mm" },
-      { "title": "Aspect Ratio", "value": "40 to 80" },
-      { "title": "Compliance", "value": "Meets ASTM A820, EN 14889-1 Standards" },
-      { "title": "Tested by", "value": "IIT Madras, CBRI Roorkee, CRRI, SVNIT Surat" }
+      {
+        "title": "Product Type",
+        "value": "Steel Fibre for Concrete Reinforcement"
+      },
+      {
+        "title": "Grades",
+        "value": "Hookend Steel Fibre, Glued Hookend Steel Fibre, Flat Crimped, Undulated Hookend Steel Fibre "
+      },
+      { "title": "Pack Size", "value": "25 Kg" }
     ],
+    "ExtraImg": "/images/steel-extra.png",
+    "Advantages": [
+      "High Tensile strength",
+      "Substantially enhance initial crack strength",
+      "Continuously provide post crack strength",
+      "Increases Speed of construction, overall durability, fatigue resistance and flexural toughness",
+      "Save money and time and require less labour",
+      "Provides Multi-Dimensional reinforcement",
+      "ultimate load bearing capacity",
+      "Stronger joints lower the possibility of maintenance"
+    ],
+    "Application": [
+      "Commercial and industrial slabs on ground",
+      " Bridge decks",
+      "overlays and pavements",
+      "Precast concrete applications",
+      "Shotcrete",
+      "tunnel linings and slope stabilization",
+      "Blast resistant concrete",
+      "External Roads & Pavements",
+      "Mass concrete and composite deck construction",
+      "Floors Without Joints"
+    ],
+    "Key Features": [
+      "Enhances load-bearing capacity",
+      "Prevents cracking and improves durability",
+      "Increases impact and fatigue resistance",
+      "Minimizes reliance on traditional steel reinforcements",
+      "Improves construction efficiency"
+    ],
+    "pdfURL": "",
     "features": [
-      { "title": "Enhances Load-Bearing Capacity", "value": "Improves the structural integrity of concrete, making it more resistant to heavy loads." },
-      { "title": "Prevents Cracking", "value": "Effectively controls micro and macro cracks, reducing maintenance costs." },
-      { "title": "Increases Impact & Fatigue Resistance", "value": "Ideal for high-traffic and heavy-duty applications like industrial flooring and roadways." },
-      { "title": "Reduces Dependence on Traditional Reinforcement", "value": "Minimizes the need for steel rebars and mesh, leading to cost and labor savings." }
+      {
+        "title": "Enhances Load-Bearing Capacity",
+        "value": "Improves the structural integrity of concrete, making it more resistant to heavy loads."
+      }
     ],
     "images": [
       "/images/steel-1.jpg",
       "/images/steel-2.jpg",
       "/images/steel-4.jpg"
     ]
+  },
+  {
+    "slug": "cellulose-fiber-pellets",
+    "name": "Cellulose Fiber Pellets",
+    "bgImage": "/images/cellulose-bg.jpg",
+    "logoImg": ["/images/cellulose-logo1.png", "/images/cellulose-logo2.png"],
+    "description": "Enhancing asphalt mixtures with superior fiber reinforcement.",
+    "overview": "Cellulose fiber pellets improve the stability and durability of asphalt pavements by reducing rutting and increasing resistance to cracking.",
+    "application": [
+      "Used in asphalt paving for high-performance roads",
+      "Enhances the durability of bridge decks and airport runways",
+      "Used in waterproofing membranes and soundproofing applications"
+    ],
+    "advantages": [
+      "Reduces binder drain-down",
+      "Enhances resistance to fatigue cracking",
+      "Improves adhesion and overall mixture stability"
+    ],
+    "keyFeatures": [
+      "Made from high-quality cellulose fibers",
+      "Eco-friendly and sustainable",
+      "Easy to mix and apply in asphalt production"
+    ],
+    "pdfURL": "/pdfs/cellulose-fiber-pellets.pdf",
+    "specifications": [
+      { "title": "Fiber Content", "value": "≥ 85%" },
+      { "title": "Moisture Content", "value": "< 5%" },
+      { "title": "Bulk Density", "value": "450-600 kg/m³" }
+    ],
+    "images": ["/images/cellulose-1.jpg", "/images/cellulose-2.jpg"]
+  },
+  {
+    "slug": "anti-stripping-agent",
+    "name": "Anti Stripping Agent",
+    "bgImage": "/images/anti-stripping-bg.jpg",
+    "logoImg": [],
+    "description": "Enhancing asphalt adhesion to prevent moisture damage.",
+    "overview": "Anti-stripping agents are additives that improve the bond between asphalt and aggregates, preventing premature failure due to water infiltration.",
+    "application": [
+      "Used in hot mix asphalt to prevent stripping",
+      "Applied in road construction for improved durability",
+      "Enhances performance in extreme weather conditions"
+    ],
+    "advantages": [
+      "Improves water resistance",
+      "Reduces maintenance costs",
+      "Enhances asphalt mixture strength and longevity"
+    ],
+    "keyFeatures": [
+      "Chemical and polymer-based formulations available",
+      "Enhances adhesion and reduces moisture susceptibility",
+      "Compatible with various types of asphalt binders"
+    ],
+    "pdfURL": "/pdfs/anti-stripping-agent.pdf",
+    "specifications": [
+      { "title": "pH Value", "value": "6.0 - 8.0" },
+      { "title": "Appearance", "value": "Liquid / Powder" },
+      { "title": "Dosage", "value": "0.2% - 0.5% by weight of bitumen" }
+    ],
+    "images": ["/images/anti-stripping-1.jpg", "/images/anti-stripping-2.jpg"]
+  },
+  {
+    "slug": "silica-fume",
+    "name": "Silica Fume",
+    "bgImage": "/images/silica-fume-bg.jpg",
+    "logoImg": ["/images/silica-logo1.png"],
+    "description": "Enhancing concrete strength and durability with ultra-fine silica.",
+    "overview": "Silica fume is a highly reactive pozzolan that improves the mechanical and durability properties of concrete.",
+    "application": [
+      "Used in high-performance concrete for bridges and tunnels",
+      "Enhances strength in precast concrete elements",
+      "Improves resistance to corrosion in marine structures"
+    ],
+    "advantages": [
+      "Increases compressive strength",
+      "Enhances durability and resistance to chemical attacks",
+      "Reduces permeability and enhances workability"
+    ],
+    "keyFeatures": [
+      "Extremely fine particle size for superior performance",
+      "Enhances sulfate and chloride resistance",
+      "Widely used in high-strength concrete applications"
+    ],
+    "pdfURL": "/pdfs/silica-fume.pdf",
+    "specifications": [
+      { "title": "SiO2 Content", "value": "> 85%" },
+      { "title": "Specific Surface Area", "value": "15,000 - 30,000 m²/kg" },
+      { "title": "Bulk Density", "value": "200-700 kg/m³" }
+    ],
+    "images": ["/images/silica-1.jpg", "/images/silica-2.jpg"]
   }
 ]

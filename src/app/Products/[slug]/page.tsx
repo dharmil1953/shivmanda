@@ -116,7 +116,6 @@
 //     </main>
 //   );
 // }
-
 import React from "react";
 import Image from "next/image";
 import fs from "fs/promises";
@@ -129,8 +128,13 @@ interface Project {
   description: string;
   image: string;
   overview: string;
+  application?: string;
+  advantages?: string[];
+  keyFeatures?: string[];
   specifications: Specification[];
   images: string[];
+  logoImg?: string[];
+  pdfURL?: string;
 }
 
 interface Specification {
@@ -138,26 +142,25 @@ interface Specification {
   value: string;
 }
 
-async function getProjectData(slug: string) {
+async function getProjectData(slug: string): Promise<Project | null> {
   try {
     const filePath = path.join(process.cwd(), "public", "projects.json");
-    const jsonData = await fs.readFile(filePath, "utf-8"); // Use async read
-    const projects = JSON.parse(jsonData); // Parse JSON safely
-
-    return projects.find((project: Project) => project.slug === slug) || null;
+    const jsonData = await fs.readFile(filePath, "utf-8");
+    const projects: Project[] = JSON.parse(jsonData);
+    return projects.find((project) => project.slug === slug) || null;
   } catch (error) {
     console.error("Error reading projects.json:", error);
     return null;
   }
 }
 
-type tParams = Promise<{ slug: string }>;
-  export default async function ProductDetail({ params }: { params: tParams }) {
-    const { slug } = await params;
+interface ProductDetailProps {
+  params: Promise<{ slug: string }>;
+}
 
+export default async function ProductDetail({ params }: ProductDetailProps) {
+  const { slug } = await params;
   const project = await getProjectData(slug);
-
-  console.log("Project Details:", project); 
 
   if (!project) {
     return (
@@ -171,10 +174,7 @@ type tParams = Promise<{ slug: string }>;
     <main className="min-h-screen bg-[var(--background)]">
       <section className="relative h-[60vh] w-full">
         <Image
-          src={
-            project.bgImage ||
-            "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
-          }
+          src={project.bgImage || "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"}
           alt={project.name}
           fill
           className="object-cover"
@@ -192,37 +192,48 @@ type tParams = Promise<{ slug: string }>;
         </div>
       </section>
 
+      {project.logoImg && project.logoImg.length > 0 && (
+        <div className="mt-4 flex flex-wrap gap-4">
+          {project.logoImg.map((logo, index) => (
+            <div key={index} className="w-[80px] h-[80px]">
+              <Image
+                src={logo}
+                alt={`Project Logo ${index + 1}`}
+                width={80}
+                height={80}
+                className="object-contain"
+              />
+            </div>
+          ))}
+        </div>
+      )}
+
       <section className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 gap-12">
-        <div>
-  <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
-    Overview
-  </h2>
-  <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
-
-  {/* Download Button */}
-  <a
-    href=""
-    download
-    className="inline-block bg-[var(--text-dark)] text-red-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
-  >
-    Download PDF
-  </a>
-</div>
-
+          {/* Overview Section */}
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
-              Specifications
-            </h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Overview</h2>
+            <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
+
+            {/* Download PDF Button */}
+            {project.pdfURL && (
+              <a
+                href={project.pdfURL}
+                download
+                className="inline-block bg-[var(--text-dark)] text-red-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
+              >
+                Download PDF
+              </a>
+            )}
+          </div>
+
+          {/* Specifications Section */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Specifications</h2>
             <div className="space-y-4">
-              {project.specifications.map((spec: Specification, index: number) => (
-                <div
-                  key={index}
-                  className="border-b border-[var(--text-body)]/10 pb-4"
-                >
-                  <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">
-                    {spec.title}
-                  </h3>
+              {project.specifications.map((spec, index) => (
+                <div key={index} className="border-b border-[var(--text-body)]/10 pb-4">
+                  <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">{spec.title}</h3>
                   <p className="text-[var(--text-body)]">{spec.value}</p>
                 </div>
               ))}
@@ -230,16 +241,44 @@ type tParams = Promise<{ slug: string }>;
           </div>
         </div>
 
+        {/* Application Section */}
+        {project.application && (
+          <div className="mt-12">
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Application</h2>
+            <p className="text-[var(--text-body)]">{project.application}</p>
+          </div>
+        )}
+
+        {/* Advantages Section */}
+        {project.advantages && project.advantages.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Advantages</h2>
+            <ul className="list-disc list-inside text-[var(--text-body)] space-y-2">
+              {project.advantages.map((advantage, index) => (
+                <li key={index}>{advantage}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Key Features Section */}
+        {project.keyFeatures && project.keyFeatures.length > 0 && (
+          <div className="mt-12">
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Key Features</h2>
+            <ul className="list-disc list-inside text-[var(--text-body)] space-y-2">
+              {project.keyFeatures.map((feature, index) => (
+                <li key={index}>{feature}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {/* Gallery Section */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-8 text-[var(--foreground)]">
-            Gallery
-          </h2>
+          <h2 className="text-3xl font-bold mb-8 text-[var(--foreground)]">Gallery</h2>
           <div className="grid md:grid-cols-3 gap-6">
-            {project?.images?.map((img: string, index: number) => (
-              <div
-                key={index}
-                className="relative h-64 rounded-lg overflow-hidden"
-              >
+            {project.images.map((img, index) => (
+              <div key={index} className="relative h-64 rounded-lg overflow-hidden">
                 <Image
                   src={img}
                   alt={`Gallery image ${index + 1}`}
@@ -250,13 +289,14 @@ type tParams = Promise<{ slug: string }>;
             ))}
           </div>
         </div>
+
+        {/* Call to Action */}
         <div className="relative mt-32 mb-16">
           <div className="bg-primaryColor rounded-2xl px-4 py-16 md:p-16">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-dark)] mb-6">
                 Want to Create Your Dream Project?
               </h2>
-
               <div className="flex flex-col md:flex-row items-center justify-center gap-6 mt-8">
                 <button className="w-full md:w-auto bg-[var(--text-dark)] text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all">
                   CONTACT US

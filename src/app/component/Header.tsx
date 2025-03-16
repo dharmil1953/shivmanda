@@ -18,7 +18,17 @@ const navLinks = [
       { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
     ],
   },
+  // { 
+  //   href: "#", 
+  //   label: "Knowledge Hub",  
+  //   submenu: [
+  //     { href: "/Products/antrocel-g", label: "Antrocel-g " },
+  //     { href: "/Products/steel-fibre", label: "Steel Fibre" },
+  //     { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
+  //   ],
+  // },
   { href: "/Contact", label: "Contact Us" },
+  { href: "/Blog", label: "Knowledge Hub" },
 ];
 
 const Header = () => {

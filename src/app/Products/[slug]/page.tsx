@@ -202,7 +202,7 @@ type tParams = Promise<{ slug: string }>;
 
   {/* Download Button */}
   <a
-    href="/project.pdf"
+    href=""
     download
     className="inline-block bg-[var(--text-dark)] text-red-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
   >

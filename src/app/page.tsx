@@ -14,11 +14,11 @@ export default function Home() {
     <>
       <Hero />
       <About />
-      <OurClients />
+      <Industrie />
       <Applications />
+      <OurClients />
       {/* <Section3 /> */}
       
-      <Industrie />
       <OurProject />
       <MoreInfo />
       <OurTechnology />

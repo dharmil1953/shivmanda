@@ -1,16 +1,43 @@
-import React from "react";
+"use client"
+import React, { useState } from "react";
 
-const Contacts = () => {
+const Contacts: React.FC = () => {
+  // Define state for form fields
+  const [formData, setFormData] = useState<{
+    firstName: string;
+    lastName: string;
+    email: string;
+    phone: string;
+    message: string;
+  }>({
+    firstName: "",
+    lastName: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+
+  // Handle input change
+  const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  // Handle form submission
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log("Form submitted:", formData);
+  };
+
   return (
     <section className="py-12 sm:py-14 md:py-16 lg:py-20 bg-[#EFEFEF]">
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          {/* Address Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-primaryColor text-lg leading-6 mb-3 font-semibold">
-              Our Address
-            </h3>
+            <h3 className="text-primaryColor text-lg leading-6 mb-3 font-semibold">Our Address</h3>
             <h1 className="mb-5 text-Dark text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
-              Visit <span className="font-bold uppercase">Our Office</span>
+              <span className="font-bold">Visit Us</span>
             </h1>
             <p className="text-[#25252A] text-lg sm:text-xl leading-relaxed">
               Shop No, 1170/23, 3rd Floor, <br />
@@ -18,21 +45,41 @@ const Contacts = () => {
               <br />
               Delhi, 110007
             </p>
+
+            {/* Google Map */}
+            <div className="mt-6 rounded-xl overflow-hidden shadow-lg">
+              <iframe
+                title="Google Map"
+                className="w-full h-52 sm:h-80 md:h-96"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.534254763913!2d77.1993044!3d28.6758928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd33d637a8e3%3A0x89f24efc933b0f71!2sShakti%20Nagar%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1693846382937!5m2!1sen!2sin"
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
           </div>
-          <div>
-            <form>
+
+          {/* Contact Form */}
+          <div className="lg:mt-44">
+            <form onSubmit={handleSubmit}>
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-5">
                 <div>
                   <input
                     type="text"
+                    name="firstName"
                     placeholder="First Name"
+                    value={formData.firstName}
+                    onChange={handleChange}
                     className="py-3 px-5 block w-full rounded-full bg-transparent border border-[#3C3C3C] focus:border-primaryColor outline-none sm:text-sm text-[#25252A] placeholder:text-[#25252A]"
                   />
                 </div>
                 <div>
                   <input
                     type="text"
+                    name="lastName"
                     placeholder="Last Name"
+                    value={formData.lastName}
+                    onChange={handleChange}
                     className="py-3 px-5 block w-full rounded-full bg-transparent border border-[#3C3C3C] focus:border-primaryColor outline-none sm:text-sm text-[#25252A] placeholder:text-[#25252A]"
                   />
                 </div>
@@ -40,30 +87,40 @@ const Contacts = () => {
               <div className="mb-5">
                 <input
                   type="email"
+                  name="email"
                   placeholder="Email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="py-3 px-5 block w-full rounded-full bg-transparent border border-[#3C3C3C] focus:border-primaryColor outline-none sm:text-sm text-[#25252A] placeholder:text-[#25252A]"
                 />
               </div>
               <div className="mb-5">
                 <input
                   type="tel"
+                  name="phone"
                   placeholder="Phone Number"
+                  value={formData.phone}
+                  onChange={handleChange}
                   className="py-3 px-5 block w-full rounded-full bg-transparent border border-[#3C3C3C] focus:border-primaryColor outline-none sm:text-sm text-[#25252A] placeholder:text-[#25252A]"
                 />
               </div>
               <div className="mb-8">
                 <textarea
+                  name="message"
                   rows={3}
                   placeholder="Message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="py-3 px-5 block w-full rounded-xl bg-transparent border border-[#3C3C3C] focus:border-primaryColor outline-none sm:text-sm text-[#25252A] placeholder:text-[#25252A]"
                 ></textarea>
               </div>
               <div className="w-full text-center">
-                <input
-                  type="button"
-                  value="Submit"
+                <button
+                  type="submit"
                   className="mx-auto px-8 py-2 rounded-full bg-primaryColor hover:bg-transparent border-2 border-transparent hover:border-primaryColor text-Light hover:text-primaryColor font-semibold text-lg duration-300"
-                />
+                >
+                  Submit
+                </button>
               </div>
             </form>
           </div>

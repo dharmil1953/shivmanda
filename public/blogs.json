@@ -3,9 +3,78 @@
       "slug": "stone-matrix-asphalt",
       "name": "Stone Matrix Asphalt (SMA)",
       "bgImage": "/images/SMA-mix.jpg",
-      "description": "Stone Matrix Asphalt (SMA) is a durable and rut-resistant asphalt mix, ideal for heavily trafficked roads. It comprises a coarse aggregate skeleton, binder, filler, fine aggregate, and stabilizing additives like cellulose fibers.",
+      "description": "At Antrocel, we are your gateway to unparalleled sustainability in the realm of Stone Matrix Asphalt (SMA). As a trusted cellulose manufacturer and supplier, we are rewriting the rules of asphalt road technology by seamlessly integrating cellulose fibers into SMA asphalt. Your journey is defined by making it simply possible, pushing the boundaries of what's possible in asphalt road.",
       "image": "/images/sma-image.png",
-      "overview": "Developed in Germany during the 1960s, SMA has become a preferred choice for road surfaces subjected to heavy loads. Its unique composition offers enhanced durability, improved skid resistance, and reduced cracking, making it a cost-effective and environmentally friendly option for modern infrastructure.",
+      "overview": "Stone Matrix Asphalt, also known as asphalt stone mastic is a type of asphalt blend comprising a carefully balanced mix of coarse aggregates, filler, and binder. It usually includes a stabilizing asphalt additive, commonly known as a drainage inhibitor that prevents the binder from separating from the aggregate. This results in a resilient and durable pavement surface.SMA asphalt originated in Germany during the mid-1960s and demonstrated remarkable efficiency in enduring wear and standing up to the challenges posed by studded tires. Due to its exceptional performance, it was officially standardized on a national level in 1984. Subsequently, SMA asphalt gained widespread adoption across Europe and globally.",
+      "application": [
+        {
+          "title": "Enhanced Durability",
+          "description":
+            "The incorporation of cellulose fibers into SMA asphalt significantly improves the overall durability of the asphalt road, extending the pavement's lifespan and reducing maintenance costs."
+        },
+        {
+          "title": "Rut Resistance",
+          "description":
+            "SMA asphalt's unique composition provides exceptional resistance against rutting, ensuring a smooth and stable road surface even under high traffic volumes."
+        },
+        {
+          "title": "Improved Skid Resistance",
+          "description":
+            "Cellulose fibers enhance pavement's texture, contributing to better skid resistance and improved safety for drivers."
+        },
+        {
+          "title": "Reduced Cracking",
+          "description":
+            "The presence of cellulose fibers minimizes the occurrence of cracks, reducing the risk of water infiltration and subsequent damage caused by freeze-thaw cycles."
+        },
+        {
+          "title": "Environmentally Friendly",
+          "description":
+            "Cellulose fibers used in SMA asphalt are derived from sustainable and renewable sources, making it a sustainable choice for road mastic construction."
+        },
+        {
+          "title": "Cost-Effective",
+          "description":
+            "The enhanced durability and reduced maintenance requirements of mastic asphalt result in long-term cost savings for road authorities and project developers."
+        },
+        {
+          "title": "Efficient Maintenance Pace",
+          "description":
+            "Thanks to SMA asphalt's thin-layer construction, the ease of planning and replacement is a distinct advantage. This translates to minimal traffic disruption during maintenance efforts."
+        },
+        {
+          "title": "Good Noise Reduction Properties",
+          "description":
+            "SMA asphalt provides good noise reduction properties, contributing to a quieter and more comfortable driving experience."
+        }
+      ],
+      "challenges": [
+        {
+          "title": "Not Suitable for All Applications",
+          "description":
+            "While SMA asphalt excels in high-traffic areas and heavy-load conditions, it may not be the best choice for low-traffic roads or locations with unique requirements, where other types of asphalt mixes may be more cost-effective."
+        },
+        {
+          "title": "Higher Initial Cost",
+          "description":
+            "Compared to conventional asphalt mixes, SMA asphalt can be more expensive to produce and install due to the additional cost of incorporating cellulose fibers and the specialized mix design."
+        },
+        {
+          "title": "Complex SMA Mix Design",
+          "description":
+            "SMA asphalt requires a precise and complex mix design to achieve its desired performance characteristics. This may pose challenges for some contractors and asphalt producers who are less experienced in working with stone matrix asphalt."
+        },
+        {
+          "title": "Limited Availability of High-Quality Cellulose Fibers",
+          "description":
+            "Cellulose fibers used in SMA asphalt must meet specific requirements and quality standards. As a specialized additive, the availability of high-quality cellulose fibers can be limited, particularly in some regions."
+        },
+        {
+          "title": "Fat Spot Risks in SMA Asphalt Design",
+          "description":
+            "It's important to address the potential risk of various types of fat spots emerging on the surface, which can arise due to discrepancies or inconsistencies during the phases of asphalt mastic design, production, or construction."
+        }
+      ],
       "specifications": [
         {
           "title": "Composition",
@@ -29,9 +98,83 @@
       "slug": "sma-asphalt-mix-design",
       "name": "Stone Matrix Asphalt (SMA) Mix Design",
       "bgImage": "/images/SMA-mix.jpg",
-      "description": "Stone Matrix Asphalt (SMA) is a gap-graded hot mix asphalt designed to maximize rutting resistance and durability through a stone-on-stone aggregate skeleton and a rich asphalt binder mortar.",
+      "description": "Stone Matrix Asphalt or asphalt mastic serves both wearing and intermediate pavement layers. The recommended minimum course thickness ranges from 3.5 to 4 times the maximum aggregate size. For heavy traffic, coarser asphalt mixtures like 0/11 and 0/12.5 mm are popular, but they come with trade-offs such as reduced noise reduction and antiskid properties, along with higher permeability. The composition of the coarse aggregate fraction significantly impacts asphalt mastic quality. Achieving optimal gap-gradation involves reducing the finer fractions while increasing the coarsest ones. Higher coarse aggregate content leads to increased air voids and more binder. Adjustments to air voids should not primarily rely on changing binder content, but rather on aggregate fraction gradations. Corrective coefficients dependent on aggregate density are advisable for binder content adjustments. For more information, view Stone Matrix Asphalt explained.",
       "image": "/images/sma-image.png",
       "overview": "Developed in Germany in the 1960s, SMA has become a preferred choice for heavily trafficked roads due to its deformation-resistant and durable properties. The mix design focuses on creating a strong aggregate structure filled with a binder-rich mortar, enhancing performance and longevity.",
+      "challenges": [
+        {
+          "title": "Complex Mix Design Requirements",
+          "description":
+            "Achieving optimal gap-gradation requires precise adjustments to aggregate fractions. Relying solely on binder content for air void adjustments is not recommended, making mix design complex."
+        },
+        {
+          "title": "Binder Drain Down Effect",
+          "description":
+            "SMA asphalt contains excess binder, which may drain away from aggregate particles, leading to visible fat spots and performance issues."
+        },
+        {
+          "title": "Need for Stabilizing Additives",
+          "description":
+            "To prevent binder drain down, stabilizing asphalt additives like cellulose fibers or polymer modifiers are essential, adding to production complexity."
+        },
+        {
+          "title": "Limited Workability with Excessive Stabilizers",
+          "description":
+            "While cellulose fibers help in stabilization, excessive usage can reduce workability, making precise dosage critical."
+        },
+        {
+          "title": "Variations in Density Determination Procedures",
+          "description":
+            "Different guidelines use varying density determination procedures, impacting results and requiring careful comparison for optimal asphalt mix performance."
+        },
+        {
+          "title": "Trade-offs in Coarser Mixtures",
+          "description":
+            "For heavy traffic, coarser asphalt mixtures (e.g., 0/11 and 0/12.5 mm) are used, but they reduce noise reduction and skid resistance while increasing permeability."
+        },
+        {
+          "title": "Dependence on High-Quality Materials",
+          "description":
+            "Maintaining the right filler quantity (9-10%) and limiting natural sand usage is crucial, especially for SMA asphalt designed for heavy traffic."
+        }
+      ],
+      "applications": [
+        {
+          "title": "High-Traffic Roads",
+          "description":
+            "SMA asphalt is ideal for roads with heavy vehicle loads due to its durability and rut resistance."
+        },
+        {
+          "title": "Wearing and Intermediate Pavement Layers",
+          "description":
+            "Stone Matrix Asphalt serves effectively as both a wearing course and an intermediate layer in road construction."
+        },
+        {
+          "title": "Sustainable Infrastructure Projects",
+          "description":
+            "SMA asphalt integrates cellulose fibers from renewable sources, making it an eco-friendly choice for road construction."
+        },
+        {
+          "title": "Urban and Highway Roads",
+          "description":
+            "The high skid resistance and noise reduction properties make SMA asphalt suitable for highways and busy urban streets."
+        },
+        {
+          "title": "Cold and Wet Climates",
+          "description":
+            "SMA asphalt minimizes cracking and water infiltration, making it suitable for regions prone to freeze-thaw cycles."
+        },
+        {
+          "title": "Long-Term Cost-Efficient Projects",
+          "description":
+            "Despite its higher initial cost, SMA asphalt's extended lifespan and low maintenance requirements make it cost-effective for long-term infrastructure planning."
+        },
+        {
+          "title": "Noise-Reduction Sensitive Areas",
+          "description":
+            "In locations requiring noise reduction, such as residential areas and bridges, finer SMA asphalt mixes can help minimize traffic noise."
+        }
+      ],
       "specifications": [
         {
           "title": "Aggregate Structure",

@@ -1,9 +1,10 @@
 'use client'
 import React from 'react'
-import Project1 from '../../../../public/images/project-1.png'
-import Project2 from '../../../../public/images/project-2.jpg'
-import Project3 from '../../../../public/images/project-3.png'
-import Project4 from '../../../../public/images/project-4.jpg'
+import Project1 from '../../../../public/images/synthetic-1.png'
+import Project2 from '../../../../public/images/cellulose-fiber-pellet.jpg'
+import Project3 from '../../../../public/images/steel-1.jpg'
+import Project4 from '../../../../public/images/silica-fume.jpg'
+import project5 from "../../../../public/images/anti-stripping-agent.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -36,7 +37,7 @@ const OurProjects = [
     },
     {
         ProjectLink: '/Products/anti-stripping-agent',
-        ProjectImg: Project4,
+        ProjectImg: project5,
         ProjectTitle: 'Anti Stripping Agent'
     },
 ];
@@ -99,11 +100,7 @@ const OurProject = () => {
                     </button>
                 </div>
 
-                <div className='w-full text-center'>
-                    <button className="mt-10 h-10 px-6 bg-Light mx-auto hover:bg-transparent border-2 hover:border-Light border-transparent font-semibold text-primaryColor hover:text-Light duration-300 rounded-full">
-                        View More
-                    </button>
-                </div>
+               
             </div>
         </section>
     )

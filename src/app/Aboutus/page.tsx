@@ -1,7 +1,8 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 import Image from "next/image";
 import {
   Building2,
@@ -14,111 +15,119 @@ import OurProject from "../component/Home/OurProject"
 import logo from "../../../public/images/logo.png";
 
 export default function About() {
+  const [currentImage, setCurrentImage] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev === 0 ? 1 : 0));
+    }, 3000);
+    return () => clearInterval(interval); 
+  }, []);
+  const images = [logo, logo]; 
+
   return (
     <div className="min-h-screen bg-[var(--background)]">
-      <section className="relative min-h-[80vh] flex items-center bg-gradient-to-b from-[var(--secondary)]/10 to-[var(--background)]">
-        <div className="container mx-auto px-6 pt-24">
-          {/* Grid Layout for First Two Paragraphs + Image */}
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            {/* Text Content - Left Side */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8 }}
-            >
-              <h3 className="text-primaryColor text-lg leading-6 mb-3 font-medium">
-                About Us
-              </h3>
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Narsingh Dass Group is a multifarious trading group, renowned
-                and much admired in the paper industry. With its core business
-                aimed to create an efficient flow of goods between manufacturers
-                and consumers of
-                <span className="font-bold">
-                  {" "}
-                  paper, paperboard & related products
-                </span>
-                , the group has risen consistently to be one of the most trusted
-                business houses of its kind in India.
-              </p>
-
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                With a corporate philosophy based on Knowledge Partnership,
-                Narsingh Dass Group follows a guiding principle of
-                <span className="font-bold"> Customers Grow, We Grow</span>.
-                With this belief, the group has enjoyed consistent growth and
-                expansion over the years and has transformed itself from a
-                trading company to a complete
-                <span className="font-bold"> Solution Marketing Group</span>.
-              </p>
-
-              <p className="text-gray-700 text-lg leading-relaxed mb-4">
-                Our Business centers are - Narsingh Dass & Co., Narsingh Dass
-                (Co. Pvt. Ltd.), India Paper Products / Sudhir Papers / Synchem,
-                Shivananda Marketing Pvt. Ltd., Sudhir Papers Limited.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.8 }}
-              className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl"
-            >
-              <Image
-                src={logo}
-                alt="Modern Construction Project"
-                layout="fill"
-                objectFit="cover"
-                objectPosition="center"
-              />
-            </motion.div>
-          </div>
-
-          {/* Full-Width Text Below */}
+       <section className="relative min-h-[80vh] flex items-center bg-gradient-to-b from-[var(--secondary)]/10 to-[var(--background)]">
+      <div className="container mx-auto px-6 pt-24">
+     
+        <div className="grid md:grid-cols-2 gap-12 items-center">
+ 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mt-12"
           >
+            <h3 className="text-primaryColor text-lg leading-6 mb-3 font-medium">
+              About Us
+            </h3>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              <span className="font-bold"> Shivananda Marketing Pvt. Ltd.</span>
-              was established in 1989 and has since been a pioneer in
-              implementing new technologies and adopting advanced materials in
-              emerging and growing sectors. With nearly three and a half decades
-              of experience, we have become one of the leading names in fiber
-              reinforcement technology and building materials in the Indian
-              infrastructure ecosystem.
+              Narsingh Dass Group is a multifarious trading group, renowned
+              and much admired in the paper industry. With its core business
+              aimed to create an efficient flow of goods between manufacturers
+              and consumers of
+              <span className="font-bold">
+                {" "}
+                paper, paperboard & related products
+              </span>
+              , the group has risen consistently to be one of the most trusted
+              business houses of its kind in India.
             </p>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              We bring innovative product solutions, new formulations, on-site
-              technical support, and end-to-end solutions for the construction
-              industry. Our business operates in almost all the Indian states
-              while reaching out to global clients in most of the nations in the
-              Indian subcontinent, SEA, and the Middle East. In the future, we
-              aim to reach out to more countries in the European and American
-              markets.
+              With a corporate philosophy based on Knowledge Partnership,
+              Narsingh Dass Group follows a guiding principle of
+              <span className="font-bold"> Customers Grow, We Grow</span>.
+              With this belief, the group has enjoyed consistent growth and
+              expansion over the years and has transformed itself from a
+              trading company to a complete
+              <span className="font-bold"> Solution Marketing Group</span>.
             </p>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Our specialized and modern warehouse facilities are equipped with
-              adequate staff to ensure that our clients can meet their
-              timelines. To meet industrial standards, we perform extensive
-              quality testing and quality assurance on all our products.
-            </p>
-
-            <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Our objective is to remain responsive to the needs of our
-              customers and provide the product or service they require.
-              Flexibility and creativity are the basis of our success. Our
-              pioneering spirit enables us to explore, develop, and drive
-              innovations that make a positive difference in people’s lives.
+              Our Business centers are - Narsingh Dass & Co., Narsingh Dass
+              (Co. Pvt. Ltd.), India Paper Products / Sudhir Papers / Synchem,
+              Shivananda Marketing Pvt. Ltd., Sudhir Papers Limited.
             </p>
           </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8 }}
+            className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl"
+          >
+            <Image
+              src={images[currentImage]}
+              alt="Modern Construction Project"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="center"
+            />
+          </motion.div>
         </div>
-      </section>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          className="mt-12"
+        >
+          <p className="text-gray-700 text-lg leading-relaxed mb-4">
+            <span className="font-bold"> Shivananda Marketing Pvt. Ltd.</span>
+            was established in 1989 and has since been a pioneer in
+            implementing new technologies and adopting advanced materials in
+            emerging and growing sectors. With nearly three and a half decades
+            of experience, we have become one of the leading names in fiber
+            reinforcement technology and building materials in the Indian
+            infrastructure ecosystem.
+          </p>
+
+          <p className="text-gray-700 text-lg leading-relaxed mb-4">
+            We bring innovative product solutions, new formulations, on-site
+            technical support, and end-to-end solutions for the construction
+            industry. Our business operates in almost all the Indian states
+            while reaching out to global clients in most of the nations in the
+            Indian subcontinent, SEA, and the Middle East. In the future, we
+            aim to reach out to more countries in the European and American
+            markets.
+          </p>
+
+          <p className="text-gray-700 text-lg leading-relaxed mb-4">
+            Our specialized and modern warehouse facilities are equipped with
+            adequate staff to ensure that our clients can meet their
+            timelines. To meet industrial standards, we perform extensive
+            quality testing and quality assurance on all our products.
+          </p>
+
+          <p className="text-gray-700 text-lg leading-relaxed mb-4">
+            Our objective is to remain responsive to the needs of our
+            customers and provide the product or service they require.
+            Flexibility and creativity are the basis of our success. Our
+            pioneering spirit enables us to explore, develop, and drive
+            innovations that make a positive difference in people’s lives.
+          </p>
+        </motion.div>
+      </div>
+    </section>
 
       <section className="py-24">
         <div className="container mx-auto px-6">

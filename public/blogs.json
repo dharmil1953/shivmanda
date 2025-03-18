@@ -203,61 +203,133 @@
       "totalUsers": 3156
     },
     {
-      "slug": "self-compacting-concrete-for-rafts-and-retaining-walls",
-      "name": "Self-Compacting Concrete (SCC) for Rafts and Retaining Walls",
-      "bgImage": "/images/self-concrete-bgImage.jpg",
-      "description": "Self-Compacting Concrete (SCC) is a high-performance concrete that flows under its own weight, filling formwork completely without the need for mechanical vibration. This property makes it particularly suitable for complex structures like rafts and retaining walls.",
-      "image": "/images/Self-compacting-Concrete-SCC.jpg",
-      "overview": "Developed to address durability concerns and labor shortages, SCC ensures complete compaction even in confined zones with dense reinforcement. Its ability to flow easily into intricate formwork shapes without segregation enhances both the structural integrity and surface finish of concrete elements.",
-      "specifications": [
-        {
-          "title": "Key Properties",
-          "value": "High deformability, excellent segregation resistance, and the ability to fill intricate formwork under its own weight."
-        },
-        {
-          "title": "Advantages",
-          "value": "Eliminates the need for vibration, reduces construction time, improves surface finish quality, and minimizes noise during placement."
-        },
-        {
-          "title": "Applications",
-          "value": "Ideal for structures with complex geometries or dense reinforcement, such as rafts, retaining walls, and areas where traditional vibration methods are challenging."
-        }
-      ],
-      "images": [
-        "/images/Self-compacting-Concrete-SCC.jpg"
-      ],
-      "totalUsers": 3156
+        "slug": "self-compacting-concrete-for-rafts-and-retaining-walls",
+        "name": "Self-Compacting Concrete (SCC) for Rafts and Retaining Walls",
+        "bgImage": "/images/self-concrete-bgImage.jpg",
+        "description": "Self-Compacting Concrete (SCC) is a high-performance concrete that flows under its own weight, filling formwork completely without the need for mechanical vibration. This property makes it particularly suitable for complex structures like rafts and retaining walls.",
+        "image": "/images/Self-compacting-Concrete-SCC.jpg",
+        "overview": "Developed to address durability concerns and labor shortages, SCC ensures complete compaction even in confined zones with dense reinforcement. Its ability to flow easily into intricate formwork shapes without segregation enhances both the structural integrity and surface finish of concrete elements.",
+        "specifications": [
+          {
+            "title": "Key Properties",
+            "value": "High deformability, excellent segregation resistance, and the ability to fill intricate formwork under its own weight."
+          },
+          {
+            "title": "Advantages",
+            "value": "Eliminates the need for vibration, reduces construction time, improves surface finish quality, and minimizes noise during placement."
+          },
+          {
+            "title": "Applications",
+            "value": "Ideal for structures with complex geometries or dense reinforcement, such as rafts, retaining walls, and areas where traditional vibration methods are challenging."
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Complex Mix Design",
+            "description": "Achieving the right balance of workability, strength, and segregation resistance requires precise proportioning of materials."
+          },
+          {
+            "title": "Material Costs",
+            "description": "SCC often requires higher amounts of cement and admixtures, increasing overall costs compared to conventional concrete."
+          },
+          {
+            "title": "Sensitivity to Moisture Variations",
+            "description": "The mix is highly sensitive to variations in aggregate moisture content, necessitating strict quality control."
+          },
+          {
+            "title": "Formwork Pressure",
+            "description": "Due to its high fluidity, SCC exerts greater pressure on formwork, requiring robust and well-sealed formwork systems."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Raft Foundations",
+            "description": "Used in large raft foundations where dense reinforcement makes traditional vibration difficult."
+          },
+          {
+            "title": "Retaining Walls",
+            "description": "Ideal for retaining walls with complex geometries and tight reinforcement spacing."
+          },
+          {
+            "title": "Precast Concrete Elements",
+            "description": "Enhances the quality of precast concrete products by providing a smooth finish with minimal defects."
+          },
+          {
+            "title": "Bridges and Tunnels",
+            "description": "Facilitates construction in areas where access for vibration equipment is restricted."
+          }
+        ],
+        "images": [
+          "/images/Self-compacting-Concrete-SCC.jpg"
+        ],
+        "totalUsers": 3156
     },
     {
-      "slug": "steel-fibre-reinforced-concrete",
-      "name": "Steel Fibre Reinforced Concrete (SFRC)",
-      "bgImage": "/images/steel-bgImage.png",
-      "description": "Steel Fibre Reinforced Concrete (SFRC) incorporates steel fibres into the concrete mix to enhance its mechanical properties, providing improved tensile strength, ductility, and resistance to cracking.",
-      "image": "/images/steel-1.jpg",
-      "overview": "SFRC is a composite material where steel fibres are uniformly distributed and randomly oriented within the concrete. This reinforcement method addresses concrete's inherent brittleness and low tensile strength, making it suitable for applications requiring enhanced durability and load-bearing capacity.",
-      "specifications": [
-        {
-          "title": "Fibre Characteristics",
-          "value": "Steel fibres are typically 4 to 5 cm in length and can be corrugated, wavy, or smooth, with flat or shaped ends."
-        },
-        {
-          "title": "Dosage",
-          "value": "The typical fibre content ranges from 25 to 100 kg per cubic meter of concrete, depending on the desired reinforcement level."
-        },
-        {
-          "title": "Advantages",
-          "value": "Improved mechanical behavior in all directions, increased resistance to abrasion and erosion, enhanced durability with reduced cracking, and greater resistance to compression, tension, torsion, and shear forces."
-        },
-        {
-          "title": "Considerations",
-          "value": "Potential for fibres to protrude through the concrete surface, which can be mitigated by applying a 'dry shake' treatment during curing."
-        }
-      ],
-      "images": [
-        "/images/steel-fibre-gallery-one.png",
-        "/images/steel-fibre-gallery-two.png",
-        "/images/steel-2.jpg"        
-      ],
-      "totalUsers": 3156
-    } 
+        "slug": "steel-fibre-reinforced-concrete",
+        "name": "Steel Fibre Reinforced Concrete (SFRC)",
+        "bgImage": "/images/steel-bgImage.png",
+        "description": "Steel Fibre Reinforced Concrete (SFRC) incorporates steel fibres into the concrete mix to enhance its mechanical properties, providing improved tensile strength, ductility, and resistance to cracking.",
+        "image": "/images/steel-1.jpg",
+        "overview": "SFRC is a composite material where steel fibres are uniformly distributed and randomly oriented within the concrete. This reinforcement method addresses concrete's inherent brittleness and low tensile strength, making it suitable for applications requiring enhanced durability and load-bearing capacity.",
+        "specifications": [
+          {
+            "title": "Fibre Characteristics",
+            "value": "Steel fibres are typically 4 to 5 cm in length and can be corrugated, wavy, or smooth, with flat or shaped ends."
+          },
+          {
+            "title": "Dosage",
+            "value": "The typical fibre content ranges from 25 to 100 kg per cubic meter of concrete, depending on the desired reinforcement level."
+          },
+          {
+            "title": "Advantages",
+            "value": "Improved mechanical behavior in all directions, increased resistance to abrasion and erosion, enhanced durability with reduced cracking, and greater resistance to compression, tension, torsion, and shear forces."
+          },
+          {
+            "title": "Considerations",
+            "value": "Potential for fibres to protrude through the concrete surface, which can be mitigated by applying a 'dry shake' treatment during curing."
+          }
+        ],
+        "challenges": [
+          {
+            "title": "Mixing and Dispersion Challenges",
+            "description": "Ensuring uniform fibre distribution in the concrete mix is critical to avoid clumping and loss of structural benefits."
+          },
+          {
+            "title": "Increased Material Costs",
+            "description": "Steel fibres are more expensive than traditional reinforcement, impacting overall construction costs."
+          },
+          {
+            "title": "Surface Finish Issues",
+            "description": "Fibres may protrude on the concrete surface, requiring additional finishing techniques."
+          },
+          {
+            "title": "Compatibility with Conventional Construction Methods",
+            "description": "May require adjustments in placement and finishing techniques compared to traditional reinforced concrete."
+          }
+        ],
+        "applications": [
+          {
+            "title": "Industrial Floors",
+            "description": "Enhances impact resistance and reduces shrinkage cracking in large industrial flooring projects."
+          },
+          {
+            "title": "Pavements and Roads",
+            "description": "Improves load-bearing capacity and durability in road construction applications."
+          },
+          {
+            "title": "Tunnels and Underground Structures",
+            "description": "Increases ductility and crack resistance in underground infrastructure projects."
+          },
+          {
+            "title": "Precast Elements",
+            "description": "Used in precast concrete elements to reduce cracking and enhance durability."
+          }
+        ],
+        "images": [
+          "/images/steel-fibre-gallery-one.png",
+          "/images/steel-fibre-gallery-two.png",
+          "/images/steel-2.jpg"
+        ],
+        "totalUsers": 3156
+    }    
 ]

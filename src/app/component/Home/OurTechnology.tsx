@@ -83,13 +83,6 @@ const OurTechnology = () => {
                         </div>
                     ))}
                 </div>
-
-                <div className='w-full text-center'>
-                    <button className="mt-10 h-10 px-6 bg-primaryColor mx-auto hover:bg-transparent border-2 border-transparent hover:border-primaryColor font-semibold text-Light hover:text-primaryColor duration-300 rounded-full">
-                        View More
-                    </button>
-                </div>
-
             </div>
         </section>
     )

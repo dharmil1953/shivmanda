@@ -116,6 +116,7 @@
 //     </main>
 //   );
 // }
+
 import React from "react";
 import Image from "next/image";
 import fs from "fs/promises";
@@ -192,7 +193,13 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         </div>
       </section>
 
-      {project.logoImg && project.logoImg.length > 0 && (
+      <section className="container mx-auto px-4 py-16">
+        <div className="grid md:grid-cols-2 gap-12">
+          {/* Overview Section */}
+          <div>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Overview</h2>
+            <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
+            {project.logoImg && project.logoImg.length > 0 && (
         <div className="mt-4 flex flex-wrap gap-4">
           {project.logoImg.map((logo, index) => (
             <div key={index} className="w-[80px] h-[80px]">
@@ -207,20 +214,12 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
           ))}
         </div>
       )}
-
-      <section className="container mx-auto px-4 py-16">
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Overview Section */}
-          <div>
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Overview</h2>
-            <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
-
             {/* Download PDF Button */}
             {project.pdfURL && (
               <a
                 href={project.pdfURL}
                 download
-                className="inline-block bg-[var(--text-dark)] text-red-500 px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
+                className="inline-block bg-[var(--text-dark)] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
               >
                 Download PDF
               </a>

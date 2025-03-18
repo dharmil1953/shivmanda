@@ -49,7 +49,7 @@ const OurProject = () => {
 
                 <div className='mb-12 text-center'>
                     <h1 className="mb-5 text-Light text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
-                        Our <span className="font-bold uppercase">PROJECTS</span>
+                        Our <span className="font-bold uppercase">PRODUCTS</span>
                     </h1>
                 </div>
 

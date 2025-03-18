@@ -147,23 +147,20 @@ export default async function BlogDetail({ params }: { params: tParams }) {
               {blog.description}
             </div>
 
-            {/* Social Sharing */}
             <div className="flex items-center mb-8 pb-8 border-b border-gray-100">
               <div className="flex items-center mr-6">
-                <button className="flex items-center text-gray-500 hover:text-[#FF7069] transition-colors">
+                <button
+                  onClick={() =>
+                    navigator.clipboard.writeText(window.location.href)
+                  }
+                  className="flex items-center text-gray-500 hover:text-[#FF7069] transition-colors"
+                >
                   <Share2 size={18} className="mr-2" />
                   <span>Share</span>
                 </button>
               </div>
-              <div className="flex items-center">
-                <button className="flex items-center text-gray-500 hover:text-[#FF7069] transition-colors">
-                  <BookmarkPlus size={18} className="mr-2" />
-                  <span>Save</span>
-                </button>
-              </div>
             </div>
 
-            {/* Main Image */}
             <div className="relative w-full h-96 md:h-[500px] mb-8 rounded-xl overflow-hidden">
               <Image
                 src={blog.image || "/api/placeholder/1200/800"}
@@ -174,7 +171,6 @@ export default async function BlogDetail({ params }: { params: tParams }) {
               />
             </div>
 
-            {/* Article Content */}
             <div className="prose prose-lg max-w-none mb-12">
               <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">
                 Overview
@@ -183,7 +179,6 @@ export default async function BlogDetail({ params }: { params: tParams }) {
                 {blog.overview}
               </div>
 
-              {/* Specifications Section */}
               {blog.specifications && blog.specifications.length > 0 && (
                 <>
                   <h2 className="text-2xl md:text-3xl font-bold mt-12 mb-6 text-gray-900">
@@ -210,7 +205,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
                   </div>
                 </>
               )}
-              {/* Applications Section */}
+
               {blog.application?.length > 0 && (
                 <div className="mt-12">
                   <h2 className="text-2xl md:text-3xl font-bold mb-6 text-gray-900">
@@ -348,7 +343,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
                       </div>
                       <div className="ml-4">
                         <Link
-                          href={`/blog/${post.slug}`}
+                          href={`/Blog/${post.slug}`}
                           className="font-medium text-gray-900 hover:text-[#FF7069] text-sm line-clamp-2"
                         >
                           {post.name}

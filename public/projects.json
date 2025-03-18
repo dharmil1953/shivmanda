@@ -24,8 +24,8 @@
       }
     ],
     "ExtraImg": "/images/synthetic-extra.png",
-    "Advantages": "",
-    "Application": [
+    "advantages": "",
+    "application": [
       "Plastering",
       "Slab on Grade",
       "Raft",
@@ -36,7 +36,7 @@
       "Beam & Columns",
       "Open Drains"
     ],
-    "Key Features": [
+    "keyFeatures": [
       "Improves resistance of plastic & drying shrinkage/cracking",
       "Inhibits Propagation of micro-cracks and provides stability to concrete",
       "Improves flexural toughness and split tensile strength",
@@ -45,7 +45,7 @@
       "Reduces permeability in concrete",
       "Improves durability and enhances longevity of the structure"
     ],
-    "pdfURL": "",
+    "pdfURL": "/pdf/synthetic-fibre.pdf",
     "features": [
       {
         "title": "Improves Concrete Durability",
@@ -83,8 +83,8 @@
       }
     ],
     "ExtraImg": "/images/antrocel-extra.png",
-    "Advantages": "",
-    "Application": [
+    "advantages": "",
+    "application": [
       "Precast Elements",
       "Industrial Flooring",
       "Repair Applications",
@@ -92,7 +92,7 @@
       "Tunneling",
       "Marine Structures"
     ],
-    "Key Features": [
+    "keyFeatures": [
       "Provides superior tensile strength",
       "Minimizes shrinkage cracks",
       "Enhances impact resistance",
@@ -128,7 +128,7 @@
     "description": "Vajra Shakti - Making a stronger world",
     "extraLine": "Advanced Steel Fibre for Heavy-Duty Applications",
     "logoImg": ["/images/vajra-shakti.jpg"],
-    "overview": "Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance. Vajra Shakti Steel fibers are low carbon & cold drawn steel wire fibre manufactured by quality base primary steel bar. It has excellent mechanical properties including high tensile strength. Due to its High strength and uniform distribution of fibers, stresses can be fully dispersed and cracking propagation be effectively controlled. Steel Fibers are reliable, cost-efficient concrete reinforcement which provide temperature & shrinkage crack control, enhanced flexural reinforcement, improved shear strength and increase the crack resistance of concrete. It is designed to be easy to mix, place and finish in any concrete mix. It provides excellent load transfer in the the crack, it stabilizes load-bearing capacity after appearance of crack. Vajra Shakti Steel Fibres complies with all ASTM & EN Standards .",
+    "overview": "Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance. Vajra Shakti Steel fibers are low carbon & cold drawn steel wire fibre manufactured by quality base primary steel bar. It has excellent mechanical properties including high tensile strength. Due to its High strength and uniform distribution of fibers, stresses can be fully dispersed and cracking propagation be effectively controlled. Steel Fibers are reliable, cost-efficient concrete reinforcement which provide temperature & shrinkage crack control, enhanced flexural reinforcement, improved shear strength and increase the crack resistance of concrete. It is designed to be easy to mix, place and finish in any concrete mix. It provides excellent load transfer in the crack, it stabilizes load-bearing capacity after appearance of crack. Vajra Shakti Steel Fibres complies with all ASTM & EN Standards.",
     "specifications": [
       {
         "title": "Product Type",
@@ -136,12 +136,12 @@
       },
       {
         "title": "Grades",
-        "value": "Hookend Steel Fibre, Glued Hookend Steel Fibre, Flat Crimped, Undulated Hookend Steel Fibre "
+        "value": "Hookend Steel Fibre, Glued Hookend Steel Fibre, Flat Crimped, Undulated Hookend Steel Fibre"
       },
       { "title": "Pack Size", "value": "25 Kg" }
     ],
     "ExtraImg": "/images/steel-extra.png",
-    "Advantages": [
+    "advantages": [
       "High Tensile strength",
       "Substantially enhance initial crack strength",
       "Continuously provide post crack strength",
@@ -151,9 +151,9 @@
       "ultimate load bearing capacity",
       "Stronger joints lower the possibility of maintenance"
     ],
-    "Application": [
+    "application": [
       "Commercial and industrial slabs on ground",
-      " Bridge decks",
+      "Bridge decks",
       "overlays and pavements",
       "Precast concrete applications",
       "Shotcrete",
@@ -163,14 +163,14 @@
       "Mass concrete and composite deck construction",
       "Floors Without Joints"
     ],
-    "Key Features": [
+    "keyFeatures": [
       "Enhances load-bearing capacity",
       "Prevents cracking and improves durability",
       "Increases impact and fatigue resistance",
       "Minimizes reliance on traditional steel reinforcements",
       "Improves construction efficiency"
     ],
-    "pdfURL": "",
+    "pdfURL": "/pdf/steel-fibre.pdf",
     "features": [
       {
         "title": "Enhances Load-Bearing Capacity",
@@ -186,10 +186,10 @@
   {
     "slug": "cellulose-fiber-pellets",
     "name": "Cellulose Fiber Pellets",
-    "bgImage": "/images/cellulose-bg.jpg",
-    "logoImg": ["/images/cellulose-logo1.png", "/images/cellulose-logo2.png"],
+    "bgImage": "/images/cellulose-fiber-pellet.jpg",
+    "logoImg": [],
     "description": "Enhancing asphalt mixtures with superior fiber reinforcement.",
-    "overview": "Cellulose fiber pellets improve the stability and durability of asphalt pavements by reducing rutting and increasing resistance to cracking.",
+    "overview": "Cellulose fiber pellets are an innovative additive used in asphalt pavement mixtures to enhance their performance and longevity. These natural fibers are derived from renewable plant-based sources and offer several key benefits when incorporated into asphalt. When cellulose fiber pellets are added to asphalt, they improve the overall stability and durability of the pavement. One of the primary advantages is their ability to reduce rutting. Rutting is the formation of grooves or depressions on the surface of the road, usually caused by the repetitive stress from vehicle traffic, especially in hot weather. Cellulose fibers help distribute the load more evenly across the surface, reducing the likelihood of permanent deformation.",
     "application": [
       "Used in asphalt paving for high-performance roads",
       "Enhances the durability of bridge decks and airport runways",
@@ -211,12 +211,12 @@
       { "title": "Moisture Content", "value": "< 5%" },
       { "title": "Bulk Density", "value": "450-600 kg/m³" }
     ],
-    "images": ["/images/cellulose-1.jpg", "/images/cellulose-2.jpg"]
+    "images": ["/images/cellulose-fiber-pellet.jpg"]
   },
   {
     "slug": "anti-stripping-agent",
     "name": "Anti Stripping Agent",
-    "bgImage": "/images/anti-stripping-bg.jpg",
+    "bgImage": "/images/anti-stripping-agent.png",
     "logoImg": [],
     "description": "Enhancing asphalt adhesion to prevent moisture damage.",
     "overview": "Anti-stripping agents are additives that improve the bond between asphalt and aggregates, preventing premature failure due to water infiltration.",
@@ -241,13 +241,12 @@
       { "title": "Appearance", "value": "Liquid / Powder" },
       { "title": "Dosage", "value": "0.2% - 0.5% by weight of bitumen" }
     ],
-    "images": ["/images/anti-stripping-1.jpg", "/images/anti-stripping-2.jpg"]
+    "images": ["/images/anti-stripping-agent.png"]
   },
   {
     "slug": "silica-fume",
     "name": "Silica Fume",
-    "bgImage": "/images/silica-fume-bg.jpg",
-    "logoImg": ["/images/silica-logo1.png"],
+    "bgImage": "/images/silica-fume.jpg",
     "description": "Enhancing concrete strength and durability with ultra-fine silica.",
     "overview": "Silica fume is a highly reactive pozzolan that improves the mechanical and durability properties of concrete.",
     "application": [
@@ -271,6 +270,6 @@
       { "title": "Specific Surface Area", "value": "15,000 - 30,000 m²/kg" },
       { "title": "Bulk Density", "value": "200-700 kg/m³" }
     ],
-    "images": ["/images/silica-1.jpg", "/images/silica-2.jpg"]
+    "images": ["/images/sillica-fume-one.jpg"]
   }
 ]

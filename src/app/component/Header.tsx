@@ -25,13 +25,14 @@ const navLinks = [
   //   href: "#", 
   //   label: "Knowledge Hub",  
   //   submenu: [
-  //     { href: "/Products/antrocel-g", label: "Antrocel-g " },
-  //     { href: "/Products/steel-fibre", label: "Steel Fibre" },
-  //     { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
+  //     { href: "/Blog/stone-matrix-asphalt", label: "Stone Matrix Asphalt " },
+  //     { href: "/Blog/sma-asphalt-mix-design", label: "SMA Mix Design" },
+  //     { href: "/Blog/self-compacting-concrete-for-rafts-and-retaining-walls", label: "SCC for Rafts and Retaining Walls" },
+  //     { href: "/Blog/steel-fibre-reinforced-concrete", label: "Steel Fibre Reinforced Concrete" }
   //   ],
   // },
-  { href: "/Contact", label: "Contact Us" },
   { href: "/Blog", label: "Knowledge Hub" },
+  { href: "/Contact", label: "Contact Us" },
 ];
 
 const Header = () => {

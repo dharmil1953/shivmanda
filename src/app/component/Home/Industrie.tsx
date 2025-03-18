@@ -11,19 +11,19 @@ const Industriedata = [
         image: icon1,
         title: "Building",
         desc: "For residential, commercial and industrial projects",
-        href:"#",
+        href:"/infrastructure",
     },
     {
         image: icon2,
         title: "Infrastructure",
         desc: "Performance and Durability enhancing solutions for infrastructure projects",
-        href:"#",
+        href:"/infrastructure",
     },
     {
         image: icon1,
         title: "Coating and Masterbatch Solutions",
         desc: "Innovative Solutions for Masterbatches, Paints, Inks and all types of Coatings",
-        href:"#",
+        href:"/Coating",
     },
     {
         image: icon1,

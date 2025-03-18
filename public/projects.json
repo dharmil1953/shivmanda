@@ -68,7 +68,7 @@
     "bgImage": "/images/antrocel-2.jpg",
     "description": "High-Performance Glass Fibre for Concrete Reinforcement",
     "extraLine": "Advanced Glass Fibre for Stronger Concrete",
-    "logoImg": ["/images/antrocel-logo.jpg"],
+    "logoImg": [],
     "overview": "Antrocel-G is a specially engineered glass fibre reinforcement that significantly enhances the strength and flexibility of concrete structures. It effectively reduces shrinkage cracks, improves impact resistance, and ensures long-term performance, even in harsh environments. Designed for use in precast elements, repair applications, and industrial flooring, Antrocel-G provides excellent bonding characteristics, ensuring a uniform distribution of fibres within the concrete mix. It is a superior alternative to traditional steel reinforcements, reducing the risk of corrosion while enhancing durability.",
     "specifications": [
       { "title": "Product Type", "value": "Glass Fibre Reinforcement" },
@@ -205,7 +205,7 @@
       "Eco-friendly and sustainable",
       "Easy to mix and apply in asphalt production"
     ],
-    "pdfURL": "/pdfs/cellulose-fiber-pellets.pdf",
+    "pdfURL": "",
     "specifications": [
       { "title": "Fiber Content", "value": "≥ 85%" },
       { "title": "Moisture Content", "value": "< 5%" },
@@ -219,7 +219,7 @@
     "bgImage": "/images/anti-stripping-agent.png",
     "logoImg": [],
     "description": "Enhancing asphalt adhesion to prevent moisture damage.",
-    "overview": "Anti-stripping agents are additives that improve the bond between asphalt and aggregates, preventing premature failure due to water infiltration.",
+    "overview": "Anti-stripping agents are specialized additives used in asphalt mixtures to enhance adhesion between bitumen and aggregates, preventing moisture-related damage. They improve the durability and performance of pavements by reducing stripping, a phenomenon where water weakens the bond between asphalt and aggregate surfaces. By mitigating the effects of water infiltration, these agents help extend the lifespan of roads, minimize maintenance costs, and ensure structural stability, especially in regions prone to heavy rainfall or fluctuating temperatures. Available in various forms, including amine-based, lime-based, and silane-based formulations, anti-stripping agents play a crucial role in maintaining pavement integrity and long-term performance.",
     "application": [
       "Used in hot mix asphalt to prevent stripping",
       "Applied in road construction for improved durability",
@@ -235,7 +235,7 @@
       "Enhances adhesion and reduces moisture susceptibility",
       "Compatible with various types of asphalt binders"
     ],
-    "pdfURL": "/pdfs/anti-stripping-agent.pdf",
+    "pdfURL": "",
     "specifications": [
       { "title": "pH Value", "value": "6.0 - 8.0" },
       { "title": "Appearance", "value": "Liquid / Powder" },
@@ -248,7 +248,7 @@
     "name": "Silica Fume",
     "bgImage": "/images/silica-fume.jpg",
     "description": "Enhancing concrete strength and durability with ultra-fine silica.",
-    "overview": "Silica fume is a highly reactive pozzolan that improves the mechanical and durability properties of concrete.",
+    "overview": "Silica fume is an ultrafine powder composed of spherical particles rich in silicon dioxide, produced as a byproduct of silicon and ferrosilicon alloy manufacturing. As a highly reactive pozzolan, it significantly enhances the strength, durability, and performance of concrete. When added to concrete mixtures, silica fume refines the microstructure, reducing permeability and increasing resistance to chemical attacks, sulfate exposure, and chloride penetration. It also improves the cohesion and workability of high-performance concrete, making it ideal for applications in bridges, marine structures, tunnels, and industrial floors where superior strength and durability are essential.",
     "application": [
       "Used in high-performance concrete for bridges and tunnels",
       "Enhances strength in precast concrete elements",

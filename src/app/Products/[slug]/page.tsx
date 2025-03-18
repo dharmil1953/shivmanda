@@ -175,7 +175,10 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
     <main className="min-h-screen bg-[var(--background)]">
       <section className="relative h-[60vh] w-full">
         <Image
-          src={project.bgImage || "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"}
+          src={
+            project.bgImage ||
+            "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab"
+          }
           alt={project.name}
           fill
           className="object-cover"
@@ -197,23 +200,25 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Overview Section */}
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Overview</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
+              Overview
+            </h2>
             <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
             {project.logoImg && project.logoImg.length > 0 && (
-        <div className="mt-4 flex flex-wrap gap-4">
-          {project.logoImg.map((logo, index) => (
-            <div key={index} className="w-[80px] h-[80px]">
-              <Image
-                src={logo}
-                alt={`Project Logo ${index + 1}`}
-                width={80}
-                height={80}
-                className="object-contain"
-              />
-            </div>
-          ))}
-        </div>
-      )}
+              <div className="my-6 flex flex-wrap gap-4">
+                {project.logoImg.map((logo, index) => (
+                  <div key={index} className="w-[80px] h-[80px]">
+                    <Image
+                      src={logo}
+                      alt={`Project Logo ${index + 1}`}
+                      width={80}
+                      height={80}
+                      className="object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
             {/* Download PDF Button */}
             {project.pdfURL && (
               <a
@@ -228,11 +233,18 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
 
           {/* Specifications Section */}
           <div>
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Specifications</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
+              Specifications
+            </h2>
             <div className="space-y-4">
               {project.specifications.map((spec, index) => (
-                <div key={index} className="border-b border-[var(--text-body)]/10 pb-4">
-                  <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">{spec.title}</h3>
+                <div
+                  key={index}
+                  className="border-b border-[var(--text-body)]/10 pb-4"
+                >
+                  <h3 className="text-lg font-semibold mb-2 text-[var(--foreground)]">
+                    {spec.title}
+                  </h3>
                   <p className="text-[var(--text-body)]">{spec.value}</p>
                 </div>
               ))}
@@ -243,7 +255,9 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         {/* Application Section */}
         {project.application && (
           <div className="mt-12">
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Application</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
+              Application
+            </h2>
             <p className="text-[var(--text-body)]">{project.application}</p>
           </div>
         )}
@@ -251,7 +265,9 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         {/* Advantages Section */}
         {project.advantages && project.advantages.length > 0 && (
           <div className="mt-12">
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Advantages</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
+              Advantages
+            </h2>
             <ul className="list-disc list-inside text-[var(--text-body)] space-y-2">
               {project.advantages.map((advantage, index) => (
                 <li key={index}>{advantage}</li>
@@ -263,7 +279,9 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         {/* Key Features Section */}
         {project.keyFeatures && project.keyFeatures.length > 0 && (
           <div className="mt-12">
-            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">Key Features</h2>
+            <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
+              Key Features
+            </h2>
             <ul className="list-disc list-inside text-[var(--text-body)] space-y-2">
               {project.keyFeatures.map((feature, index) => (
                 <li key={index}>{feature}</li>
@@ -274,10 +292,15 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
 
         {/* Gallery Section */}
         <div className="mt-16">
-          <h2 className="text-3xl font-bold mb-8 text-[var(--foreground)]">Gallery</h2>
+          <h2 className="text-3xl font-bold mb-8 text-[var(--foreground)]">
+            Gallery
+          </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {project.images.map((img, index) => (
-              <div key={index} className="relative h-64 rounded-lg overflow-hidden">
+              <div
+                key={index}
+                className="relative h-64 rounded-lg overflow-hidden"
+              >
                 <Image
                   src={img}
                   alt={`Gallery image ${index + 1}`}

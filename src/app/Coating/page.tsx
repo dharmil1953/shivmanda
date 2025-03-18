@@ -1,13 +1,13 @@
 'use client'
 import React from 'react';
-import TitaniumDioxide from ''
+import TitaniumDioxide from '../../../public/images/titanium-dioxide.png'
 // import TiQ from '../../../../public/images/tiq-replacement.jpg';
-import SyntheticFibre from '../../../../public/images/synthetic-1.png';
-import StyreneButadieneLatex from '../../../../public/images/styrene-butadiene-latex.jpg';
-import StyreneAcrylicLatex from '../../../../public/images/styrene-acrylic-latex.jpg';
-import EthylCellulose from '../../../../public/images/ethyl-cellulose.jpg';
-import MethylCellulose from '../../../../public/images/methyl-cellulose.jpg';
-import SodiumAlginate from '../../../../public/images/sodium-alginate.jpg';
+import SyntheticFibre from '../../../public/images/synthetic-1.png';
+import StyreneButadieneLatex from '../../../public/images/styrene-butadiene-latex.jpg';
+import StyreneAcrylicLatex from '../../../public/images/styrene-acrylic-latex.jpg';
+import EthylCellulose from '../../../public/images/ethyl-cellulose.jpg';
+import MethylCellulose from '../../../public/images/methyl-cellulose.jpg';
+import SodiumAlginate from '../../../public/images/sodium-alginate.jpg';
 
 import SingleImage from '../../../public/images/steel-1.jpg'; 
 

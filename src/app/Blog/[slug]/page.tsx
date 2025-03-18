@@ -8,7 +8,6 @@ import {
   Calendar,
   Clock,
   Share2,
-  BookmarkPlus,
   ChevronRight,
 } from "lucide-react";
 

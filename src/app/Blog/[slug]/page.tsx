@@ -7,7 +7,6 @@ import {
   ArrowLeft,
   Calendar,
   Clock,
-  Share2,
   ChevronRight,
 } from "lucide-react";
 
@@ -94,7 +93,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/30 flex items-end">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
             <Link
-              href="/"
+              href="/Blog"
               className="inline-flex items-center text-white/90 hover:text-white mb-4 transition-colors"
             >
               <ArrowLeft size={16} className="mr-2" />
@@ -125,7 +124,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
               Home
             </Link>
             <ChevronRight size={16} className="mx-2" />
-            <Link href="/blog" className="hover:text-[#FF7069]">
+            <Link href="/Blog" className="hover:text-[#FF7069]">
               Blog
             </Link>
             <ChevronRight size={16} className="mx-2" />
@@ -146,19 +145,6 @@ export default async function BlogDetail({ params }: { params: tParams }) {
               {blog.description}
             </div>
 
-            <div className="flex items-center mb-8 pb-8 border-b border-gray-100">
-              <div className="flex items-center mr-6">
-                <button
-                  onClick={() =>
-                    navigator.clipboard.writeText(window.location.href)
-                  }
-                  className="flex items-center text-gray-500 hover:text-[#FF7069] transition-colors"
-                >
-                  <Share2 size={18} className="mr-2" />
-                  <span>Share</span>
-                </button>
-              </div>
-            </div>
 
             <div className="relative w-full h-96 md:h-[500px] mb-8 rounded-xl overflow-hidden">
               <Image
@@ -295,15 +281,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
               {/* Author Card */}
               <div className="bg-white border border-gray-100 rounded-xl p-6 shadow-sm mb-8">
                 <div className="flex items-center mb-4">
-                  <div className="relative w-12 h-12 rounded-full overflow-hidden mr-4">
-                    <Image
-                      src="/api/placeholder/128/128"
-                      alt="Author"
-                      layout="fill"
-                      objectFit="cover"
-                      className="rounded-full"
-                    />
-                  </div>
+                  
                   <div>
                     <h3 className="font-medium text-gray-900">Sarah Johnson</h3>
                     <p className="text-sm text-gray-500">Content Writer</p>
@@ -313,14 +291,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
                   Sarah specializes in technology writing with over 5 years of
                   experience covering web development and design.
                 </p>
-                <div className="flex space-x-3">
-                  <a
-                    href="#"
-                    className="text-[#FF7069] hover:text-[#ff5c54] font-medium text-sm"
-                  >
-                    View profile
-                  </a>
-                </div>
+                
               </div>
 
               {/* Related Posts */}

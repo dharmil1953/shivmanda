@@ -1,4 +1,4 @@
-
+"use client"
 import Hero from "./component/Home/Hero";
 import About from "./component/Home/About";
 import Applications from "./component/Home/Application";

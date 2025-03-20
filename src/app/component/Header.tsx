@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from "react";
 import logo from "../../../public/images/logo.svg";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 
 const navLinks = [
@@ -13,30 +13,17 @@ const navLinks = [
     href: "#", 
     label: "Products",  
     submenu: [
-      { href: "/Products/antrocel-g", label: "Antrocel-g " },
-      { href: "/Products/steel-fibre", label: "Steel Fibre" },
-      { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
-      { href: "/Products/cellulose-fiber-pellets", label: "Cellulose Fiber Pellets" },
-      { href: "/Products/anti-stripping-agent", label: "Anti Stripping Agent" },
-      { href: "/Products/silica-fume", label: "Silica Fume" },
+      {href: "/Coating", label: "Construction Solutions"},
+      {href: "/infrastructure", label: "Coating and Masterbatch Solutions"}
     ],
   },
-  // { 
-  //   href: "#", 
-  //   label: "Knowledge Hub",  
-  //   submenu: [
-  //     { href: "/Blog/stone-matrix-asphalt", label: "Stone Matrix Asphalt " },
-  //     { href: "/Blog/sma-asphalt-mix-design", label: "SMA Mix Design" },
-  //     { href: "/Blog/self-compacting-concrete-for-rafts-and-retaining-walls", label: "SCC for Rafts and Retaining Walls" },
-  //     { href: "/Blog/steel-fibre-reinforced-concrete", label: "Steel Fibre Reinforced Concrete" }
-  //   ],
-  // },
   { href: "/Blog", label: "Knowledge Hub" },
   { href: "/Contact", label: "Contact Us" },
 ];
 
 const Header = () => {
   const pathname = usePathname();
+  const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
   const submenuRef = useRef<HTMLDivElement>(null);
@@ -65,8 +52,17 @@ const Header = () => {
     setActiveSubmenu(null);
   }, [pathname]);
 
-  const toggleSubmenu = (label: string) => {
+  const toggleSubmenu = (label: string, event: React.MouseEvent) => {
+    // Stop event from bubbling up
+    event.preventDefault();
+    event.stopPropagation();
     setActiveSubmenu(activeSubmenu === label ? null : label);
+  };
+
+  // Forced navigation function
+  const navigateTo = (href: string) => {
+    router.push(href);
+    setMenuOpen(false);
   };
 
   return (
@@ -84,7 +80,7 @@ const Header = () => {
             const isSubmenuOpen = activeSubmenu === link.label;
 
             return (
-              <div key={link.href} className="relative">
+              <div key={link.label} className="relative">
                 {link.submenu ? (
                   <div>
                     <button
@@ -92,7 +88,7 @@ const Header = () => {
                       className={`text-Dark hover:text-primaryColor leading-5 md:px-3 lg:px-5 py-2 rounded-full duration-300 font-medium flex items-center gap-1 ${
                         isActive ? "bg-primaryColor !text-Light" : ""
                       }`}
-                      onClick={() => toggleSubmenu(link.label)}
+                      onClick={(e) => toggleSubmenu(link.label, e)}
                     >
                       {link.label}
                       <ChevronDown
@@ -107,7 +103,7 @@ const Header = () => {
                     {isSubmenuOpen && (
                       <div
                         ref={submenuRef}
-                        className="absolute left-0 mt-2 w-48 bg-white rounded-lg shadow-lg overflow-hidden py-1"
+                        className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg overflow-hidden py-1"
                       >
                         {link.submenu.map((sub) => (
                           <Link
@@ -152,24 +148,27 @@ const Header = () => {
         <>
           <div
             className="fixed inset-0 top-[72px] bg-black/50 backdrop-blur-sm z-40"
-            onClick={() => setMenuOpen(false)}
+            // onClick={() => setMenuOpen(false)}
           />
           
-          <nav className="fixed top-[72px] left-0 right-0 bg-white shadow-md z-50 max-h-[calc(100vh-72px)] overflow-y-auto">
+          <nav 
+            className="fixed top-[72px] left-0 right-0 bg-white shadow-md z-50 max-h-[calc(100vh-72px)] overflow-y-auto"
+            // onClick={(e) => e.stopPropagation()}
+          >
             <div className="container mx-auto py-4 px-4">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
                 const isSubmenuOpen = activeSubmenu === link.label;
 
                 return (
-                  <div key={link.href} className="mb-2">
+                  <div key={link.label} className="mb-2">
                     {link.submenu ? (
                       <>
                         <button
-                          className={`w-full text-left text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium flex items-center justify-between ${
+                          className={`w-full text-left text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium flex items-center justify-between cursor-pointer ${
                             isActive ? "bg-primaryColor/10" : ""
                           }`}
-                          onClick={() => toggleSubmenu(link.label)}
+                          onClick={(e) => toggleSubmenu(link.label, e)}
                         >
                           {link.label}
                           <ChevronDown
@@ -187,13 +186,9 @@ const Header = () => {
                               <Link
                                 key={sub.href}
                                 href={sub.href}
-                                className={`block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg ${
+                                className={`w-full text-left block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg cursor-pointer ${
                                   pathname === sub.href ? "bg-primaryColor/10" : ""
                                 }`}
-                                onClick={() => {
-                                  setMenuOpen(false);
-                                  setActiveSubmenu(null);
-                                }}
                               >
                                 {sub.label}
                               </Link>
@@ -202,15 +197,14 @@ const Header = () => {
                         )}
                       </>
                     ) : (
-                      <Link
-                        href={link.href}
-                        className={`block text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium ${
+                      <button
+                        onClick={() => navigateTo(link.href)}
+                        className={`w-full text-left block text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium cursor-pointer ${
                           isActive ? "bg-primaryColor !text-Light" : ""
                         }`}
-                        onClick={() => setMenuOpen(false)}
                       >
                         {link.label}
-                      </Link>
+                      </button>
                     )}
                   </div>
                 );

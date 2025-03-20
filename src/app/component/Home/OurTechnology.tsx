@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import React from 'react'
 import blog1 from '../../../../public/images/stone-matrix.jpg'
 import blog2 from '../../../../public/images/SMA-mix.jpg'
@@ -78,7 +78,12 @@ const OurTechnology = () => {
                                 </Link>
                                 <p className='text-base line-clamp-3 text-ellipsis'>{BlogItems.BlogDesc}</p>
 
-                                <Link href={BlogItems.BlogLink} className='py-2 block mt-3 w-fit px-6 bg-transparent hover:bg-Light border-2 hover:border-Light border-primaryColor font-semibold text-primaryColor duration-300 rounded-full'>{BlogItems.BlogBtn}</Link>
+                                <Link href={BlogItems.BlogLink} legacyBehavior>
+    <a className='py-2 block mt-3 w-fit px-6 bg-transparent hover:bg-Light border-2 hover:border-Light border-primaryColor font-semibold text-primaryColor duration-300 rounded-full'>
+        {BlogItems.BlogBtn}
+    </a>
+</Link>
+
                             </div>
                         </div>
                     ))}

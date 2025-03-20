@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+// import ContactImg from "../../../public/images/construction-1.jpg"
 
 export default function Contact() {
   return (

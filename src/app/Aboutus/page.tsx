@@ -12,7 +12,8 @@ import {
 } from "lucide-react";
 import mapImg from "../../../public/images/contact.png";
 import OurProject from "../component/Home/OurProject"
-import logo from "../../../public/images/logo.png";
+// import logo from "../../../public/images/logo.png";
+import Nature from "../../../public/images/about-hero.png"
 
 export default function About() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -22,7 +23,7 @@ export default function About() {
     }, 3000);
     return () => clearInterval(interval); 
   }, []);
-  const images = [logo, logo]; 
+  const images = [Nature, Nature]; 
 
   return (
     <div className="min-h-screen bg-[var(--background)]">

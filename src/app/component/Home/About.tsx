@@ -12,13 +12,7 @@ const About = () => {
             <div>
               <div className="xl:w-9/12">
                 <p className="text-Body text-lg font-medium mb-3">
-                  Established in 1958, Narsingh Dass Group (India) rides on the
-                  values of Trust, Compassion, Togetherness and Excellence.
-                  Shivananda Marketing Pvt. Ltd. offers specialty chemicals in
-                  emerging and growing sectors of our society. With a focus on
-                  building materials, it has become one of the leading solution
-                  providers of high-performance chemicals and fibres in the
-                  infrastructure sector of India.
+                Established in 1958, Narsingh Dass Group is a multifarious trading group which is based on the values of Trust, Compassion, Togetherness and Excellence. Shivananda Marketing Pvt. Ltd. offers innovative technologies and specialty materials in emerging and growing sectors of our society. Over the years, it has become one of the leading solution providers of high-performance chemicals and fibres in the paper, building and infrastructure sector of India
                 </p>
               </div>
             </div>

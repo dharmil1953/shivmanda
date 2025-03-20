@@ -431,6 +431,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
           </div>
         </div>
       </footer>
-    </main>
+    </main> 
+    
   );
 }

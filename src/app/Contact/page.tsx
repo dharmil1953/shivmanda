@@ -1,9 +1,8 @@
 "use client";
 
-import React from 'react';
 import { motion } from 'framer-motion';
+import { Mail, MapPin, Phone } from 'lucide-react';
 import Image from 'next/image';
-import { Mail, Phone, MapPin, Send } from 'lucide-react';
 // import ContactImg from "../../../public/images/construction-1.jpg"
 
 export default function Contact() {
@@ -18,11 +17,11 @@ export default function Contact() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              Get in touch with us
+                Get in touch with us
               </h1>
               <p className="text-lg md:text-xl mb-8">
-              Please fill in your details and our dedicated team will reach out to you within 24 hours
-Looking forward to discussing opportunities with you
+                Please fill in your details and our dedicated team will reach out to you within 24 hours
+                Looking forward to discussing opportunities with you
 
               </p>
             </motion.div>
@@ -50,7 +49,7 @@ Looking forward to discussing opportunities with you
               {
                 icon: Phone,
                 title: "Call Us",
-                details: ["+91 9873173214",  "+91 9205992676"],
+                details: ["+91 9873173214", "+91 9205992676"],
               },
               {
                 icon: Mail,
@@ -78,104 +77,120 @@ Looking forward to discussing opportunities with you
               </motion.div>
             ))}
           </div>
-
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
-            >
-              <h2 className="text-3xl font-bold mb-8 text-center">
-                Send Us a Message
-              </h2>
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--text-body)] mb-2">
-                      First Name*
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-[var(--secondary)]/20 focus:outline-none focus:border-[var(--primary)]"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--text-body)] mb-2">
-                      Last Name*
-                    </label>
-                    <input
-                      type="text"
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-[var(--secondary)]/20 focus:outline-none focus:border-[var(--primary)]"
-                      placeholder="Doe"
-                    />
-                  </div>
+          <section className="py-12 sm:py-14 md:py-16 lg:py-20 ">
+            <div className="container mx-auto px-4 md:px-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <iframe
+                    title="Google Map"
+                    className="w-full h-96"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3497.534254763913!2d77.1993044!3d28.6758928!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd33d637a8e3%3A0x89f24efc933b0f71!2sShakti%20Nagar%2C%20Delhi%2C%20110007!5e0!3m2!1sen!2sin!4v1693846382937!5m2!1sen!2sin"
+                    allowFullScreen
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
-
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--text-body)] mb-2">
-                      Email Address*
-                    </label>
-                    <input
-                      type="email"
-                      required
-                      className="w-full px-4 py-3 rounded-lg border border-[var(--secondary)]/20 focus:outline-none focus:border-[var(--primary)]"
-                      placeholder="john@example.com"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium text-[var(--text-body)] mb-2">
-                      Phone Number
-                    </label>
-                    <input
-                      type="tel"
-                      className="w-full px-4 py-3 rounded-lg border border-[var(--secondary)]/20 focus:outline-none focus:border-[var(--primary)]"
-                      placeholder="+1 (555) 000-0000"
-                    />
-                  </div>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-[var(--text-body)] mb-2">
-                    Project Type*
-                  </label>
-                  <select
-                    required
-                    className="w-full px-4 py-3 rounded-lg border border-[var(--secondary)]/20 focus:outline-none focus:border-[var(--primary)]"
-                  >
-                    <option value="">Select Project Type</option>
-                    <option value="commercial">Commercial Development</option>
-                    <option value="industrial">Industrial Construction</option>
-                    <option value="infrastructure">Infrastructure Project</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-[var(--text-body)] mb-2">
-                    Message*
-                  </label>
-                  <textarea
-                    required
-                    rows={6}
-                    className="w-full px-4 py-3 rounded-lg border border-[var(--secondary)]/20 focus:outline-none focus:border-[var(--primary)]"
-                    placeholder="Tell us about your project..."
-                  ></textarea>
-                </div>
-
-                <button 
-                  type="submit"
-                  className="w-full bg-[var(--primary)] text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-[var(--primary)]/90 transition-colors flex items-center justify-center gap-2"
+                {/* Contact Form */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  className="bg-white rounded-2xl shadow-xl p-8 md:p-12"
                 >
-                  <Send className="w-5 h-5" />
-                  Send Message
-                </button>
-              </form>
-            </motion.div>
-          </div>
+                  <h2 className="text-3xl font-bold mb-8 text-center">
+                    Send Us a Message
+                  </h2>
+                  <form className="space-y-6">
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          First Name*
+                        </label>
+                        <input
+                          type="text"
+                          required
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
+                          placeholder="John"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Last Name*
+                        </label>
+                        <input
+                          type="text"
+                          required
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
+                          placeholder="Doe"
+                        />
+                      </div>
+                    </div>
+
+                    <div className="grid md:grid-cols-2 gap-6">
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Email Address*
+                        </label>
+                        <input
+                          type="email"
+                          required
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
+                          placeholder="john@example.com"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-sm font-medium text-gray-700 mb-2">
+                          Phone Number
+                        </label>
+                        <input
+                          type="tel"
+                          className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
+                          placeholder="+1 (555) 000-0000"
+                        />
+                      </div>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Project Type*
+                      </label>
+                      <select
+                        required
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
+                      >
+                        <option value="">Select Project Type</option>
+                        <option value="commercial">Commercial Development</option>
+                        <option value="industrial">Industrial Construction</option>
+                        <option value="infrastructure">Infrastructure Project</option>
+                        <option value="other">Other</option>
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-sm font-medium text-gray-700 mb-2">
+                        Message*
+                      </label>
+                      <textarea
+                        required
+                        rows={6}
+                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
+                        placeholder="Tell us about your project..."
+                      ></textarea>
+                    </div>
+
+                    <button
+                      type="submit"
+                      className="w-full bg-blue-500 text-white px-8 py-4 rounded-full text-lg font-medium hover:bg-blue-600 transition-colors flex items-center justify-center gap-2"
+                    >
+                      Send Message
+                    </button>
+                  </form>
+                </motion.div>
+
+                {/* Google Map */}
+
+              </div>
+            </div>
+          </section>
         </div>
       </section>
 

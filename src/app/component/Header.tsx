@@ -1,20 +1,20 @@
 "use client";
-import React, { useState, useRef, useEffect } from "react";
-import logo from "../../../public/images/logo.svg";
-import Link from "next/link";
+import { ChevronDown, Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { Menu, X, ChevronDown } from "lucide-react";
+import React, { useEffect, useRef, useState } from "react";
+import logo from "../../../public/images/logo.svg";
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/Aboutus", label: "About Us" },
-  { 
-    href: "#", 
-    label: "Products",  
+  {
+    href: "#",
+    label: "Products",
     submenu: [
-      {href: "/Coating", label: "Construction Solutions"},
-      {href: "/infrastructure", label: "Coating and Masterbatch Solutions"}
+      { href: "/Coating", label: "Construction Solutions" },
+      { href: "/infrastructure", label: "Coating and Masterbatch Solutions" }
     ],
   },
   { href: "/Blog", label: "Knowledge Hub" },
@@ -85,20 +85,18 @@ const Header = () => {
                   <div>
                     <button
                       ref={buttonRef}
-                      className={`text-Dark hover:text-primaryColor leading-5 md:px-3 lg:px-5 py-2 rounded-full duration-300 font-medium flex items-center gap-1 ${
-                        isActive ? "bg-primaryColor !text-Light" : ""
-                      }`}
+                      className={`text-Dark hover:text-primaryColor leading-5 md:px-3 lg:px-5 py-2 rounded-full duration-300 font-medium flex items-center gap-1 ${isActive ? "bg-primaryColor !text-Light" : ""
+                        }`}
                       onClick={(e) => toggleSubmenu(link.label, e)}
                     >
                       {link.label}
                       <ChevronDown
                         size={16}
-                        className={`transition-transform duration-200 ${
-                          isSubmenuOpen ? "rotate-180" : ""
-                        }`}
+                        className={`transition-transform duration-200 ${isSubmenuOpen ? "rotate-180" : ""
+                          }`}
                       />
                     </button>
-                    
+
                     {/* Desktop Submenu */}
                     {isSubmenuOpen && (
                       <div
@@ -109,9 +107,8 @@ const Header = () => {
                           <Link
                             key={sub.href}
                             href={sub.href}
-                            className={`block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 ${
-                              pathname === sub.href ? "bg-primaryColor/10" : ""
-                            }`}
+                            className={`block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 ${pathname === sub.href ? "bg-primaryColor/10" : ""
+                              }`}
                           >
                             {sub.label}
                           </Link>
@@ -122,9 +119,8 @@ const Header = () => {
                 ) : (
                   <Link
                     href={link.href}
-                    className={`text-Dark hover:text-primaryColor leading-5 md:px-3 lg:px-5 py-2 rounded-full duration-300 font-medium ${
-                      isActive ? "bg-primaryColor !text-Light" : ""
-                    }`}
+                    className={`text-Dark hover:text-primaryColor leading-5 md:px-3 lg:px-5 py-2 rounded-full duration-300 font-medium ${isActive ? "bg-primaryColor !text-Light" : ""
+                      }`}
                   >
                     {link.label}
                   </Link>
@@ -148,12 +144,12 @@ const Header = () => {
         <>
           <div
             className="fixed inset-0 top-[72px] bg-black/50 backdrop-blur-sm z-40"
-            // onClick={() => setMenuOpen(false)}
+          // onClick={() => setMenuOpen(false)}
           />
-          
-          <nav 
+
+          <nav
             className="fixed top-[72px] left-0 right-0 bg-white shadow-md z-50 max-h-[calc(100vh-72px)] overflow-y-auto"
-            // onClick={(e) => e.stopPropagation()}
+          // onClick={(e) => e.stopPropagation()}
           >
             <div className="container mx-auto py-4 px-4">
               {navLinks.map((link) => {
@@ -165,30 +161,27 @@ const Header = () => {
                     {link.submenu ? (
                       <>
                         <button
-                          className={`w-full text-left text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium flex items-center justify-between cursor-pointer ${
-                            isActive ? "bg-primaryColor/10" : ""
-                          }`}
+                          className={`w-full text-left text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium flex items-center justify-between cursor-pointer ${isActive ? "bg-primaryColor/10" : ""
+                            }`}
                           onClick={(e) => toggleSubmenu(link.label, e)}
                         >
                           {link.label}
                           <ChevronDown
                             size={18}
-                            className={`transition-transform duration-200 ${
-                              isSubmenuOpen ? "rotate-180" : ""
-                            }`}
+                            className={`transition-transform duration-200 ${isSubmenuOpen ? "rotate-180" : ""
+                              }`}
                           />
                         </button>
-                        
+
                         {/* Mobile Submenu */}
                         {isSubmenuOpen && (
-                          <div className="mt-1 ml-4 space-y-1">
+                          <div className="mt-1 ml-4 space-y-1" ref={submenuRef}>
                             {link.submenu.map((sub) => (
                               <Link
                                 key={sub.href}
                                 href={sub.href}
-                                className={`w-full text-left block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg cursor-pointer ${
-                                  pathname === sub.href ? "bg-primaryColor/10" : ""
-                                }`}
+                                className={`w-full text-left block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg cursor-pointer ${pathname === sub.href ? "bg-primaryColor/10" : ""
+                                  }`}
                               >
                                 {sub.label}
                               </Link>
@@ -199,9 +192,8 @@ const Header = () => {
                     ) : (
                       <button
                         onClick={() => navigateTo(link.href)}
-                        className={`w-full text-left block text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium cursor-pointer ${
-                          isActive ? "bg-primaryColor !text-Light" : ""
-                        }`}
+                        className={`w-full text-left block text-Dark hover:text-primaryColor px-4 py-2 rounded-lg font-medium cursor-pointer ${isActive ? "bg-primaryColor !text-Light" : ""
+                          }`}
                       >
                         {link.label}
                       </button>

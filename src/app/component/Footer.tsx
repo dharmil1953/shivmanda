@@ -3,17 +3,17 @@ import Link from 'next/link'
 import React from 'react'
 
 const ProductList = [
-    { productLink: "/Products/antrocel-g", productTitle: "Antrocel-g " },
-    { productLink: "/Products/steel-fibre", productTitle: "Steel Fibre" },
-    { productLink: "/Products/synthetic-fibre", productTitle: "Synthetic Fibre" },
-    { productLink: "/Products/cellulose-fiber-pellets", productTitle: "Cellulose Fiber Pellets" },
-    { productLink: "/Products/anti-stripping-agent", productTitle: "Anti Stripping Agent" },
-    { productLink: "/Products/silica-fume", productTitle: "Silica Fume" },
+    { productLink: "/infrastructure", productTitle: "Construction Solutions " },
+    { productLink: "/Coating", productTitle: "Coating and Masterbatch Solutions" },
+    { productLink: "https://indiapaper.com/", productTitle: "Paper" },
+    // { productLink: "/Products/cellulose-fiber-pellets", productTitle: "Cellulose Fiber Pellets" },
+    // { productLink: "/Products/anti-stripping-agent", productTitle: "Anti Stripping Agent" },
+    // { productLink: "/Products/silica-fume", productTitle: "Silica Fume" },
 ]
 
 const Footer = () => {
-    const firstHalf = ProductList.slice(0, ProductList.length / 2);
-    const secondHalf = ProductList.slice(ProductList.length / 2);
+    // const firstHalf = ProductList.slice(0, ProductList.length / 2);
+    // const secondHalf = ProductList.slice(ProductList.length / 2);
 
     return (
         <footer className='pt-12 md:pt-14 lg:pt-16 pb-16 md:pb-18 lg:pb-20 bg-gray-100'>
@@ -27,10 +27,16 @@ const Footer = () => {
                         </h2>
                         <p className='text-sm text-Dark mb-2'>Call us: 9AM - 6 PM</p>
                         <Link href='tel:+919873173214' className='text-primaryColor text-lg sm:text-xl font-semibold block mb-3'>
-                            +91 9873173214 / +91 9205992676
+                            +91 9873173214
+                        </Link> 
+                        <Link href='tel:+91 9205992676' className='text-primaryColor text-lg sm:text-xl font-semibold block mb-3'>
+                            +91 9205992676
                         </Link>
                         <Link href='mailto:smpl@narsinghdass.com' className='text-base text-Dark font-medium block mb-3 hover:text-primaryColor duration-300'>
-                            smpl@narsinghdass.com / material@narsinghdass.com
+                            smpl@narsinghdass.com
+                        </Link>
+                        <Link href='mailto:material@narsinghdass.com' className='text-base text-Dark font-medium block mb-3 hover:text-primaryColor duration-300'>
+                            material@narsinghdass.com
                         </Link>
                     </div>
 
@@ -39,12 +45,12 @@ const Footer = () => {
                         <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-4'>
                             Help & Support
                         </h2>
-                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                        <Link href="/Contact" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
                             Contact Us
                         </Link>
-                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                        {/* <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
                             Our Services
-                        </Link>
+                        </Link> */}
                     </div>
 
                     {/* Product Categories */}
@@ -52,9 +58,9 @@ const Footer = () => {
                         <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-4'>
                             Product Categories
                         </h2>
-                        <div className="grid grid-cols-2 gap-x-6">
+                        <div className="grid grid-cols-1 gap-x-6">
                             <ul>
-                                {firstHalf.map((product, index) => (
+                                {ProductList.map((product, index) => (
                                     <li key={index}>
                                         <Link href={product.productLink} className='block text-base md:text-lg text-Dark mb-2 hover:text-primaryColor'>
                                             {product.productTitle}
@@ -62,7 +68,7 @@ const Footer = () => {
                                     </li>
                                 ))}
                             </ul>
-                            <ul>
+                            {/* <ul>
                                 {secondHalf.map((product, index) => (
                                     <li key={index}>
                                         <Link href={product.productLink} className='block text-base md:text-lg text-Dark mb-2 hover:text-primaryColor'>
@@ -70,7 +76,7 @@ const Footer = () => {
                                         </Link>
                                     </li>
                                 ))}
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
 
@@ -79,10 +85,10 @@ const Footer = () => {
                         <h2 className='text-lg lg:text-xl font-semibold text-primaryColor uppercase mb-4'>
                             Company Information
                         </h2>
-                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                        <Link href="/Blog" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
                             Blog
                         </Link>
-                        <Link href="#" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
+                        <Link href="/Aboutus" className='text-base md:text-lg text-Dark block mb-2 hover:text-primaryColor'>
                             About
                         </Link>
                     </div>

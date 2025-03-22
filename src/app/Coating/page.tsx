@@ -8,7 +8,7 @@
 // import MethylCellulose from '../../../public/images/methyl-cellulose.jpg';
 // import SodiumAlginate from '../../../public/images/sodium-alginate.jpg';
 
-// import SingleImage from '../../../public/images/steel-1.jpg'; 
+// import SingleImage from '../../../public/images/steel-1.jpg';
 
 // import Image from 'next/image';
 // import Link from 'next/link';
@@ -157,103 +157,109 @@
 
 // export default CoatingPage;
 
+"use client";
+import React, { useState, useEffect } from "react";
+import Image from "next/image";
+import Link from "next/link";
+import service from "../../../public/images/service.png";
 
-'use client'
-import React, { useState, useEffect } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import service from "../../../public/images/service.png"
+import TitaniumDioxide1 from "../../../public/images/titanium-dioxide.png";
+import TitaniumDioxide2 from "../../../public/images/titanium-dioxide-2.jpg";
+import TitaniumDioxide3 from "../../../public/images/titanium-dioxide-3.jpg";
 
-import TitaniumDioxide1 from '../../../public/images/titanium-dioxide.png';
-import TitaniumDioxide2 from '../../../public/images/titanium-dioxide-2.jpg';
-import TitaniumDioxide3 from '../../../public/images/titanium-dioxide-3.jpg';
-
-import TiQReplacement1 from '../../../public/images/steel-1.jpg';
+import TiQReplacement1 from "../../../public/images/steel-1.jpg";
 // import TiQReplacement2 from '../../../public/images/steel-2.jpg';
 // import TiQReplacement3 from '../../../public/images/steel-3.jpg';
 
 // import SyntheticFibre from '../../../public/images/synthetic-1.png';
-import SyntheticFibre2 from '../../../public/images/synthetic-2.jpg';
-import SyntheticFibre3 from '../../../public/images/synthetic-3.jpg';
+import SyntheticFibre2 from "../../../public/images/synthetic-2.jpg";
+import SyntheticFibre3 from "../../../public/images/synthetic-3.jpg";
 
-import StyreneButadieneLatex from '../../../public/images/styrene-butadiene-latex.jpg';
-import StyreneButadieneLatex2 from '../../../public/images/styrene-butadiene-latex-1.jpg';
+import StyreneButadieneLatex from "../../../public/images/styrene-butadiene-latex.jpg";
+import StyreneButadieneLatex2 from "../../../public/images/styrene-butadiene-latex-1.jpg";
 // import StyreneButadieneLatex3 from '../../../public/images/styrene-butadiene-latex-3.jpg';
 
-import StyreneAcrylicLatex from '../../../public/images/styrene-acrylic-latex.jpg';
-import StyreneAcrylicLatex2 from '../../../public/images/styrene-acrylic-latex-1.jpg';
+import StyreneAcrylicLatex from "../../../public/images/styrene-acrylic-latex.jpg";
+import StyreneAcrylicLatex2 from "../../../public/images/styrene-acrylic-latex-1.jpg";
 // import StyreneAcrylicLatex3 from '../../../public/images/styrene-acrylic-latex-3.jpg';
 
 // import EthylCellulose from '../../../public/images/ethyl-cellulose.jpg';
-import EthylCellulose2 from '../../../public/images/ethyl-cellulose-2.jpg';
-import EthylCellulose3 from '../../../public/images/ethyl-cellulose-3.jpg';
+import EthylCellulose2 from "../../../public/images/ethyl-cellulose-2.jpg";
+import EthylCellulose3 from "../../../public/images/ethyl-cellulose-3.jpg";
 
 // import MethylCellulose from '../../../public/images/methyl-cellulose.jpg';
-import MethylCellulose2 from '../../../public/images/methyl-cellulose-2.jpg';
-import MethylCellulose3 from '../../../public/images/methyl-cellulose-3.jpg';
+import MethylCellulose2 from "../../../public/images/methyl-cellulose-2.jpg";
+import MethylCellulose3 from "../../../public/images/methyl-cellulose-3.jpg";
 
-import SodiumAlginate from '../../../public/images/sodium-alginate.jpg';
-import SodiumAlginate2 from '../../../public/images/sodium-alginate-2.jpg';
-import SodiumAlginate3 from '../../../public/images/sodium-alginate-3.jpg';
+import SodiumAlginate from "../../../public/images/sodium-alginate.jpg";
+import SodiumAlginate2 from "../../../public/images/sodium-alginate-2.jpg";
+import SodiumAlginate3 from "../../../public/images/sodium-alginate-3.jpg";
 
-
-import { StaticImageData } from 'next/image';
+import { StaticImageData } from "next/image";
 
 interface Product {
   ProjectLink: string;
-  ProjectImages: StaticImageData[];  // Updated to StaticImageData[]
+  ProjectImages: StaticImageData[]; // Updated to StaticImageData[]
   ProjectTitle: string;
   ProjectDescription: string;
 }
 
 const OurProducts = [
   {
-    ProjectLink: '/Products/titanium-dioxide',
+    ProjectLink: "/Products/titanium-dioxide",
     ProjectImages: [TitaniumDioxide1, TitaniumDioxide2, TitaniumDioxide3],
-    ProjectTitle: 'Titanium Dioxide',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectTitle: "Titanium Dioxide",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: '/Products/tiq-replacement',
+    ProjectLink: "/Products/tiq-replacement",
     ProjectImages: [TiQReplacement1],
-    ProjectTitle: 'TiQ - Replacement of TiO2',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectTitle: "TiQ - Replacement of TiO2",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: '/Products/synthetic-fibre',
+    ProjectLink: "/Products/synthetic-fibre",
     ProjectImages: [SyntheticFibre2, SyntheticFibre3],
-    ProjectTitle: 'Synthetic Fibre',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectTitle: "Synthetic Fibre",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: '/Products/styrene-butadiene-latex',
+    ProjectLink: "/Products/styrene-butadiene-latex",
     ProjectImages: [StyreneButadieneLatex, StyreneButadieneLatex2],
-    ProjectTitle: 'Styrene Butadiene Latex',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectTitle: "Styrene Butadiene Latex",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: '/Products/styrene-acrylic-latex',
+    ProjectLink: "/Products/styrene-acrylic-latex",
     ProjectImages: [StyreneAcrylicLatex, StyreneAcrylicLatex2],
-    ProjectTitle: 'Styrene Acrylic Latex',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectTitle: "Styrene Acrylic Latex",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: '/Products/ethyl-cellulose',
-    ProjectImages: [ EthylCellulose2, EthylCellulose3],
-    ProjectTitle: 'Ethyl Cellulose',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectLink: "/Products/ethyl-cellulose",
+    ProjectImages: [EthylCellulose2, EthylCellulose3],
+    ProjectTitle: "Ethyl Cellulose",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: '/Products/methyl-cellulose',
-    ProjectImages: [ MethylCellulose2, MethylCellulose3],
-    ProjectTitle: 'Methyl Cellulose (HPMC)',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectLink: "/Products/methyl-cellulose",
+    ProjectImages: [MethylCellulose2, MethylCellulose3],
+    ProjectTitle: "Methyl Cellulose (HPMC)",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: '/Products/sodium-alginate',
+    ProjectLink: "/Products/sodium-alginate",
     ProjectImages: [SodiumAlginate, SodiumAlginate2, SodiumAlginate3],
-    ProjectTitle: 'Sodium Alginate',
-    ProjectDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    ProjectTitle: "Sodium Alginate",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
 ];
 
@@ -281,7 +287,7 @@ const ProductCard = ({ product }: { product: Product }) => {
             width={500} // Increased width for better clarity
             height={500} // Increased height for better clarity
             className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
-              index === currentImageIndex ? 'opacity-100' : 'opacity-0'
+              index === currentImageIndex ? "opacity-100" : "opacity-0"
             }`}
           />
         ))}
@@ -293,7 +299,9 @@ const ProductCard = ({ product }: { product: Product }) => {
         >
           {product.ProjectTitle}
         </Link>
-        <p className="text-text-dark mt-2 text-sm">{product.ProjectDescription}</p>
+        <p className="text-text-dark mt-2 text-sm">
+          {product.ProjectDescription}
+        </p>
       </div>
     </div>
   );
@@ -301,55 +309,49 @@ const ProductCard = ({ product }: { product: Product }) => {
 
 const CoatingPage = () => {
   return (
-    <div className='bg-background text-text-dark'>
+    <div className="bg-background text-text-dark">
       {/* Headline Section with Background Image */}
       <section className="relative h-[90vh] overflow-hidden">
-  {/* Background image with parallax effect */}
-  <div 
-    className="absolute inset-0 bg-cover bg-center transform scale-110 transition-transform duration-700"
-    style={{ 
-      backgroundImage: "url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1470&auto=format&fit=crop')",
-      backgroundAttachment: "fixed"
-    }}
-  ></div>
-  
-  {/* Gradient overlay for better text visibility */}
-  <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-70"></div>
-  
-  {/* Animated accent elements */}
-  <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute w-96 h-96 rounded-full bg-yellow-500 opacity-20 blur-3xl -top-20 -left-20 animate-pulse"></div>
-    <div className="absolute w-80 h-80 rounded-full bg-blue-600 opacity-20 blur-3xl bottom-10 right-10 animate-pulse" style={{animationDelay: "1.5s"}}></div>
-  </div>
-  
-  {/* Content */}
-  <div className="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center items-center">
-    <div className="text-center max-w-5xl mx-auto">
-      <h3 className="text-primaryColor font-bold text-xl mb-4 tracking-wider uppercase">Industry Leaders Since 1989</h3>
-      <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-        Advanced Solutions for <span className="text-primaryColor">Masterbatches</span>, Paints, Inks and Coatings
-      </h1>
-     
-    </div>
-  </div>
-  
-</section>
+        {/* Background image with parallax effect */}
+        <div
+          className="absolute inset-0 bg-cover bg-center transform scale-110 transition-transform duration-700"
+          style={{
+            backgroundImage:
+              "url('https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?q=80&w=1470&auto=format&fit=crop')",
+            backgroundAttachment: "fixed",
+          }}
+        ></div>
+
+        {/* Gradient overlay for better text visibility */}
+        <div className="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-70"></div>
+
+        {/* Animated accent elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute w-96 h-96 rounded-full bg-yellow-500 opacity-20 blur-3xl -top-20 -left-20 animate-pulse"></div>
+          <div
+            className="absolute w-80 h-80 rounded-full bg-blue-600 opacity-20 blur-3xl bottom-10 right-10 animate-pulse"
+            style={{ animationDelay: "1.5s" }}
+          ></div>
+        </div>
+
+        {/* Content */}
+        <div className="container mx-auto px-4 relative z-10 h-full flex flex-col justify-center items-center">
+          <div className="text-center max-w-5xl mx-auto">
+            <h3 className="text-primaryColor font-bold text-xl mb-4 tracking-wider uppercase">
+              Industry Leaders Since 1989
+            </h3>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+              Advanced Solutions for{" "}
+              <span className="text-primaryColor">Masterbatches</span>, Paints,
+              Inks and Coatings
+            </h1>
+          </div>
+        </div>
+      </section>
 
       {/* Full-Width Image Section */}
-      <section className="py-16 px-4 md:px-8">
-  <div className="container mx-auto">
-    <div className="relative w-full h-auto aspect-[16/9] rounded-xl overflow-hidden shadow-2xl">
-      <Image
-        src={service}
-        alt="Services Overview"
-        layout="fill"
-        objectFit="contain"
-        className="w-full h-full"
-      />
-    </div>
-  </div>
-</section>
-{/* <section className="relative w-full py-16 px-4 md:px-8 bg-black text-white">
+
+      {/* <section className="relative w-full py-16 px-4 md:px-8 bg-black text-white">
       <div className="container mx-auto">
         <h2 className="text-3xl font-bold mb-8 text-yellow-400">OUR SERVICES</h2>
         
@@ -361,7 +363,7 @@ const CoatingPage = () => {
 
         <div className="relative px-4 sm:px-6 lg:px-8 py-10">
           {/* Dashed Circle */}
-          {/* <div className="absolute w-full h-full max-w-4xl mx-auto inset-0" style={{
+      {/* <div className="absolute w-full h-full max-w-4xl mx-auto inset-0" style={{
             border: '4px dashed #FFD700',
             borderRadius: '50%',
             top: '50%',
@@ -369,16 +371,16 @@ const CoatingPage = () => {
             transform: 'translate(-50%, -50%)'
           }}></div> */}
 
-          {/* What we do? and Single solution text */}
-          {/* <div className="text-center mb-16">
+      {/* What we do? and Single solution text */}
+      {/* <div className="text-center mb-16">
             <h3 className="text-2xl text-yellow-400 font-bold mb-4">what we do?</h3>
           </div>
           <div className="text-center mt-32">
             <h3 className="text-2xl text-yellow-400 font-bold">single solution</h3>
           </div> */}
 
-          {/* Service Circles */}
-          {/* <div className="flex flex-wrap justify-center">
+      {/* Service Circles */}
+      {/* <div className="flex flex-wrap justify-center">
             <div className="w-36 h-36 rounded-full border-2 border-yellow-400 flex items-center justify-center text-center m-2 sm:m-4">
               <p className="text-sm px-2">training and further education for customers</p>
             </div>
@@ -406,12 +408,12 @@ const CoatingPage = () => {
           </div>
         </div>
       </div> */}
-    {/* </section>   */}
+      {/* </section>   */}
 
       {/* Products Grid Section */}
-      <section className='py-12 sm:py-14 md:py-16 lg:py-20 bg-light'>
+      <section className="py-12 sm:py-14 md:py-16 lg:py-20 bg-light">
         <div className="container mx-auto px-4 md:px-8">
-          <div className='mb-12 text-center'>
+          <div className="mb-12 text-center">
             <h2 className="mb-5 text-primary text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
               Our <span className="font-bold uppercase">PRODUCTS</span>
             </h2>
@@ -419,10 +421,26 @@ const CoatingPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {OurProducts.map((product, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+              >
                 <ProductCard product={product} />
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-16 px-4 md:px-8">
+        <div className="container mx-auto">
+          <div className="relative w-full h-auto aspect-[16/9] rounded-xl overflow-hidden shadow-2xl">
+            <Image
+              src={service}
+              alt="Services Overview"
+              layout="fill"
+              objectFit="contain"
+              className="w-full h-full"
+            />
           </div>
         </div>
       </section>

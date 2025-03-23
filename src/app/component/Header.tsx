@@ -13,7 +13,18 @@ const navLinks = [
     href: "#",
     label: "Products",
     submenu: [
-      { href: "/Coating", label: "Construction Solutions" },
+      { 
+        href: "/Coating", 
+        label: "Construction Solutions",
+        subsubmenu: [
+          { href: "/Products/antrocel-g", label: "Antrocel-g " },
+          { href: "/Products/steel-fibre", label: "Steel Fibre" },
+          { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
+          { href: "/Products/cellulose-fiber-pellets", label: "Cellulose Fiber Pellets" },
+          { href: "/Products/anti-stripping-agent", label: "Anti Stripping Agent" },
+          { href: "/Products/silica-fume", label: "Silica Fume" },
+        ]
+      },
       { href: "/infrastructure", label: "Coating and Masterbatch Solutions" }
     ],
   },
@@ -26,8 +37,11 @@ const Header = () => {
   const router = useRouter();
   const [menuOpen, setMenuOpen] = useState(false);
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null);
+  const [activeSubSubmenu, setActiveSubSubmenu] = useState<string | null>(null);
   const submenuRef = useRef<HTMLDivElement>(null);
+  const subSubmenuRef = useRef<HTMLDivElement>(null);
   const buttonRef = useRef<HTMLButtonElement>(null);
+  const subButtonRef = useRef<HTMLButtonElement>(null);
 
   // Close submenu when clicking outside
   useEffect(() => {
@@ -36,9 +50,14 @@ const Header = () => {
         submenuRef.current &&
         !submenuRef.current.contains(event.target as Node) &&
         buttonRef.current &&
-        !buttonRef.current.contains(event.target as Node)
+        !buttonRef.current.contains(event.target as Node) &&
+        subSubmenuRef.current &&
+        !subSubmenuRef.current.contains(event.target as Node) &&
+        subButtonRef.current &&
+        !subButtonRef.current.contains(event.target as Node)
       ) {
         setActiveSubmenu(null);
+        setActiveSubSubmenu(null);
       }
     };
 
@@ -50,23 +69,38 @@ const Header = () => {
   useEffect(() => {
     setMenuOpen(false);
     setActiveSubmenu(null);
+    setActiveSubSubmenu(null);
   }, [pathname]);
 
   const toggleSubmenu = (label: string, event: React.MouseEvent) => {
     // Stop event from bubbling up
     event.preventDefault();
     event.stopPropagation();
+    
+    if (activeSubmenu !== label) {
+      setActiveSubSubmenu(null);
+    }
+    
     setActiveSubmenu(activeSubmenu === label ? null : label);
+  };
+
+  const toggleSubSubmenu = (label: string, event: React.MouseEvent) => {
+    // Stop event from bubbling up
+    event.preventDefault();
+    event.stopPropagation();
+    setActiveSubSubmenu(activeSubSubmenu === label ? null : label);
   };
 
   // Forced navigation function
   const navigateTo = (href: string) => {
     router.push(href);
     setMenuOpen(false);
+    setActiveSubmenu(null);
+    setActiveSubSubmenu(null);
   };
 
   return (
-    <header className="bg-Light shadow-md sticky top-0 z-50">
+    <header className="bg-Light shadow-md sticky top-0 z-40">
       <div className="container mx-auto flex items-center justify-between px-4 py-3">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-gray-800">
@@ -101,18 +135,58 @@ const Header = () => {
                     {isSubmenuOpen && (
                       <div
                         ref={submenuRef}
-                        className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg overflow-hidden py-1"
+                        className="absolute left-0 mt-2 w-64 bg-white rounded-lg shadow-lg py-1 z-50"
                       >
-                        {link.submenu.map((sub) => (
-                          <Link
-                            key={sub.href}
-                            href={sub.href}
-                            className={`block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 ${pathname === sub.href ? "bg-primaryColor/10" : ""
-                              }`}
-                          >
-                            {sub.label}
-                          </Link>
-                        ))}
+                        {link.submenu.map((sub) => {
+                          const hasSubSubmenu = sub.subsubmenu && sub.subsubmenu.length > 0;
+                          const isSubSubmenuOpen = activeSubSubmenu === sub.label;
+                          
+                          return (
+                            <div key={sub.href} className="relative">
+                              {hasSubSubmenu ? (
+                                <>
+                                  <button
+                                    ref={subButtonRef}
+                                    className={`w-full text-left flex justify-between items-center px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 ${pathname.startsWith(sub.href) ? "bg-primaryColor/10" : ""}`}
+                                    onClick={(e) => toggleSubSubmenu(sub.label, e)}
+                                  >
+                                    {sub.label}
+                                    <ChevronDown
+                                      size={16}
+                                      className={`transition-transform duration-200 ${isSubSubmenuOpen ? "rotate-180" : ""}`}
+                                    />
+                                  </button>
+                                  
+                                  {/* Desktop Sub-Submenu */}
+                                  {isSubSubmenuOpen && (
+                                    <div
+                                      ref={subSubmenuRef}
+                                      className="absolute left-full top-0 w-64 bg-white rounded-lg shadow-lg py-1 z-60"
+                                      style={{ visibility: 'visible', pointerEvents: 'auto' }}
+                                    >
+                                      {sub.subsubmenu.map((subsub) => (
+                                        <Link
+                                          key={subsub.href}
+                                          href={subsub.href}
+                                          className={`block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 ${pathname === subsub.href ? "bg-primaryColor/10" : ""}`}
+                                        >
+                                          {subsub.label}
+                                        </Link>
+                                      ))}
+                                    </div>
+                                  )}
+                                </>
+                              ) : (
+                                <Link
+                                  href={sub.href}
+                                  className={`block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 ${pathname === sub.href ? "bg-primaryColor/10" : ""}`}
+                                >
+                                  {sub.label}
+                                </Link>
+                              )}
+                            </div>
+                          );
+                        })}
                       </div>
                     )}
                   </div>
@@ -144,12 +218,10 @@ const Header = () => {
         <>
           <div
             className="fixed inset-0 top-[72px] bg-black/50 backdrop-blur-sm z-40"
-          // onClick={() => setMenuOpen(false)}
           />
 
           <nav
             className="fixed top-[72px] left-0 right-0 bg-white shadow-md z-50 max-h-[calc(100vh-72px)] overflow-y-auto"
-          // onClick={(e) => e.stopPropagation()}
           >
             <div className="container mx-auto py-4 px-4">
               {navLinks.map((link) => {
@@ -176,16 +248,51 @@ const Header = () => {
                         {/* Mobile Submenu */}
                         {isSubmenuOpen && (
                           <div className="mt-1 ml-4 space-y-1" ref={submenuRef}>
-                            {link.submenu.map((sub) => (
-                              <Link
-                                key={sub.href}
-                                href={sub.href}
-                                className={`w-full text-left block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg cursor-pointer ${pathname === sub.href ? "bg-primaryColor/10" : ""
-                                  }`}
-                              >
-                                {sub.label}
-                              </Link>
-                            ))}
+                            {link.submenu.map((sub) => {
+                              const hasSubSubmenu = sub.subsubmenu && sub.subsubmenu.length > 0;
+                              const isSubSubmenuOpen = activeSubSubmenu === sub.label;
+                              
+                              return (
+                                <div key={sub.href} className="mb-1">
+                                  {hasSubSubmenu ? (
+                                    <>
+                                      <button
+                                        className={`w-full text-left px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg flex items-center justify-between ${pathname.startsWith(sub.href) ? "bg-primaryColor/10" : ""}`}
+                                        onClick={(e) => toggleSubSubmenu(sub.label, e)}
+                                      >
+                                        {sub.label}
+                                        <ChevronDown
+                                          size={16}
+                                          className={`transition-transform duration-200 ${isSubSubmenuOpen ? "rotate-180" : ""}`}
+                                        />
+                                      </button>
+                                      
+                                      {/* Mobile Sub-Submenu */}
+                                      {isSubSubmenuOpen && (
+                                        <div className="mt-1 ml-4 space-y-1">
+                                          {sub.subsubmenu.map((subsub) => (
+                                            <button
+                                              key={subsub.href}
+                                              onClick={() => navigateTo(subsub.href)}
+                                              className={`w-full text-left block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg ${pathname === subsub.href ? "bg-primaryColor/10" : ""}`}
+                                            >
+                                              {subsub.label}
+                                            </button>
+                                          ))}
+                                        </div>
+                                      )}
+                                    </>
+                                  ) : (
+                                    <button
+                                      onClick={() => navigateTo(sub.href)}
+                                      className={`w-full text-left block px-4 py-2 text-Dark hover:bg-primaryColor hover:text-Light duration-200 rounded-lg ${pathname === sub.href ? "bg-primaryColor/10" : ""}`}
+                                    >
+                                      {sub.label}
+                                    </button>
+                                  )}
+                                </div>
+                              );
+                            })}
                           </div>
                         )}
                       </>

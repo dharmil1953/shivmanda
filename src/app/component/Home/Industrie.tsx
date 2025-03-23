@@ -27,7 +27,7 @@ const Industriedata = [
     },
     {
         image: icon1,
-        title: "Paper",
+        title: "Paper & Packaging",
         desc: "For Printing, Packaging and Hygiene Segments",
         href:"https://indiapaper.com/",
     }

@@ -11,7 +11,6 @@ const Hero = () => {
             autoPlay
             loop
             preload="auto"
-            loading="lazy"
             poster="/images/bg_poster.png"
             muted
             playsInline

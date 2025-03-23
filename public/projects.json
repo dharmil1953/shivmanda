@@ -2,7 +2,7 @@
   {
     "slug": "synthetic-fibre",
     "name": "Synthetic Fibre",
-    "bgImage": "/images/synthetic-1.png",
+    "bgImage": "/images/synthetic-7.jpg",
     "description": "Empowering Fibre Reinforcement Technology",
     "extraLine": "Recron 3s - Making a stronger world",
     "logoImg": ["/images/realince.jpg", "/images/recron-s3.png"],
@@ -60,7 +60,7 @@
         "value": "Promotes better adhesion within the concrete mix for stronger structural integrity."
       }
     ],
-    "images": ["/images/synthetic-4.jpg", "/images/Synthetic-fibres-5.jpg"]
+    "images": ["/images/synthetic-4.png", "/images/synthetic-2.png"]
   },
   {
     "slug": "antrocel-g",

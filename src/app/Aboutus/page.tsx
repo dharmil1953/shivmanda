@@ -1,19 +1,14 @@
 "use client";
 
 import React from "react";
-import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import {
-  Building2,
-  Trophy,
-  Users,
-  ChevronRight,
-} from "lucide-react";
+import { Building2, Trophy, Users, ChevronRight } from "lucide-react";
 import mapImg from "../../../public/images/contact.png";
-import OurProject from "../component/Home/OurProject"
-// import logo from "../../../public/images/logo.png";
-import Nature from "../../../public/images/about-hero.png"
+import OurProject from "../component/Home/OurProject";
+import Logo from "../../../public/images/logo.png";
+import Nature from "../../../public/images/about-hero.png";
 
 export default function About() {
   const [currentImage, setCurrentImage] = useState(0);
@@ -21,114 +16,112 @@ export default function About() {
     const interval = setInterval(() => {
       setCurrentImage((prev) => (prev === 0 ? 1 : 0));
     }, 3000);
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
-  const images = [Nature, Nature]; 
+  const images = [Nature, Nature];
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
-       <section className="relative min-h-[80vh] flex items-center bg-gradient-to-b from-[var(--secondary)]/10 to-[var(--background)]">
-      <div className="container mx-auto px-6 pt-24">
-     
-        <div className="grid md:grid-cols-2 gap-12 items-center">
- 
+      <section className="relative min-h-[80vh] flex items-center bg-gradient-to-b from-[var(--secondary)]/10 to-[var(--background)]">
+        <div className="container mx-auto px-6 pt-24">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              <h3 className="text-primaryColor text-lg leading-6 mb-3 font-medium">
+                About Us
+              </h3>
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                Narsingh Dass Group is a multifarious trading group, renowned
+                and much admired in the paper industry. With its core business
+                aimed to create an efficient flow of goods between manufacturers
+                and consumers of
+                <span className="font-bold">
+                  {" "}
+                  paper, paperboard & related products
+                </span>
+                , the group has risen consistently to be one of the most trusted
+                business houses of its kind in India.
+              </p>
+
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                With a corporate philosophy based on Knowledge Partnership,
+                Narsingh Dass Group follows a guiding principle of
+                <span className="font-bold"> Customers Grow, We Grow</span>.
+                With this belief, the group has enjoyed consistent growth and
+                expansion over the years and has transformed itself from a
+                trading company to a complete
+                <span className="font-bold"> Solution Marketing Group</span>.
+              </p>
+
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
+                Our Business centers are - Narsingh Dass & Co., Narsingh Dass
+                (Co. Pvt. Ltd.), India Paper Products / Sudhir Papers / Synchem,
+                Shivananda Marketing Pvt. Ltd., Sudhir Papers Limited.
+              </p>
+            </motion.div>
+
+            <motion.div
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.8 }}
+              className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl"
+            >
+              <Image
+                src={images[currentImage]}
+                alt="Modern Construction Project"
+                layout="fill"
+                objectFit="cover"
+                objectPosition="center"
+              />
+            </motion.div>
+          </div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="mt-12"
           >
-            <h3 className="text-primaryColor text-lg leading-6 mb-3 font-medium">
-              About Us
-            </h3>
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Narsingh Dass Group is a multifarious trading group, renowned
-              and much admired in the paper industry. With its core business
-              aimed to create an efficient flow of goods between manufacturers
-              and consumers of
-              <span className="font-bold">
-                {" "}
-                paper, paperboard & related products
-              </span>
-              , the group has risen consistently to be one of the most trusted
-              business houses of its kind in India.
+              <span className="font-bold"> Shivananda Marketing Pvt. Ltd.</span>
+              was established in 1989 and has since been a pioneer in
+              implementing new technologies and adopting advanced materials in
+              emerging and growing sectors. With nearly three and a half decades
+              of experience, we have become one of the leading names in fiber
+              reinforcement technology and building materials in the Indian
+              infrastructure ecosystem.
             </p>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              With a corporate philosophy based on Knowledge Partnership,
-              Narsingh Dass Group follows a guiding principle of
-              <span className="font-bold"> Customers Grow, We Grow</span>.
-              With this belief, the group has enjoyed consistent growth and
-              expansion over the years and has transformed itself from a
-              trading company to a complete
-              <span className="font-bold"> Solution Marketing Group</span>.
+              We bring innovative product solutions, new formulations, on-site
+              technical support, and end-to-end solutions for the construction
+              industry. Our business operates in almost all the Indian states
+              while reaching out to global clients in most of the nations in the
+              Indian subcontinent, SEA, and the Middle East. In the future, we
+              aim to reach out to more countries in the European and American
+              markets.
             </p>
 
             <p className="text-gray-700 text-lg leading-relaxed mb-4">
-              Our Business centers are - Narsingh Dass & Co., Narsingh Dass
-              (Co. Pvt. Ltd.), India Paper Products / Sudhir Papers / Synchem,
-              Shivananda Marketing Pvt. Ltd., Sudhir Papers Limited.
+              Our specialized and modern warehouse facilities are equipped with
+              adequate staff to ensure that our clients can meet their
+              timelines. To meet industrial standards, we perform extensive
+              quality testing and quality assurance on all our products.
             </p>
-          </motion.div>
 
-          <motion.div
-            initial={{ opacity: 0, scale: 0.8 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8 }}
-            className="relative w-full h-[400px] rounded-2xl overflow-hidden shadow-xl"
-          >
-            <Image
-              src={images[currentImage]}
-              alt="Modern Construction Project"
-              layout="fill"
-              objectFit="cover"
-              objectPosition="center"
-            />
+            <p className="text-gray-700 text-lg leading-relaxed mb-4">
+              Our objective is to remain responsive to the needs of our
+              customers and provide the product or service they require.
+              Flexibility and creativity are the basis of our success. Our
+              pioneering spirit enables us to explore, develop, and drive
+              innovations that make a positive difference in people’s lives.
+            </p>
           </motion.div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mt-12"
-        >
-          <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            <span className="font-bold"> Shivananda Marketing Pvt. Ltd.</span>
-            was established in 1989 and has since been a pioneer in
-            implementing new technologies and adopting advanced materials in
-            emerging and growing sectors. With nearly three and a half decades
-            of experience, we have become one of the leading names in fiber
-            reinforcement technology and building materials in the Indian
-            infrastructure ecosystem.
-          </p>
-
-          <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            We bring innovative product solutions, new formulations, on-site
-            technical support, and end-to-end solutions for the construction
-            industry. Our business operates in almost all the Indian states
-            while reaching out to global clients in most of the nations in the
-            Indian subcontinent, SEA, and the Middle East. In the future, we
-            aim to reach out to more countries in the European and American
-            markets.
-          </p>
-
-          <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            Our specialized and modern warehouse facilities are equipped with
-            adequate staff to ensure that our clients can meet their
-            timelines. To meet industrial standards, we perform extensive
-            quality testing and quality assurance on all our products.
-          </p>
-
-          <p className="text-gray-700 text-lg leading-relaxed mb-4">
-            Our objective is to remain responsive to the needs of our
-            customers and provide the product or service they require.
-            Flexibility and creativity are the basis of our success. Our
-            pioneering spirit enables us to explore, develop, and drive
-            innovations that make a positive difference in people’s lives.
-          </p>
-        </motion.div>
-      </div>
-    </section>
+      </section>
 
       <section className="py-24">
         <div className="container mx-auto px-6">
@@ -158,6 +151,41 @@ export default function About() {
         </div>
       </section>
 
+      <section className="py-12 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            {/* Logo */}
+            <div className="w-full md:w-2/5 flex justify-center">
+              <Image
+                src={Logo}
+                alt="Company Logo"
+                className="w-48 h-48 md:w-64 md:h-64 object-contain"
+                priority
+              />
+            </div>
+
+            {/* Logo description */}
+            <div className="w-full md:w-3/5">
+              <div className="space-y-4">
+                <p className="text-gray-700">
+                  Represents a Paper Fan which denotes the different group
+                  activities
+                </p>
+
+                <p className="text-gray-700">
+                  The wings, unattached, converge to one focal point, the
+                  Consumer!
+                </p>
+
+                <p className="text-gray-700">
+                  The changing colors and the circular movement of the fan
+                  reflect the dynamism and continuous growth of the group.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="py-12">
         <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
           <div className="md:w-2/3"></div>

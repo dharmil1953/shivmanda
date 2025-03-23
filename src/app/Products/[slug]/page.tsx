@@ -116,7 +116,6 @@
 //     </main>
 //   );
 // }
-
 import React from "react";
 import Image from "next/image";
 import fs from "fs/promises";
@@ -171,9 +170,32 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
     );
   }
 
+  const hasLogos = project.logoImg && project.logoImg.length > 0;
+
   return (
     <main className="min-h-screen bg-[var(--background)]">
       <section className="relative h-[60vh] w-full">
+        {/* Logos on Right Side */}
+        {hasLogos && (
+          <div className="absolute top-4 right-4 z-10 flex flex-row gap-2 md:gap-4">
+            {project?.logoImg?.map((logo, index) => (
+              <div 
+                key={index} 
+                className="relative w-auto h-auto max-w-xs overflow-hidden shadow-lg"
+              >
+                <Image
+                  src={logo}
+                  alt={`${project.name} Logo ${index + 1}`}
+                  width={150}
+                  height={100}
+                  className="object-contain"
+                  style={{ width: 'auto', height: 'auto' }}
+                />
+              </div>
+            ))}
+          </div>
+        )}
+
         <Image
           src={
             project.bgImage ||
@@ -204,21 +226,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
               Overview
             </h2>
             <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
-            {project.logoImg && project.logoImg.length > 0 && (
-              <div className="my-6 flex flex-wrap gap-4">
-                {project.logoImg.map((logo, index) => (
-                  <div key={index} className="w-[80px] h-[80px]">
-                    <Image
-                      src={logo}
-                      alt={`Project Logo ${index + 1}`}
-                      width={80}
-                      height={80}
-                      className="object-contain"
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
+            
             {/* Download PDF Button */}
             {project.pdfURL && (
               <a
@@ -305,7 +313,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
                   src={img}
                   alt={`Gallery image ${index + 1}`}
                   fill
-                  className="object-cover hover:scale-105 transition-transform duration-300"
+                  className="object-contain hover:scale-105 transition-transform duration-300"
                 />
               </div>
             ))}

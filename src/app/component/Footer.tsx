@@ -5,7 +5,7 @@ import React from 'react'
 const ProductList = [
     { productLink: "/infrastructure", productTitle: "Construction Solutions " },
     { productLink: "/Coating", productTitle: "Coating and Masterbatch Solutions" },
-    { productLink: "https://indiapaper.com/", productTitle: "Paper" },
+    { productLink: "https://indiapaper.com/", productTitle: "Paper & Packaging" },
     // { productLink: "/Products/cellulose-fiber-pellets", productTitle: "Cellulose Fiber Pellets" },
     // { productLink: "/Products/anti-stripping-agent", productTitle: "Anti Stripping Agent" },
     // { productLink: "/Products/silica-fume", productTitle: "Silica Fume" },

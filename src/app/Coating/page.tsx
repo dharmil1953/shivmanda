@@ -206,20 +206,6 @@ interface Product {
 
 const OurProducts = [
   {
-    ProjectLink: "/Products/titanium-dioxide",
-    ProjectImages: [TitaniumDioxide1, TitaniumDioxide2, TitaniumDioxide3],
-    ProjectTitle: "Titanium Dioxide",
-    ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    ProjectLink: "/Products/tiq-replacement",
-    ProjectImages: [TiQReplacement1],
-    ProjectTitle: "TiQ - Replacement of TiO2",
-    ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
     ProjectLink: "/Products/synthetic-fibre",
     ProjectImages: [SyntheticFibre2, SyntheticFibre3],
     ProjectTitle: "Synthetic Fibre",
@@ -227,35 +213,49 @@ const OurProducts = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: "/Products/styrene-butadiene-latex",
+    ProjectLink: "#",
+    ProjectImages: [TitaniumDioxide1, TitaniumDioxide2, TitaniumDioxide3],
+    ProjectTitle: "Titanium Dioxide",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    ProjectLink: "#",
+    ProjectImages: [TiQReplacement1],
+    ProjectTitle: "TiQ - Replacement of TiO2",
+    ProjectDescription:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  },
+  {
+    ProjectLink: "#",
     ProjectImages: [StyreneButadieneLatex, StyreneButadieneLatex2],
     ProjectTitle: "Styrene Butadiene Latex",
     ProjectDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: "/Products/styrene-acrylic-latex",
+    ProjectLink: "#",
     ProjectImages: [StyreneAcrylicLatex, StyreneAcrylicLatex2],
     ProjectTitle: "Styrene Acrylic Latex",
     ProjectDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: "/Products/ethyl-cellulose",
+    ProjectLink: "#",
     ProjectImages: [EthylCellulose2, EthylCellulose3],
     ProjectTitle: "Ethyl Cellulose",
     ProjectDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: "/Products/methyl-cellulose",
+    ProjectLink: "#",
     ProjectImages: [MethylCellulose2, MethylCellulose3],
     ProjectTitle: "Methyl Cellulose (HPMC)",
     ProjectDescription:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
-    ProjectLink: "/Products/sodium-alginate",
+    ProjectLink: "#",
     ProjectImages: [SodiumAlginate, SodiumAlginate2, SodiumAlginate3],
     ProjectTitle: "Sodium Alginate",
     ProjectDescription:

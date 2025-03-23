@@ -61,7 +61,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
   const { slug } = await params;
   const blog = await getBlogData(slug);
   const relatedPosts = await getRelatedPosts(slug);
-  console.log("blog", blog);
+
   if (!blog) {
     return (
       <main className="min-h-screen flex items-center justify-center">
@@ -327,7 +327,7 @@ export default async function BlogDetail({ params }: { params: tParams }) {
                 </div>
                 <div className="mt-6 pt-4 border-t border-gray-200">
                   <Link
-                    href="/blog"
+                    href="/Blog"
                     className="text-[#FF7069] hover:text-[#ff5c54] font-medium text-sm flex items-center"
                   >
                     View all articles

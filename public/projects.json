@@ -3,7 +3,7 @@
     "slug": "synthetic-fibre",
     "name": "Synthetic Fibre",
     "bgImage": "/images/synthetic-7.jpg",
-    "description": "Empowering Fibre Reinforcement Technology",
+    "description": "Making a stronger world",
     "extraLine": "Recron 3s - Making a stronger world",
     "logoImg": ["/images/realince.jpg", "/images/recron-s3.png"],
     "overview": "Concrete often suffers from brittleness, low tensile strength, and shrinkage cracks. Synthetic Fibre, made from micro polyester and polypropylene, significantly enhances concrete performance by improving crack resistance, increasing tensile strength, and ensuring better bonding. It is specifically designed for projects facing repeated stress, temperature variations, and exposure to moisture. This fibre reinforcement is extensively used in industrial flooring, precast structures, tunnel linings, and road pavements to increase the durability and flexibility of concrete.",
@@ -60,7 +60,13 @@
         "value": "Promotes better adhesion within the concrete mix for stronger structural integrity."
       }
     ],
-    "images": ["/images/synthetic-4.png", "/images/synthetic-2.png"]
+    "images": [
+      "/images/synthetic-4.png",
+      "/images/synthetic-2.png",
+      "/images/synthetic-8.jpg",
+      "/images/synthetic-3.jpg",
+      "/images/synthetic-4.jpg"
+    ]
   },
   {
     "slug": "antrocel-g",
@@ -118,7 +124,9 @@
     "images": [
       "/images/antrocel-g.jpg",
       "/images/antrocel-1.jpg",
-      "/images/antrocel-2.jpg"
+      "/images/antrocel-2.jpg",
+      "/images/antrocel-3.jpg",
+      "/images/antrocel-5.jpg"
     ]
   },
   {
@@ -180,7 +188,9 @@
     "images": [
       "/images/steel-1.jpg",
       "/images/steel-2.jpg",
-      "/images/steel-4.jpg"
+      "/images/steel-4.jpg",
+      "/images/steel-5.jpg",
+      "/images/steel-6.jpg"
     ]
   },
   {
@@ -211,15 +221,21 @@
       { "title": "Moisture Content", "value": "< 5%" },
       { "title": "Bulk Density", "value": "450-600 kg/m³" }
     ],
-    "images": ["/images/cellulose-fiber-pellet.jpg"]
+    "images": [
+      "/images/cellulose-fiber-pellet.jpg",
+      "/images/cellulose-fiber-pellet-two.jpg",
+      "/images/cellulose-fiber-pellet-three.jpg",
+      "/images/cellulose-fiber-pellet-four.jpg",
+      "/images/cellulose-fiber-pellet-five.jpg"
+    ]
   },
   {
     "slug": "anti-stripping-agent",
     "name": "Anti Stripping Agent",
-    "bgImage": "/images/anti-stripping-agent.png",
+    "bgImage": "/images/anti-stripping-agent-main.jpg",
     "logoImg": [],
-    "description": "Enhancing asphalt adhesion to prevent moisture damage.",
-    "overview": "Anti-stripping agents are specialized additives used in asphalt mixtures to enhance adhesion between bitumen and aggregates, preventing moisture-related damage. They improve the durability and performance of pavements by reducing stripping, a phenomenon where water weakens the bond between asphalt and aggregate surfaces. By mitigating the effects of water infiltration, these agents help extend the lifespan of roads, minimize maintenance costs, and ensure structural stability, especially in regions prone to heavy rainfall or fluctuating temperatures. Available in various forms, including amine-based, lime-based, and silane-based formulations, anti-stripping agents play a crucial role in maintaining pavement integrity and long-term performance.",
+    "description": "Adhesion Promoter for Flexible Pavements",
+    "overview": "Anti-stripping agents are specialized additives used in asphalt mixtures to enhance adhesion between bitumen and aggregates, preventing moisture-related damage. They improve the durability and performance of pavements by reducing stripping, a phenomenon where water weakens the bond between asphalt and aggregate surfaces. By mitigating the effects of water infiltration, these agents help extend the lifespan of roads, minimize maintenance costs, and ensure structural stability, especially in regions prone to heavy rainfall or fluctuating temperatures. Available in various forms, including organic-based, amine-based, and silane-based formulations, anti-stripping agents play a crucial role in maintaining pavement integrity and long-term performance.",
     "application": [
       "Used in hot mix asphalt to prevent stripping",
       "Applied in road construction for improved durability",
@@ -231,24 +247,38 @@
       "Enhances asphalt mixture strength and longevity"
     ],
     "keyFeatures": [
-      "Chemical and polymer-based formulations available",
+      "Chemical and Organic-based formulations available",
       "Enhances adhesion and reduces moisture susceptibility",
-      "Compatible with various types of asphalt binders"
+      "Compatible with various types of asphalt binders (PMB, CRMB, VG Grades)"
     ],
     "pdfURL": "",
     "specifications": [
-      { "title": "pH Value", "value": "6.0 - 8.0" },
-      { "title": "Appearance", "value": "Liquid / Powder" },
-      { "title": "Dosage", "value": "0.2% - 0.5% by weight of bitumen" }
+      {
+        "title": "Pack Size",
+        "value": "20kg Drums; 1000 kg IBC for bulks needs"
+      },
+      { "title": "Grade", "value": "Nanotechnology, Organic Chemistry " },
+      { "title": "Appearance", "value": "Pale Yellow Liquid" },
+      {
+        "title": "Recommended Dosage",
+        "value": "0.05 - 0.1%"
+      }
     ],
-    "images": ["/images/anti-stripping-agent.png"]
+    "images": [
+      "/images/anti-stripping-agent-two.jpg",
+      "/images/anti-stripping-agent-three.jpg",
+      "/images/anti-stripping-agent-four.jpg",
+      "/images/anti-stripping-agent-five.jpg",
+      "/images/anti-stripping-agent-six.jpg"
+    ]
   },
   {
     "slug": "silica-fume",
     "name": "Silica Fume",
     "bgImage": "/images/silica-fume.jpg",
     "description": "Enhancing concrete strength and durability with ultra-fine silica.",
-    "overview": "Silica fume is an ultrafine powder composed of spherical particles rich in silicon dioxide, produced as a byproduct of silicon and ferrosilicon alloy manufacturing. As a highly reactive pozzolan, it significantly enhances the strength, durability, and performance of concrete. When added to concrete mixtures, silica fume refines the microstructure, reducing permeability and increasing resistance to chemical attacks, sulfate exposure, and chloride penetration. It also improves the cohesion and workability of high-performance concrete, making it ideal for applications in bridges, marine structures, tunnels, and industrial floors where superior strength and durability are essential.",
+    "overview": "Corniche Silica Fume is the trusted solution for enhancing the durability and strength of concrete. When added to concrete, Corniche significantly improves its resistance to harmful elements like sulfates, chlorides, and other chemicals that can weaken structures over time. This makes Corniche Silica Fume ideal for a wide range of high-performance concrete applications, including high-rise buildings, bridges, tunnels, and infrastructure projects exposed to harsh environments. By ensuring that concrete remains strong and resilient for decades, Corniche helps in building structures that stand the test of time, making it an essential component for projects demanding long-lasting durability. We focus on delivering a product that enhances the longevity and strength of concrete, improving its resistance to sulfates, chlorides, and other damaging agents. By adding just 5-8% of Silica Fume to concrete, we significantly boost its durability, making it ideal for a variety of construction applications, including high-rise buildings, bridges, tunnels, and underwater concrete.",
+    "logoImg": ["/images/sillica-fume-logo.jpg"],
     "application": [
       "Used in high-performance concrete for bridges and tunnels",
       "Enhances strength in precast concrete elements",
@@ -264,12 +294,24 @@
       "Enhances sulfate and chloride resistance",
       "Widely used in high-strength concrete applications"
     ],
-    "pdfURL": "", 
+    "pdfURL": "/pdf/corniche_brochure_digital.pdf",
     "specifications": [
-      { "title": "SiO2 Content", "value": "> 85%" },
-      { "title": "Specific Surface Area", "value": "15,000 - 30,000 m²/kg" },
-      { "title": "Bulk Density", "value": "200-700 kg/m³" }
+      { "title": "SiO2 Content", "value": "> 92%" },
+      {
+        "title": "Pack Size",
+        "value": "25 Kg Bags, 1000 kg Jumbo bags for bulk needs"
+      },
+      {
+        "title": "Shelf Life",
+        "value": "24 months under ideal storage conditions"
+      }
     ],
-    "images": ["/images/sillica-fume-one.jpg"]
+    "images": [
+      "/images/sillica-fume-one.jpg",
+      "/images/sillica-fume-two.jpg",
+      "/images/sillica-fume-three.jpg",
+      "/images/sillica-fume-four.jpg",
+      "/images/sillica-fume-five.jpg"
+    ]
   }
 ]

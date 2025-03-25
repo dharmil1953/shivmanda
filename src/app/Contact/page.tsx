@@ -1,11 +1,94 @@
 "use client";
 
-import { motion } from 'framer-motion';
-import { Mail, MapPin, Phone } from 'lucide-react';
-import Image from 'next/image';
+import { motion } from "framer-motion";
+import { Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 // import ContactImg from "../../../public/images/construction-1.jpg"
 
+interface FormValues {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone?: string;
+  message: string;
+}
+
+// Define the types for the API response
+interface ApiResponse {
+  success: boolean;
+  message: string;
+}
+
 export default function Contact() {
+  const handleSubmit = async (
+    values: FormValues,
+    {
+      setSubmitting,
+      resetForm,
+    }: { setSubmitting: (isSubmitting: boolean) => void; resetForm: () => void }
+  ): Promise<void> => {
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(values),
+      });
+
+      const data: ApiResponse = await response.json();
+      if (data.success) {
+        alert("Your message has been sent!");
+        resetForm();
+      } else {
+        alert("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      alert("An error occurred. Please try again.");
+    }
+
+    setSubmitting(false);
+  };
+
+  const onSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ): Promise<void> => {
+    e.preventDefault();
+
+    const form = e.target as HTMLFormElement;
+    const formData = new FormData(form);
+    const values = {
+      firstName: formData.get("firstName") as string,
+      lastName: formData.get("lastName") as string,
+      email: formData.get("email") as string,
+      phone: formData.get("phone") as string,
+      message: formData.get("message") as string,
+    };
+
+    if (
+      !values.firstName ||
+      !values.lastName ||
+      !values.email ||
+      !values.message
+    ) {
+      alert("All fields marked with * are required!");
+      return;
+    }
+
+    // Email validation
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    if (!emailPattern.test(values.email)) {
+      alert("Please enter a valid email address!");
+      return;
+    }
+
+    await handleSubmit(values, {
+      setSubmitting: () => {},
+      resetForm: () => form.reset(),
+    });
+  };
+
   return (
     <div className="min-h-screen bg-[var(--background)]">
       <section className="relative min-h-[60vh] flex items-center bg-gradient-to-b from-[var(--secondary)]/10 to-[var(--background)]">
@@ -20,9 +103,9 @@ export default function Contact() {
                 Get in touch with us
               </h1>
               <p className="text-lg md:text-xl mb-8">
-                Please fill in your details and our dedicated team will reach out to you within 24 hours
-                Looking forward to discussing opportunities with you
-
+                Please fill in your details and our dedicated team will reach
+                out to you within 24 hours Looking forward to discussing
+                opportunities with you
               </p>
             </motion.div>
             <motion.div
@@ -54,12 +137,17 @@ export default function Contact() {
               {
                 icon: Mail,
                 title: "Email Us",
-                details: ["smpl@narsinghdass.com ", "material@narsinghdass.com"],
+                details: [
+                  "smpl@narsinghdass.com ",
+                  "material@narsinghdass.com",
+                ],
               },
               {
                 icon: MapPin,
                 title: "Visit Us",
-                details: ["Shop No, 1170/23, 3rd Floor, GT Rd, Block 25, Shakti Nagar, Delhi, 110007"],
+                details: [
+                  "Shop No, 1170/23, 3rd Floor, GT Rd, Block 25, Shakti Nagar, Delhi, 110007",
+                ],
               },
             ].map((contact, index) => (
               <motion.div
@@ -70,9 +158,13 @@ export default function Contact() {
                 className="text-center p-8 rounded-xl bg-[var(--secondary)]/5 hover:bg-[var(--secondary)]/10 transition-all"
               >
                 <contact.icon className="w-12 h-12 text-[var(--primary)] mx-auto mb-4" />
-                <h3 className="text-2xl font-bold text-[var(--text-dark)] mb-4">{contact.title}</h3>
+                <h3 className="text-2xl font-bold text-[var(--text-dark)] mb-4">
+                  {contact.title}
+                </h3>
                 {contact.details.map((detail, i) => (
-                  <p key={i} className="text-[var(--text-body)]">{detail}</p>
+                  <p key={i} className="text-[var(--text-body)]">
+                    {detail}
+                  </p>
                 ))}
               </motion.div>
             ))}
@@ -99,13 +191,14 @@ export default function Contact() {
                   <h2 className="text-3xl font-bold mb-8 text-center">
                     Send Us a Message
                   </h2>
-                  <form className="space-y-6">
+                  <form onSubmit={onSubmit} className="space-y-6">
                     <div className="grid md:grid-cols-2 gap-6">
                       <div>
                         <label className="block text-sm font-medium text-gray-700 mb-2">
                           First Name*
                         </label>
                         <input
+                          name="firstName"
                           type="text"
                           required
                           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
@@ -117,6 +210,7 @@ export default function Contact() {
                           Last Name*
                         </label>
                         <input
+                          name="lastName"
                           type="text"
                           required
                           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
@@ -131,6 +225,7 @@ export default function Contact() {
                           Email Address*
                         </label>
                         <input
+                          name="email"
                           type="email"
                           required
                           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
@@ -142,6 +237,7 @@ export default function Contact() {
                           Phone Number
                         </label>
                         <input
+                          name="phone"
                           type="tel"
                           className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
                           placeholder="+1 (555) 000-0000"
@@ -151,25 +247,10 @@ export default function Contact() {
 
                     <div>
                       <label className="block text-sm font-medium text-gray-700 mb-2">
-                        Project Type*
-                      </label>
-                      <select
-                        required
-                        className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
-                      >
-                        <option value="">Select Project Type</option>
-                        <option value="commercial">Commercial Development</option>
-                        <option value="industrial">Industrial Construction</option>
-                        <option value="infrastructure">Infrastructure Project</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-
-                    <div>
-                      <label className="block text-sm font-medium text-gray-700 mb-2">
                         Message*
                       </label>
                       <textarea
+                        name="message"
                         required
                         rows={6}
                         className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
@@ -187,7 +268,6 @@ export default function Contact() {
                 </motion.div>
 
                 {/* Google Map */}
-
               </div>
             </div>
           </section>

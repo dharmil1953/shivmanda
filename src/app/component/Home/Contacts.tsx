@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 
 const Contacts: React.FC = () => {
@@ -18,7 +18,9 @@ const Contacts: React.FC = () => {
   });
 
   // Handle input change
-  const handleChange: React.ChangeEventHandler<HTMLInputElement | HTMLTextAreaElement> = (e) => {
+  const handleChange: React.ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (e) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
@@ -35,7 +37,9 @@ const Contacts: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Address Section */}
           <div className="text-center md:text-left">
-            <h3 className="text-primaryColor text-lg leading-6 mb-3 font-semibold">Our Address</h3>
+            <h3 className="text-primaryColor text-lg leading-6 mb-3 font-semibold">
+              Our Address
+            </h3>
             <h1 className="mb-5 text-Dark text-2xl sm:text-3xl leading-8 sm:leading-10 font-medium">
               <span className="font-bold">Visit Us</span>
             </h1>

@@ -116,6 +116,7 @@
 //     </main>
 //   );
 // }
+
 import React from "react";
 import Image from "next/image";
 import fs from "fs/promises";
@@ -128,7 +129,7 @@ interface Project {
   description: string;
   image: string;
   overview: string;
-  application?: string;
+  application?: string[];
   advantages?: string[];
   keyFeatures?: string[];
   specifications: Specification[];
@@ -179,8 +180,8 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         {hasLogos && (
           <div className="absolute top-4 right-4 z-10 flex flex-row gap-2 md:gap-4">
             {project?.logoImg?.map((logo, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="relative w-auto h-auto max-w-xs overflow-hidden shadow-lg"
               >
                 <Image
@@ -189,7 +190,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
                   width={150}
                   height={100}
                   className="object-contain"
-                  style={{ width: 'auto', height: 'auto' }}
+                  style={{ width: "auto", height: "auto" }}
                 />
               </div>
             ))}
@@ -226,7 +227,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
               Overview
             </h2>
             <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
-            
+
             {/* Download PDF Button */}
             {project.pdfURL && (
               <a
@@ -266,7 +267,11 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
             <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
               Application
             </h2>
-            <p className="text-[var(--text-body)]">{project.application}</p>
+            <ul className="list-disc pl-5 text-[var(--text-body)]">
+              {project?.application?.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
           </div>
         )}
 
@@ -303,7 +308,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
           <h2 className="text-3xl font-bold mb-8 text-[var(--foreground)]">
             Gallery
           </h2>
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-5 gap-6">
             {project.images.map((img, index) => (
               <div
                 key={index}

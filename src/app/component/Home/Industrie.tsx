@@ -1,34 +1,28 @@
 "use client"
 import React from 'react'
-import icon1 from '../../../../public/images/icon1.svg'
-import icon2 from '../../../../public/images/icon2.svg'
 import Image from 'next/image';
 import { useRouter } from "next/navigation";
 
-
+// Updated data with placeholder images related to each industry
 const Industriedata = [
     {
-        image: icon1,
+        image: "/api/placeholder/400/250",
         title: "Building",
-        desc: "For residential, commercial and industrial projects",
         href:"/infrastructure",
     },
     {
-        image: icon2,
+        image: "/api/placeholder/400/250",
         title: "Infrastructure",
-        desc: "Performance and Durability enhancing solutions for infrastructure projects",
         href:"/infrastructure",
     },
     {
-        image: icon1,
+        image: "/api/placeholder/400/250",
         title: "Coating and Masterbatch Solutions",
-        desc: "Innovative Solutions for Masterbatches, Paints, Inks and all types of Coatings",
         href:"/Coating",
     },
     {
-        image: icon1,
+        image: "/api/placeholder/400/250",
         title: "Paper & Packaging",
-        desc: "For Printing, Packaging and Hygiene Segments",
         href:"https://indiapaper.com/",
     }
 ];
@@ -48,23 +42,36 @@ const Industrie = () => {
 
                 {/* Responsive Grid Layout */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    {Industriedata.map((industries, index) => (
-                        
-                        <div key={index} 
-                        onClick={() => router.push(industries.href)}
-                        className='w-full cursor-pointer bg-[#EFEFEF] rounded-xl px-6 py-8 text-center shadow-md hover:shadow-lg transition-shadow duration-300'>
-                            {/* Icon */}
-                            <div className='flex items-center justify-center size-20 lg:size-[91px] rounded-full bg-primaryColor mx-auto mb-4'>
-                                <Image src={industries.image} alt={`Industry Image ${index + 1}`} className='w-auto' />
+                    {Industriedata.map((industry, index) => (
+                        <div 
+                            key={index} 
+                            onClick={() => router.push(industry.href)}
+                            className='w-full cursor-pointer bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col'
+                        >
+                            {/* Full-width image at the top */}
+                            <div className='w-full h-48 relative'>
+                                <Image 
+                                    src={industry.image} 
+                                    alt={`${industry.title} image`}
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
                             </div>
 
-                            {/* Title */}
-                            <h2 className='text-xl md:text-2xl font-semibold mb-2'>{industries.title}</h2>
-
-                            {/* Description */}
-                            <p className='text-base md:text-lg text-gray-700'>{industries.desc}</p>
+                            {/* Content area */}
+                            <div className='p-6 flex flex-col flex-grow'>
+                                {/* Title */}
+                                <h2 className='text-xl md:text-2xl font-semibold mb-2'>{industry.title}</h2>
+                                
+                                {/* Spacer to push the "Find more" to bottom */}
+                                <div className='flex-grow'></div>
+                                
+                                {/* Find more link */}
+                                <div className='mt-4 text-primaryColor font-medium text-lg hover:underline'>
+                                    Find more &gt;
+                                </div>
+                            </div>
                         </div>
-                        
                     ))}
                 </div>
             </div>

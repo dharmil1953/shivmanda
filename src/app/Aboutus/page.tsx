@@ -18,7 +18,7 @@ export default function About() {
     }, 3000);
     return () => clearInterval(interval);
   }, []);
-  const images = [Nature, Nature];
+  const images = [mapImg, mapImg];
 
   return (
     <div className="min-h-screen bg-[var(--background)]">
@@ -33,7 +33,7 @@ export default function About() {
               <h3 className="text-primaryColor text-lg leading-6 mb-3 font-medium">
                 About Us
               </h3>
-              <p className="text-gray-700 text-lg leading-relaxed mb-4 font-serif">
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 Narsingh Dass Group is a multifarious trading group, renowned
                 and much admired in the paper industry. With its core business
                 aimed to create an efficient flow of goods between manufacturers
@@ -46,7 +46,7 @@ export default function About() {
                 business houses of its kind in India.
               </p>
 
-              <p className="text-gray-700 text-lg leading-relaxed mb-4 font-sans">
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 With a corporate philosophy based on Knowledge Partnership,
                 Narsingh Dass Group follows a guiding principle of
                 <span className="font-bold"> Customers Grow, We Grow</span>.
@@ -56,7 +56,7 @@ export default function About() {
                 <span className="font-bold"> Solution Marketing Group</span>.
               </p>
 
-              <p className="text-gray-700 text-lg leading-relaxed mb-4 font-mono">
+              <p className="text-gray-700 text-lg leading-relaxed mb-4">
                 Our Business centers are - Narsingh Dass & Co., Narsingh Dass
                 (Co. Pvt. Ltd.), India Paper Products / Sudhir Papers / Synchem,
                 Shivananda Marketing Pvt. Ltd., Sudhir Papers Limited.
@@ -86,8 +86,7 @@ export default function About() {
             className="mt-12"
           >
             <p
-              className="text-gray-700 text-lg leading-relaxed mb-4 font-Arial"
-              style={{ fontFamily: "cursive" }}
+              className="text-gray-700 text-lg leading-relaxed mb-4"
             >
               <span className="font-bold"> Shivananda Marketing Pvt. Ltd.</span>
               was established in 1989 and has since been a pioneer in
@@ -100,7 +99,6 @@ export default function About() {
 
             <p
               className="text-gray-700 text-lg leading-relaxed mb-4"
-              style={{ fontFamily: "sans-serif" }}
             >
               We bring innovative product solutions, new formulations, on-site
               technical support, and end-to-end solutions for the construction
@@ -113,7 +111,6 @@ export default function About() {
 
             <p
               className="text-gray-700 text-lg leading-relaxed mb-4"
-              style={{ fontFamily: "serif" }}
             >
               Our specialized and modern warehouse facilities are equipped with
               adequate staff to ensure that our clients can meet their
@@ -123,7 +120,6 @@ export default function About() {
 
             <p
               className="text-gray-700 text-lg leading-relaxed mb-4"
-              style={{ fontFamily: "fantasy" }}
             >
               Our objective is to remain responsive to the needs of our
               customers and provide the product or service they require.
@@ -339,7 +335,7 @@ export default function About() {
               className="relative h-[450px] w-full rounded-2xl overflow-hidden shadow-xl"
             >
               <Image
-                src={mapImg}
+                src={Nature}
                 alt="Contact Image"
                 fill
                 className="object-cover"

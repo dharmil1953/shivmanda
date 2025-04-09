@@ -17,7 +17,6 @@ const navLinks = [
         href: "/Coating", 
         label: "Construction Solutions",
         subsubmenu: [
-          { href: "/Products/antrocel-g", label: "Antrocel-g " },
           { href: "/Products/steel-fibre", label: "Steel Fibre" },
           { href: "/Products/synthetic-fibre", label: "Synthetic Fibre" },
           { href: "/Products/cellulose-fiber-pellets", label: "Cellulose Fiber Pellets" },
@@ -25,7 +24,7 @@ const navLinks = [
           { href: "/Products/silica-fume", label: "Silica Fume" },
         ]
       },
-      { href: "/infrastructure", label: "Coating and Masterbatch Solutions" }
+      { href: "/Coating", label: "Coating and Masterbatch Solutions" }
     ],
   },
   { href: "/Blog", label: "Knowledge Hub" },

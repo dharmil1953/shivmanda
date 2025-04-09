@@ -1,10 +1,10 @@
 'use client'
 import React from 'react'
-import Project1 from '../../../../public/images/synthetic-1.png'
-import Project2 from '../../../../public/images/cellulose-fiber-pellet.jpg'
+import Project1 from '../../../../public/images/synthetic-fibre-p.png'
+import Project2 from '../../../../public/images/cellulose-fiber-pellet-p.png'
 import Project3 from '../../../../public/images/steel-1.jpg'
 import Project4 from '../../../../public/images/silica-fume.jpg'
-import project5 from "../../../../public/images/anti-stripping-agent.png"
+import project5 from "../../../../public/images/anti-stripping-agent-p.png"
 import Image from 'next/image'
 import Link from 'next/link'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -72,6 +72,7 @@ const OurProject = () => {
                             <SwiperSlide key={index} className="group">
                                 <div className="w-full flex justify-center">
                                     <div className="w-[250px] h-[250px] overflow-hidden rounded-full shadow-lg border-4 border-gray-200">
+                                       <Link href={item.ProjectLink}>
                                         <Image
                                             src={item.ProjectImg}
                                             alt={item.ProjectTitle}
@@ -79,6 +80,7 @@ const OurProject = () => {
                                             height={250}
                                             className="w-full h-full object-cover group-hover:scale-110 duration-300"
                                         />
+                                        </Link>
                                     </div>
                                 </div>
                                 <Link

@@ -16,8 +16,8 @@ export default function Home() {
       <About />
       <Industrie />
       <OurProject />
-      <Applications />
-      <OurClients />
+      {/* <Applications />
+      <OurClients /> */}
       {/* <Section3 /> */}
       
       <MoreInfo />

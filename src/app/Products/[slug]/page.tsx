@@ -228,16 +228,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
             </h2>
             <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
 
-            {/* Download PDF Button */}
-            {project.pdfURL && (
-              <a
-                href={project.pdfURL}
-                download
-                className="inline-block bg-[var(--text-dark)] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
-              >
-                Download PDF
-              </a>
-            )}
+           
           </div>
 
           {/* Specifications Section */}
@@ -303,10 +294,21 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
           </div>
         )}
 
+            {/* Download PDF Button */}
+            {project.pdfURL && (
+              <a
+                href={project.pdfURL}
+                download
+                className="inline-block bg-[var(--text-dark)] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
+              >
+                Download PDF
+              </a>
+            )}
+
         {/* Gallery Section */}
         <div className="mt-16">
           <h2 className="text-3xl font-bold mb-8 text-[var(--foreground)]">
-            Gallery
+             PRODUCT GALLERY
           </h2>
           <div className="grid md:grid-cols-5 gap-6">
             {project.images.map((img, index) => (
@@ -326,7 +328,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
         </div>
 
         {/* Call to Action */}
-        <div className="relative mt-32 mb-16">
+        {/* <div className="relative mt-32 mb-16">
           <div className="bg-primaryColor rounded-2xl px-4 py-16 md:p-16">
             <div className="max-w-4xl mx-auto text-center">
               <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--text-dark)] mb-6">
@@ -339,7 +341,7 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </main>
   );

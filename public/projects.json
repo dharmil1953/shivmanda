@@ -3,10 +3,11 @@
     "slug": "synthetic-fibre",
     "name": "Synthetic Fibre",
     "bgImage": "/images/synthetic-7.jpg",
-    "description": "Making a stronger world",
+    "description": "Empowering Fibre Reinforcement Technology",
     "extraLine": "Recron 3s - Making a stronger world",
-    "logoImg": ["/images/realince.jpg", "/images/recron-s3.png"],
+    "logoImg": ["/images/recron-s3.png"],
     "overview": "Concrete often suffers from brittleness, low tensile strength, and shrinkage cracks. Synthetic Fibre, made from micro polyester and polypropylene, significantly enhances concrete performance by improving crack resistance, increasing tensile strength, and ensuring better bonding. It is specifically designed for projects facing repeated stress, temperature variations, and exposure to moisture. This fibre reinforcement is extensively used in industrial flooring, precast structures, tunnel linings, and road pavements to increase the durability and flexibility of concrete.",
+    "extraImg": "/images/synthetic-12.png",
     "specifications": [
       {
         "title": "Product Type",
@@ -61,11 +62,11 @@
       }
     ],
     "images": [
-      "/images/synthetic-4.png",
-      "/images/synthetic-2.png",
       "/images/synthetic-8.jpg",
-      "/images/synthetic-3.jpg",
-      "/images/synthetic-4.jpg"
+      "/images/synthetic-4.jpg",
+            "/images/synthetic-9.png",
+                  "/images/synthetic-10.png",
+                        "/images/synthetic-11.png"
     ]
   },
   {
@@ -136,7 +137,7 @@
     "description": "Vajra Shakti - Making a stronger world",
     "extraLine": "Advanced Steel Fibre for Heavy-Duty Applications",
     "logoImg": ["/images/vajra-shakti.jpg"],
-    "overview": "Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance. Vajra Shakti Steel fibers are low carbon & cold drawn steel wire fibre manufactured by quality base primary steel bar. It has excellent mechanical properties including high tensile strength. Due to its High strength and uniform distribution of fibers, stresses can be fully dispersed and cracking propagation be effectively controlled. Steel Fibers are reliable, cost-efficient concrete reinforcement which provide temperature & shrinkage crack control, enhanced flexural reinforcement, improved shear strength and increase the crack resistance of concrete. It is designed to be easy to mix, place and finish in any concrete mix. It provides excellent load transfer in the crack, it stabilizes load-bearing capacity after appearance of crack. Vajra Shakti Steel Fibres complies with all ASTM & EN Standards.",
+    "overview": "<p>Steel Fibre reinforcement is an innovative solution for improving the structural integrity and performance of concrete. It enhances flexural strength, fatigue resistance, and impact absorption, making it an ideal choice for heavy-duty applications such as industrial floors, bridge decks, and tunnel linings. By controlling crack propagation and improving load-bearing capacity, Steel Fibre reduces reliance on conventional steel reinforcements, leading to cost savings and improved construction efficiency. With excellent durability and resistance to extreme environmental conditions, it is a preferred choice for long-term structural performance.</p><br /><p>Vajra Shakti Steel fibers are low carbon & cold drawn steel wire fibre manufactured by quality base primary steel bar. It has excellent mechanical properties including high tensile strength. Due to its High strength and uniform distribution of fibers, stresses can be fully dispersed and cracking propagation be effectively controlled. Steel Fibers are reliable, cost-efficient concrete reinforcement which provide temperature & shrinkage crack control, enhanced flexural reinforcement, improved shear strength and increase the crack resistance of concrete. It is designed to be easy to mix, place and finish in any concrete mix. It provides excellent load transfer in the crack, it stabilizes load-bearing capacity after appearance of crack. Vajra Shakti Steel Fibres complies with all ASTM & EN Standards.</p>",
     "specifications": [
       {
         "title": "Product Type",
@@ -165,7 +166,7 @@
       "overlays and pavements",
       "Precast concrete applications",
       "Shotcrete",
-      "tunnel linings and slope stabilization",
+      "Tunnel linings and slope stabilization",
       "Blast resistant concrete",
       "External Roads & Pavements",
       "Mass concrete and composite deck construction",
@@ -190,16 +191,19 @@
       "/images/steel-2.jpg",
       "/images/steel-4.jpg",
       "/images/steel-5.jpg",
-      "/images/steel-6.jpg"
+      "/images/steel-6.jpg",
+      "/images/steel-8.png",
+      "/images/steel-9.png"
     ]
   },
   {
     "slug": "cellulose-fiber-pellets",
     "name": "Cellulose Fiber Pellets",
-    "bgImage": "/images/cellulose-fiber-pellet.jpg",
+    "bgImage": "/images/antrocel-2.jpg",
     "logoImg": [],
-    "description": "Enhancing asphalt mixtures with superior fiber reinforcement.",
-    "overview": "Cellulose fiber pellets are an innovative additive used in asphalt pavement mixtures to enhance their performance and longevity. These natural fibers are derived from renewable plant-based sources and offer several key benefits when incorporated into asphalt. When cellulose fiber pellets are added to asphalt, they improve the overall stability and durability of the pavement. One of the primary advantages is their ability to reduce rutting. Rutting is the formation of grooves or depressions on the surface of the road, usually caused by the repetitive stress from vehicle traffic, especially in hot weather. Cellulose fibers help distribute the load more evenly across the surface, reducing the likelihood of permanent deformation.",
+    "description": "Empowering Stone Matrix Asphalt (SMA) technology in flexible pavements",
+    "overview": "<p><b>Cellulose fiber pellets</b> are an innovative additive used in asphalt pavement mixtures to enhance their performance and longevity. These natural fibers are derived from renewable plant-based sources and offer several key benefits when incorporated into asphalt. When cellulose fiber pellets are added to asphalt, they improve the overall stability and durability of the pavement. One of the primary advantages is their ability to reduce binder draindown in <b>Stone Matrix Asphalt</b> Mixes. Rutting is the formation of grooves or depressions on the surface of the road, usually caused by the repetitive stress from vehicle traffic, especially in hot weather. Cellulose fibers help distribute the load more evenly across the surface, reducing the likelihood of permanent deformation.</p><br /><p>About Stone Matrix Asphalt:<b> Stone Matrix Asphalt</b> (SMA) was developed in Germany in 1960s and is considered to be highly rut resistant bituminous course, both for binder and wearing courses, for heavy traffic roads. SMA is a tough, stable and a rut resistant mixture which is based on the concept of coarse aggregate skeleton, achieving stone on stone contact. This skeleton provides strength and durability to SMA and enables it to remain healthy for at least 10 - 12 years. </p>",
+    "storage": "To maintain the quality of Cellulose fiber pellets, store them in a cool, dry place, away from direct sunlight and moisture. Handle with care to prevent damage or contamination. Following proper storage and handling guidelines ensures the product’s performance integrity when added to asphalt mixtures.",
     "application": [
       "Used in asphalt paving for high-performance roads",
       "Enhances the durability of bridge decks and airport runways",
@@ -217,16 +221,20 @@
     ],
     "pdfURL": "",
     "specifications": [
-      { "title": "Fiber Content", "value": "≥ 85%" },
+      { "title": "Natural Cellulose Fibre Content", "value": "≥ 90%" },
       { "title": "Moisture Content", "value": "< 5%" },
-      { "title": "Bulk Density", "value": "450-600 kg/m³" }
+      { "title": "Ash Content", "value": "< 20%" },
+      { "title": "Compliance", "value": " IRC SP 79 & MORTH" },
+      { "title": "Tested By", "value": "CRRI, IIT, NITRA, Delhi Test House" }
     ],
     "images": [
-      "/images/cellulose-fiber-pellet.jpg",
-      "/images/cellulose-fiber-pellet-two.jpg",
+      "/images/antrocel-g.jpg",
+      "/images/antrocel-1.jpg",
+      "/images/antrocel-2.jpg",
+      "/images/antrocel-3.jpg",
+      "/images/antrocel-5.jpg",
       "/images/cellulose-fiber-pellet-three.jpg",
-      "/images/cellulose-fiber-pellet-four.jpg",
-      "/images/cellulose-fiber-pellet-five.jpg"
+      "/images/cellulose-fiber-pellet-seven.jpg"
     ]
   },
   {
@@ -308,10 +316,10 @@
     ],
     "images": [
       "/images/sillica-fume-one.jpg",
-      "/images/sillica-fume-two.jpg",
-      "/images/sillica-fume-three.jpg",
       "/images/sillica-fume-four.jpg",
-      "/images/sillica-fume-five.jpg"
+      "/images/sillica-fume-logo.jpg",
+      "/images/sillica-fume-six.png",
+      "/images/sillica-fume-seven.png"
     ]
   }
 ]

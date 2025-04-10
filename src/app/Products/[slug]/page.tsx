@@ -127,6 +127,8 @@ interface Project {
   name: string;
   bgImage: string;
   description: string;
+  extraLine?: string;
+  extraImg?: string;
   image: string;
   overview: string;
   application?: string[];
@@ -136,6 +138,7 @@ interface Project {
   images: string[];
   logoImg?: string[];
   pdfURL?: string;
+  storage?: string;
 }
 
 interface Specification {
@@ -215,6 +218,9 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
             <p className="text-lg md:text-xl text-gray-200 max-w-2xl">
               {project.description}
             </p>
+            {project?.extraLine && <p className="text-lg md:text-xl text-gray-200 max-w-2xl">
+              {project?.extraLine}
+            </p>}
           </div>
         </div>
       </section>
@@ -226,8 +232,10 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
             <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
               Overview
             </h2>
-            <p className="text-[var(--text-body)] mb-6">{project.overview}</p>
-
+            <div
+    className="text-[var(--text-body)] mb-6"
+    dangerouslySetInnerHTML={{ __html: project.overview }}
+  />
            
           </div>
 
@@ -251,6 +259,34 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
             </div>
           </div>
         </div>
+
+        {project?.extraImg && (
+  <div className="pb-4 mt-5">
+    
+    <div className="w-full max-w-md mx-auto rounded-lg overflow-hidden shadow-lg">
+      <Image
+        src={project?.extraImg}
+        alt="Storage Condition"
+        width={500}
+        height={500}
+        className="w-full h-auto object-contain"
+      />
+    </div>
+  </div>
+)}
+
+  
+
+        {project?.storage && (
+          <div
+          className="pb-4 mt-5"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-[var(--foreground)]">
+              Storage Condition
+            </h2>
+          <p className="text-[var(--text-body)] max-w-4xl">{project.storage}</p>
+        </div>
+        )}
 
         {/* Application Section */}
         {project.application && (
@@ -299,14 +335,14 @@ export default async function ProductDetail({ params }: ProductDetailProps) {
               <a
                 href={project.pdfURL}
                 download
-                className="inline-block bg-[var(--text-dark)] text-white px-6 py-3 rounded-lg text-lg font-semibold hover:bg-opacity-90 transition-all"
+                className="inline-block bg-[var(--text-dark)] text-white px-6 py-3 rounded-lg text-lg font-semibold mt-5 hover:bg-opacity-90 transition-all"
               >
                 Download PDF
               </a>
             )}
 
         {/* Gallery Section */}
-        <div className="mt-16">
+        <div className="mt-12">
           <h2 className="text-3xl font-bold mb-8 text-[var(--foreground)]">
              PRODUCT GALLERY
           </h2>

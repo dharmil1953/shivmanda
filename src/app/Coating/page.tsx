@@ -167,9 +167,6 @@ import TitaniumDioxide1 from "../../../public/images/titanium-dioxide.png";
 import TitaniumDioxide2 from "../../../public/images/titanium-dioxide-2.jpg";
 import TitaniumDioxide3 from "../../../public/images/titanium-dioxide-3.jpg";
 
-import TiQReplacement1 from "../../../public/images/steel-1.jpg";
-// import TiQReplacement2 from '../../../public/images/steel-2.jpg';
-// import TiQReplacement3 from '../../../public/images/steel-3.jpg';
 
 // import SyntheticFibre from '../../../public/images/synthetic-1.png';
 import SyntheticFibre2 from "../../../public/images/synthetic-2.jpg";
@@ -195,6 +192,8 @@ import SodiumAlginate from "../../../public/images/sodium-alginate.jpg";
 import SodiumAlginate2 from "../../../public/images/sodium-alginate-2.jpg";
 import SodiumAlginate3 from "../../../public/images/sodium-alginate-3.jpg";
 
+import Polox from "../../../public/images/polox.png";
+
 import { StaticImageData } from "next/image";
 
 interface Product {
@@ -210,56 +209,63 @@ const OurProducts = [
     ProjectImages: [SyntheticFibre2, SyntheticFibre3],
     ProjectTitle: "Synthetic Fibre",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Recron 3s patented modified flock fibres provide reinforcement to interior and exterior decorative paints. Their uniform multidirectional dispersion leads to improved adhesion, compatibility and aesthetics",
   },
   {
     ProjectLink: "#",
     ProjectImages: [TitaniumDioxide1, TitaniumDioxide2, TitaniumDioxide3],
     ProjectTitle: "Titanium Dioxide",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "It is used for Coating with general purpose,including external & internal architectural coatings,industrial coatings,powder coatings,inks, paint, plastics, masterbatches, paper, PVC & etc. It is a universal pigment that provides opacity, glossiness and brightness,high durability and hiding power. ",
   },
   {
     ProjectLink: "#",
-    ProjectImages: [TiQReplacement1],
+    ProjectImages: [TitaniumDioxide1, TitaniumDioxide2, TitaniumDioxide3],
     ProjectTitle: "TiQ - Replacement of TiO2",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "High-performance opacifier to replace TiO2. Superior opacity, brightness, and dispersion with upto 50% cost savings. Compatible with paints, inks, plastics, and coatings.",
   },
   {
     ProjectLink: "#",
     ProjectImages: [StyreneButadieneLatex, StyreneButadieneLatex2],
     ProjectTitle: "Styrene Butadiene Latex",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Styrene-butadiene (SB) latex is a common type of emulsion polymer used in a number of industrial and commercial applications. It is used in Water Based Adhesive, Adhesive Paper, Coating Binder, Paper Board Binder",
   },
   {
     ProjectLink: "#",
     ProjectImages: [StyreneAcrylicLatex, StyreneAcrylicLatex2],
     ProjectTitle: "Styrene Acrylic Latex",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Styrene-Acrylic (SA) latex offers exterior durability and UV resistance, washability ink solvent resistance and moisture vapor transmission in a wide range of applications – from decorative functional nonwovens to specialty paper and packaging.",
   },
   {
     ProjectLink: "#",
     ProjectImages: [EthylCellulose2, EthylCellulose3],
     ProjectTitle: "Ethyl Cellulose",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "ETHOCEL™ Premium Ethylcellulose Resins are water-insoluble polymers. Their excellent compatibility allows for their use in a broad range of pharmaceutical applications, from controlled-release matrix systems to microencapsulation. They are also useful as non-aqueous granulation binders and for taste-masking.",
   },
   {
     ProjectLink: "#",
     ProjectImages: [MethylCellulose2, MethylCellulose3],
     ProjectTitle: "Methyl Cellulose (HPMC)",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "METHOCEL™ Methylcellulose (MC) and Hydroxypropyl Methylcellulose (HPMC) Water-Soluble Polymers are cellulose ethers that are derived from cellulosic materials such as natural wood or cotton linters. It is used as a Thickener Coating Modifier in various chemistries.",
   },
   {
     ProjectLink: "#",
     ProjectImages: [SodiumAlginate, SodiumAlginate2, SodiumAlginate3],
     ProjectTitle: "Sodium Alginate",
     ProjectDescription:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Sodium alginate is a natural, water-soluble polysaccharide derived from brown seaweed. It is used Thickener, stabilizer and emulsifier. Used in many industries, including food, cosmetics, and pharmaceuticals.",
+  },
+  {
+    ProjectLink: "#",
+    ProjectImages: [Polox],
+    ProjectTitle: "Polyox WSR",
+    ProjectDescription:
+      "POLYOX™ Water-Soluble Resins (WSR) are thermoplastic, non-ionic polymers with high molecular weight.It exhibits many properties that are typical of other classes of water-soluble polymers such as Lubricity, Thickening and rheology modification, Binding, Film formation, Water retention. Used in Construction Chemical, Ceramics, Inks, Coatings, Lighting, Personal Care and Coolants.",
   },
 ];
 

@@ -161,6 +161,9 @@ export default function About() {
 
       <section className="py-12 bg-white">
         <div className="container mx-auto px-4">
+        <h2 className="text-3xl font-bold mb-6 text-center text-[var(--foreground)]">
+              About Our Logo
+            </h2>
           <div className="flex flex-col md:flex-row items-center gap-8">
             {/* Logo */}
             <div className="w-full md:w-2/5 flex justify-center">

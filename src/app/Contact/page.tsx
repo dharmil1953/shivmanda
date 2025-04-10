@@ -103,9 +103,7 @@ export default function Contact() {
                 Get in touch with us
               </h1>
               <p className="text-lg md:text-xl mb-8">
-                Please fill in your details and our dedicated team will reach
-                out to you within 24 hours Looking forward to discussing
-                opportunities with you
+              Please fill in your details and our dedicated team will reach out to you within 24 hours. Looking forward to discussing opportunities with you and your team.
               </p>
             </motion.div>
             <motion.div

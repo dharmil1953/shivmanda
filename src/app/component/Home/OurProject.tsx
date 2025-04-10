@@ -1,6 +1,7 @@
 'use client'
 import React from 'react'
-import Project1 from '../../../../public/images/synthetic-fibre-p.png'
+// import Project1 from '../../../../public/images/synthetic-fibre-p.png'
+import Project1 from '../../../../public/images/synthetic-fiber-p.png'
 import Project2 from '../../../../public/images/cellulose-fiber-pellet-p.png'
 import Project3 from '../../../../public/images/steel-1.jpg'
 import Project4 from '../../../../public/images/silica-fume.jpg'
